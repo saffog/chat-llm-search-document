@@ -1,10 +1,16 @@
 # Building Block Code for web app chat that uses Azure Open AI LLM and Azure Search to provide relevant data from documents 
 
-TODO: Purpose goes here
+
+> This project is based on the next project: 
 
 ## Project Structure
 
-TODO: Project structure goes here
+```
+\
+app.py       --> Holds all the logic related to Azure Open AI consumption and responses for the frontend
+++ backend   --> Holds logic related to Cosmos DB & authentication
+++ frontend  --> Holds the visual chat 
+```
 
 ## To run this project locally
 
@@ -14,6 +20,8 @@ TODO: Project structure goes here
 The app should display here: http://127.0.0.1:5000
 
 ## To run jupyter notebooks locally
+
+As prerequisit ensure you installed [Anaconda](https://www.anaconda.com/download/) before
 
 1. `cd \notebooks`
 2. `pip install jupyterlab`
@@ -77,3 +85,6 @@ netstat -ano | findstr :5000
 # Then we can use taskkill or open Task manager
 taskkill /PID 4400
 ```
+
+#### 2. localhos:5000 shows a message asking for Authentication
+To solve this issue simply change **localhost** for **127.0.0.1** 
