@@ -16,6 +16,7 @@ interface Props {
 export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, clearOnSend, conversationId }: Props) => {
     const [question, setQuestion] = useState<string>("");
     const [roleValue, setRoleValue] = useState<string>("");
+    const showRoleInput = false;
 
     const sendQuestion = () => {
         if (disabled || !question.trim()) {
@@ -59,13 +60,14 @@ export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, 
 
     return (
         <Stack horizontal className={styles.questionInputContainer}>
-            <TextField 
+            {showRoleInput && (<TextField 
                 className={styles.questionInputTextArea} 
                 placeholder={rolePlaceHolder} 
                 multiline 
                 resizable={false}
                 value={roleValue} 
                 onChange={onRoleChange} />
+                )}
             <TextField
                 className={styles.questionInputTextArea}
                 placeholder={placeholder}

@@ -27,6 +27,23 @@ As prerequisit ensure you installed [Anaconda](https://www.anaconda.com/download
 2. `pip install jupyterlab`
 3. `jupyter notebook`
 
+## To deploy this project to an existing resource
+
+Prerequisites: 
+
+- Ensure you have installed [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+- Login to your Azure account using `az login` 
+
+Check the prerequisites above.
+
+1. Build the app code with `start.cmd` or `start.sh` before you deploy, otherwise your changes will not be picked up.
+2. Setup to allow deployment from local: `az webapp config appsettings set -g <resource-group-name> -n <existing-app-name> --settings WEBSITE_WEBDEPLOY_USE_SCM=false`
+3. Deploy APP: `az webapp up --runtime <runtime-stack> --sku <sku> --name <existing-app-name> --resource-group <resource-group-name>`
+   1. For this project is enough to deploy app: `az webapp up --name <existing-app-name> --resource-group <resource-group-name>`.
+   2. Review as well the config file at: __.azure\config__ since it that file there are default values, so you will need to adjust values if deployment web app is different than the first deployment
+
+
+
 ### Setup environment values
 
 To setup variables use the next:
