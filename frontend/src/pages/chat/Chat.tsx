@@ -595,8 +595,8 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>División Comercial</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Haga preguntas de proyectos comerciales que han sido historias de éxito</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>{import.meta.env.VITE_BAUCHAT_PANEL_HEADER} </h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>{import.meta.env.VITE_BAUCHAT_PANEL_SUBHEADER}</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
