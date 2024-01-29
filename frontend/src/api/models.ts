@@ -97,4 +97,5 @@ export type ErrorMessage = {
 
 export type FrontendSettings = {
     auth_enabled?: string | null;
+    show_role_input?: string | null;
 }

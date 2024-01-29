@@ -43,6 +43,7 @@ const enum messageStatus {
 const Chat = () => {
     const appStateContext = useContext(AppStateContext)
     const AUTH_ENABLED = appStateContext?.state.frontendSettings?.auth_enabled === "true" ;
+    const SHOW_ROLE_INPUT = appStateContext?.state.frontendSettings?.show_role_input === "true";
     const chatMessageStreamEnd = useRef<HTMLDivElement | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [showLoadingMessage, setShowLoadingMessage] = useState<boolean>(false);
@@ -713,6 +714,7 @@ const Chat = () => {
                                     appStateContext?.state.isCosmosDBAvailable?.cosmosDB ? makeApiRequestWithCosmosDB(question, roleValue,id) : makeApiRequestWithoutCosmosDB(question, roleValue, id)
                                 }}
                                 conversationId={appStateContext?.state.currentChat?.id ? appStateContext?.state.currentChat?.id : undefined}
+                                showRoleInput={SHOW_ROLE_INPUT}
                             />
                         </Stack>
                     </div>
