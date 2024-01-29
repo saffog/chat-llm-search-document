@@ -16,7 +16,7 @@ interface Props {
 export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, clearOnSend, conversationId }: Props) => {
     const [question, setQuestion] = useState<string>("");
     const [roleValue, setRoleValue] = useState<string>("");
-    const showRoleInput = false;
+    const showRoleInput = true;
 
     const sendQuestion = () => {
         if (disabled || !question.trim()) {

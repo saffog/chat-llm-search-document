@@ -115,8 +115,12 @@ ELASTICSEARCH_EMBEDDING_MODEL_ID = os.environ.get("ELASTICSEARCH_EMBEDDING_MODEL
 
 # Frontend Settings via Environment Variables
 AUTH_ENABLED = os.environ.get("AUTH_ENABLED", "true").lower()
-frontend_settings = { "auth_enabled": AUTH_ENABLED }
+frontend_settings = { 
+    "auth_enabled": AUTH_ENABLED, 
+    "header": BAU_HEADER }
 
+user_settings = { 
+    "user_name": BAU_DEFAULT_USER_NAME }
 
 # Initialize a CosmosDB client with AAD auth and containers for Chat History
 cosmos_conversation_client = None
@@ -841,11 +845,21 @@ def ensure_cosmos():
         return jsonify({"error": "CosmosDB is not working"}), 500
 
     return jsonify({"message": "CosmosDB is configured and working"}), 200
+## TODO: AGOMEZ AJUSTAR EL PROMPT CON DEFAULTS VARIABLES DE AMBIENTE.
 
+## TODO: SANTIAGO
 @app.route("/frontend_settings", methods=["GET"])  
 def get_frontend_settings():
     try:
         return jsonify(frontend_settings), 200
+    except Exception as e:
+        logging.exception("Exception in /frontend_settings")
+        return jsonify({"error": str(e)}), 500  
+## TODO: PONCHO
+@app.route("/user_settings", methods=["GET"])  
+def get_user_settings():
+    try:
+        return jsonify(user_settings), 200
     except Exception as e:
         logging.exception("Exception in /frontend_settings")
         return jsonify({"error": str(e)}), 500  
