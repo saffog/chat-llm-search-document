@@ -115,10 +115,19 @@ ELASTICSEARCH_EMBEDDING_MODEL_ID = os.environ.get("ELASTICSEARCH_EMBEDDING_MODEL
 
 # Frontend Settings via Environment Variables
 AUTH_ENABLED = os.environ.get("AUTH_ENABLED", "true").lower()
+BAU_HEADER = os.environ.get("BAU_HEADER", "Chat mágico cómico musical")
 frontend_settings = { 
     "auth_enabled": AUTH_ENABLED, 
     "header": BAU_HEADER }
 
+# User default data settings via Environment Variables
+BAU_DEFAULT_USER_ID = os.environ.get("BAU_DEFAULT_USER_NAME")
+BAU_DEFAULT_USER_NAME = os.environ.get("BAU_DEFAULT_USER_NAME")
+BAU_DEFAULT_USER_SENIORITY = os.environ.get("BAU_DEFAULT_USER_SENIORITY")
+BAU_DEFAULT_USER_JOB = os.environ.get("BAU_DEFAULT_USER_JOB")
+BAU_DEFAULT_USER_LOCATION = os.environ.get("BAU_DEFAULT_USER_LOCATION")
+BAU_DEFAULT_USER_EMAIL = os.environ.get("BAU_DEFAULT_USER_EMAIL")
+BAU_NO_USER_DATA_PREFIX = os.environ.get("BAU_NO_USER_DATA_PREFIX", "Estimado Baufesiano para responder su pregunta necesito los siguientes datos")
 user_settings = { 
     "user_name": BAU_DEFAULT_USER_NAME }
 
@@ -213,6 +222,41 @@ def prepare_body_headers_with_data(request):
     last_message = request_messages[-1]
     role_value = last_message.get('roleValue', AZURE_OPENAI_SYSTEM_MESSAGE)
     logging.debug(f"prepare_body_headers_with_data : role_value to test {role_value}")
+    
+    user_question = last_message.get('content', '')
+    delimiter = "####"
+    no_user_data_prefix = BAU_NO_USER_DATA_PREFIX
+    user_name = BAU_DEFAULT_USER_NAME
+    user_seniority = BAU_DEFAULT_USER_SENIORITY
+    user_job = BAU_DEFAULT_USER_JOB
+    user_location = BAU_DEFAULT_USER_LOCATION
+    # Simplest string to test
+    # template_user_message = f"La pregunta es {user_question}"
+    template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
+    Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe seguir el siguiente formato : {no_user_data_prefix} \
+    listando los datos que te falten y nada mas. \
+    Paso 2 : Si tienes los datos del colaborador, usa en tu respuesta el nombre del colaborador \
+    en lugar de estimado colaborador. \
+    Paso 3 : Usa las siguientes recomendaciones para tu respuesta : \
+    Recomendacion 1 : Usa los datos del colaborador para filtrar la respuesta. \
+    Recomendacion 2 : Solo muestra los resultados que tengan que ver con el pais de la unidad y la antiguedad en Baufest. \
+    Recomendacion 3 : Si la respuesta es muy amplia, filtra la respuesta por el pais de la unidad y la antiguedad en Baufest. \
+    Recomendacion 4 : Si la pregunta no es clara, solicita mayor detalle para responder. \
+    \
+    Datos del colaborador: \
+    Nombre : {user_name}. \
+    Antiguedad en Baufest : {user_seniority}. \
+    Puesto : {user_job}. \
+    Pais de la unidad : {user_location}. \
+    \
+    {delimiter}{user_question}{delimiter} \
+    "
+
+    logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
+
+    request_messages[-1]['content'] = template_user_message
+    logging.debug(f"prepare_body_headers_with_data : request_messages last message {request_messages[-1]}")
+
 
     body = {
         "messages": request_messages,
