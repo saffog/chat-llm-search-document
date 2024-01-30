@@ -100,4 +100,5 @@ export type FrontendSettings = {
     BAUCHAT_HEADER?: string | null; 
     BAUCHAT_PANEL_HEADER?: string | null; 
     BAUCHAT_PANEL_SUBHEADER?: string | null;
+    show_role_input?: string | null;
 }

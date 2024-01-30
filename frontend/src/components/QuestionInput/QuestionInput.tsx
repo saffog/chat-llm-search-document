@@ -11,12 +11,12 @@ interface Props {
     rolePlaceHolder?: string;
     clearOnSend?: boolean;
     conversationId?: string;
+    showRoleInput?: boolean;
 }
 
-export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, clearOnSend, conversationId }: Props) => {
+export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, clearOnSend, conversationId, showRoleInput }: Props) => {
     const [question, setQuestion] = useState<string>("");
     const [roleValue, setRoleValue] = useState<string>("");
-    const showRoleInput = false;
 
     const sendQuestion = () => {
         if (disabled || !question.trim()) {

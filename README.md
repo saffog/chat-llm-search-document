@@ -85,7 +85,6 @@ Required environment variables:
 
 - Other
   - `$Env:DATASOURCE_TYPE`
-  - `$Env:DATASOURCE_TYPE`
   - `$Env:DEBUG`
 
 ### Deployment known issues

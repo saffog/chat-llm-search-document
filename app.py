@@ -118,9 +118,26 @@ AUTH_ENABLED = os.environ.get("AUTH_ENABLED", "true").lower()
 BAUCHAT_HEADER = os.environ.get("BAUCHAT_HEADER")
 BAUCHAT_PANEL_HEADER = os.environ.get("BAUCHAT_PANEL_HEADER")
 BAUCHAT_PANEL_SUBHEADER = os.environ.get("BAUCHAT_PANEL_SUBHEADER")
+BAU_SHOW_ROLE_INPUT = os.environ.get("BAU_SHOW_ROLE_INPUT", "false")
 
-frontend_settings = { "auth_enabled": AUTH_ENABLED, "BAUCHAT_HEADER": BAUCHAT_HEADER , "BAUCHAT_PANEL_HEADER": BAUCHAT_PANEL_HEADER, "BAUCHAT_PANEL_SUBHEADER": BAUCHAT_PANEL_SUBHEADER }
+frontend_settings = { 
+    "auth_enabled": AUTH_ENABLED,
+    "BAUCHAT_HEADER": BAUCHAT_HEADER , 
+    "BAUCHAT_PANEL_HEADER": BAUCHAT_PANEL_HEADER, 
+    "BAUCHAT_PANEL_SUBHEADER": BAUCHAT_PANEL_SUBHEADER,
+    "show_role_input": BAU_SHOW_ROLE_INPUT
+     }
 
+# User default data settings via Environment Variables
+BAU_DEFAULT_USER_ID = os.environ.get("BAU_DEFAULT_USER_NAME")
+BAU_DEFAULT_USER_NAME = os.environ.get("BAU_DEFAULT_USER_NAME")
+BAU_DEFAULT_USER_SENIORITY = os.environ.get("BAU_DEFAULT_USER_SENIORITY")
+BAU_DEFAULT_USER_JOB = os.environ.get("BAU_DEFAULT_USER_JOB")
+BAU_DEFAULT_USER_LOCATION = os.environ.get("BAU_DEFAULT_USER_LOCATION")
+BAU_DEFAULT_USER_EMAIL = os.environ.get("BAU_DEFAULT_USER_EMAIL")
+BAU_NO_USER_DATA_PREFIX = os.environ.get("BAU_NO_USER_DATA_PREFIX", "Estimado Baufesiano para responder su pregunta necesito los siguientes datos")
+user_settings = { 
+    "user_name": BAU_DEFAULT_USER_NAME }
 
 # Initialize a CosmosDB client with AAD auth and containers for Chat History
 cosmos_conversation_client = None
@@ -213,6 +230,41 @@ def prepare_body_headers_with_data(request):
     last_message = request_messages[-1]
     role_value = last_message.get('roleValue', AZURE_OPENAI_SYSTEM_MESSAGE)
     logging.debug(f"prepare_body_headers_with_data : role_value to test {role_value}")
+    
+    user_question = last_message.get('content', '')
+    delimiter = "####"
+    no_user_data_prefix = BAU_NO_USER_DATA_PREFIX
+    user_name = BAU_DEFAULT_USER_NAME
+    user_seniority = BAU_DEFAULT_USER_SENIORITY
+    user_job = BAU_DEFAULT_USER_JOB
+    user_location = BAU_DEFAULT_USER_LOCATION
+    # Simplest string to test
+    # template_user_message = f"La pregunta es {user_question}"
+    template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
+    Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe seguir el siguiente formato : {no_user_data_prefix} \
+    listando los datos que te falten y nada mas. \
+    Paso 2 : Si tienes los datos del colaborador, usa en tu respuesta el nombre del colaborador \
+    en lugar de estimado colaborador. \
+    Paso 3 : Usa las siguientes recomendaciones para tu respuesta : \
+    Recomendacion 1 : Usa los datos del colaborador para filtrar la respuesta. \
+    Recomendacion 2 : Solo muestra los resultados que tengan que ver con el pais de la unidad y la antiguedad en Baufest. \
+    Recomendacion 3 : Si la respuesta es muy amplia, filtra la respuesta por el pais de la unidad y la antiguedad en Baufest. \
+    Recomendacion 4 : Si la pregunta no es clara, solicita mayor detalle para responder. \
+    \
+    Datos del colaborador: \
+    Nombre : {user_name}. \
+    Antiguedad en Baufest : {user_seniority}. \
+    Puesto : {user_job}. \
+    Pais de la unidad : {user_location}. \
+    \
+    {delimiter}{user_question}{delimiter} \
+    "
+
+    logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
+
+    request_messages[-1]['content'] = template_user_message
+    logging.debug(f"prepare_body_headers_with_data : request_messages last message {request_messages[-1]}")
+
 
     body = {
         "messages": request_messages,
@@ -845,11 +897,21 @@ def ensure_cosmos():
         return jsonify({"error": "CosmosDB is not working"}), 500
 
     return jsonify({"message": "CosmosDB is configured and working"}), 200
+## TODO: AGOMEZ AJUSTAR EL PROMPT CON DEFAULTS VARIABLES DE AMBIENTE.
 
+## TODO: SANTIAGO
 @app.route("/frontend_settings", methods=["GET"])  
 def get_frontend_settings():
     try:
         return jsonify(frontend_settings), 200
+    except Exception as e:
+        logging.exception("Exception in /frontend_settings")
+        return jsonify({"error": str(e)}), 500  
+## TODO: PONCHO
+@app.route("/user_settings", methods=["GET"])  
+def get_user_settings():
+    try:
+        return jsonify(user_settings), 200
     except Exception as e:
         logging.exception("Exception in /frontend_settings")
         return jsonify({"error": str(e)}), 500  
