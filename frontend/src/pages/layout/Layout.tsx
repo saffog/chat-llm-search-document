@@ -39,6 +39,7 @@ const Layout = () => {
     const [copyClicked, setCopyClicked] = useState<boolean>(false);
     const [copyText, setCopyText] = useState<string>("Copy URL");
     const appStateContext = useContext(AppStateContext)
+    const BAUCHAT_HEADER = appStateContext?.state.frontendSettings?.BAUCHAT_HEADER;
 
     const handleShareClick = () => {
         setIsSharePanelOpen(true);
@@ -80,9 +81,7 @@ const Layout = () => {
                             aria-hidden="true"
                         />
                         <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>
-                                {import.meta.env.VITE_BAUCHAT_HEADER}
-                            </h1>
+                            <h1 className={styles.headerTitle}>{BAUCHAT_HEADER}</h1>
                         </Link>
                     </Stack>
                     <Stack horizontal tokens={{ childrenGap: 4 }}>
