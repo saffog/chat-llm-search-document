@@ -74,7 +74,8 @@ def get_completion_from_messages(messages,
                                  ds_role_value="",
                                  debug=False,
                                  show_completion=False,
-                                 show_input=True) :
+                                 show_input=True,
+                                 return_completion=False) :
     if debug:
         print_required_variables(debug)
         print(f"messages: {messages}")
@@ -141,5 +142,8 @@ def get_completion_from_messages(messages,
 
     if show_completion:
         print(completion)
+        
+    if return_completion:
+        return completion
 
     return completion.choices[0].message["content"]
