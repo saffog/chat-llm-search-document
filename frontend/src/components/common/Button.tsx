@@ -14,7 +14,7 @@ export const ShareButton: React.FC<ShareButtonProps> = ({onClick}) => {
         //   position: 'absolute',
         //   right: 20,
           padding: '5px 12px',
-          marginRight: '20px'
+          // marginRight: '20px'
         },
         icon: {
           color: '#FFFFFF',

@@ -4,6 +4,7 @@ import { Conversation, ChatHistoryLoadingState, CosmosDBHealth, historyList, his
   
 export interface AppState {
     isChatHistoryOpen: boolean;
+    isDrawerInfoOpen: boolean;
     chatHistoryLoadingState: ChatHistoryLoadingState;
     isCosmosDBAvailable: CosmosDBHealth;
     chatHistory: Conversation[] | null;
@@ -14,6 +15,7 @@ export interface AppState {
 
 export type Action =
     | { type: 'TOGGLE_CHAT_HISTORY' }
+    | { type: 'DRAWER_USER_INFO' }
     | { type: 'SET_COSMOSDB_STATUS', payload: CosmosDBHealth }
     | { type: 'UPDATE_CHAT_HISTORY_LOADING_STATE', payload: ChatHistoryLoadingState }
     | { type: 'UPDATE_CURRENT_CHAT', payload: Conversation | null }
@@ -28,6 +30,7 @@ export type Action =
 
 const initialState: AppState = {
     isChatHistoryOpen: false,
+    isDrawerInfoOpen: false,
     chatHistoryLoadingState: ChatHistoryLoadingState.Loading,
     chatHistory: null,
     filteredChatHistory: null,
