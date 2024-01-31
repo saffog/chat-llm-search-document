@@ -97,5 +97,8 @@ export type ErrorMessage = {
 
 export type FrontendSettings = {
     auth_enabled?: string | null;
+    BAUCHAT_HEADER?: string | null; 
+    BAUCHAT_PANEL_HEADER?: string | null; 
+    BAUCHAT_PANEL_SUBHEADER?: string | null;
     show_role_input?: string | null;
 }

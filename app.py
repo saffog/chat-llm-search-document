@@ -115,10 +115,18 @@ ELASTICSEARCH_EMBEDDING_MODEL_ID = os.environ.get("ELASTICSEARCH_EMBEDDING_MODEL
 
 # Frontend Settings via Environment Variables
 AUTH_ENABLED = os.environ.get("AUTH_ENABLED", "true").lower()
+BAUCHAT_HEADER = os.environ.get("BAUCHAT_HEADER")
+BAUCHAT_PANEL_HEADER = os.environ.get("BAUCHAT_PANEL_HEADER")
+BAUCHAT_PANEL_SUBHEADER = os.environ.get("BAUCHAT_PANEL_SUBHEADER")
 BAU_SHOW_ROLE_INPUT = os.environ.get("BAU_SHOW_ROLE_INPUT", "false")
+
 frontend_settings = { 
-    "auth_enabled": AUTH_ENABLED, 
-    "show_role_input": BAU_SHOW_ROLE_INPUT }
+    "auth_enabled": AUTH_ENABLED,
+    "BAUCHAT_HEADER": BAUCHAT_HEADER , 
+    "BAUCHAT_PANEL_HEADER": BAUCHAT_PANEL_HEADER, 
+    "BAUCHAT_PANEL_SUBHEADER": BAUCHAT_PANEL_SUBHEADER,
+    "show_role_input": BAU_SHOW_ROLE_INPUT
+     }
 
 # User default data settings via Environment Variables
 BAU_DEFAULT_USER_ID = os.environ.get("BAU_DEFAULT_USER_NAME")

@@ -20,10 +20,11 @@
     box-sizing: border-box;
     border-radius: 5px;
     display: flex;
+    color: white;
 }
 
 .itemCell:hover {
-    background: #E6E6E6;
+    background: #616161;
 }
 
 .itemButton {
@@ -40,7 +41,7 @@
 }
 
 .itemButton:hover {
-    background-color: #E6E6E6;
+    background-color: #616161;
 }
 
 .chatGroup {
@@ -64,6 +65,7 @@
     font-weight: 600;
     margin-bottom: 5px;
     padding-left: 15px;
+    color: #a19f9d;
 }
 
 .chatTitle {

@@ -33,6 +33,7 @@ import { QuestionInput } from "../../components/QuestionInput";
 import { ChatHistoryPanel } from "../../components/ChatHistory/ChatHistoryPanel";
 import { AppStateContext } from "../../state/AppProvider";
 import { useBoolean } from "@fluentui/react-hooks";
+import UserInfo from '../../components/UserInfo/UserInfo';
 
 const enum messageStatus {
     NotRunning = "Not Running",
@@ -43,6 +44,8 @@ const enum messageStatus {
 const Chat = () => {
     const appStateContext = useContext(AppStateContext)
     const AUTH_ENABLED = appStateContext?.state.frontendSettings?.auth_enabled === "true" ;
+    const BAUCHAT_PANEL_HEADER = appStateContext?.state.frontendSettings?.BAUCHAT_PANEL_HEADER ;
+    const BAUCHAT_PANEL_SUBHEADER = appStateContext?.state.frontendSettings?.BAUCHAT_PANEL_SUBHEADER;
     const SHOW_ROLE_INPUT = appStateContext?.state.frontendSettings?.show_role_input === "true";
     const chatMessageStreamEnd = useRef<HTMLDivElement | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -588,6 +591,9 @@ const Chat = () => {
                 </Stack>
             ) : (
                 <Stack horizontal className={styles.chatRoot}>
+                    {appStateContext?.state.isDrawerInfoOpen && (
+                        <UserInfo />
+                    )}
                     <div className={styles.chatContainer}>
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
@@ -596,51 +602,51 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>{import.meta.env.VITE_BAUCHAT_PANEL_HEADER} </h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>{import.meta.env.VITE_BAUCHAT_PANEL_SUBHEADER}</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>{BAUCHAT_PANEL_HEADER} </h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>{BAUCHAT_PANEL_SUBHEADER}</h2>
                             </Stack>
                         ) : (
-                            <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
-                                {messages.map((answer, index) => (
+                          <div className={styles.containerMessageStream} >
+                              <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
+                                  {messages.map((answer, index) => (
                                     <>
                                         {answer.role === "user" ? (
-                                            <div className={styles.chatMessageUser} tabIndex={0}>
-                                                <div className={styles.chatMessageUserMessage}>{answer.content}</div>
-                                            </div>
+                                          <div className={styles.chatMessageUser} tabIndex={0}>
+                                              <div className={styles.chatMessageUserMessage}>{answer.content}</div>
+                                          </div>
                                         ) : (
-                                            answer.role === "assistant" ? <div className={styles.chatMessageGpt}>
-                                                <Answer
-                                                    answer={{
-                                                        answer: answer.content,
-                                                        citations: parseCitationFromMessage(messages[index - 1]),
-                                                    }}
-                                                    onCitationClicked={c => onShowCitation(c)}
-                                                />
-                                            </div> : answer.role === ERROR ? <div className={styles.chatMessageError}>
-                                                <Stack horizontal className={styles.chatMessageErrorContent}>
-                                                    <ErrorCircleRegular className={styles.errorIcon} style={{color: "rgba(182, 52, 67, 1)"}} />
-                                                    <span>Error</span>
-                                                </Stack>
-                                                <span className={styles.chatMessageErrorContent}>{answer.content}</span>
-                                            </div> : null
+                                          answer.role === "assistant" ? <div className={styles.chatMessageGpt}>
+                                              <Answer
+                                                answer={{
+                                                    answer: answer.content,
+                                                    citations: parseCitationFromMessage(messages[index - 1]),
+                                                }}
+                                                onCitationClicked={c => onShowCitation(c)}
+                                              />
+                                          </div> : answer.role === ERROR ? <div className={styles.chatMessageError}>
+                                              <Stack horizontal className={styles.chatMessageErrorContent}>
+                                                  <ErrorCircleRegular className={styles.errorIcon} style={{color: "rgba(182, 52, 67, 1)"}} />
+                                                  <span>Error</span>
+                                              </Stack>
+                                              <span className={styles.chatMessageErrorContent}>{answer.content}</span>
+                                          </div> : null
                                         )}
                                     </>
-                                ))}
-                                {showLoadingMessage && (
-                                    <>
-                                        <div className={styles.chatMessageGpt}>
-                                            <Answer
-                                                answer={{
-                                                    answer: "Generando respuesta...",
-                                                    citations: []
-                                                }}
-                                                onCitationClicked={() => null}
-                                            />
-                                        </div>
-                                    </>
-                                )}
-                                <div ref={chatMessageStreamEnd} />
-                            </div>
+                                  ))}
+                                  {showLoadingMessage && (
+                                    <div className={styles.chatMessageGpt}>
+                                        <Answer
+                                          answer={{
+                                              answer: "Generando respuesta...",
+                                              citations: []
+                                          }}
+                                          onCitationClicked={() => null}
+                                        />
+                                    </div>
+                                  )}
+                                  <div ref={chatMessageStreamEnd} />
+                              </div>
+                          </div>
                         )}
 
                         <Stack horizontal className={styles.chatInput}>
@@ -661,8 +667,8 @@ const Chat = () => {
                             <Stack>
                                 {appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured && <CommandBarButton
                                     role="button"
-                                    styles={{ 
-                                        icon: { 
+                                    styles={{
+                                        icon: {
                                             color: '#FFFFFF',
                                         },
                                         root: {
@@ -737,7 +743,14 @@ const Chat = () => {
                         </div>
                     </Stack.Item>
                 )}
-                {(appStateContext?.state.isChatHistoryOpen && appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) && <ChatHistoryPanel/>}
+                {
+                    (
+                      appStateContext?.state.isChatHistoryOpen &&
+                      appStateContext?.state.isCosmosDBAvailable?.status !==
+                      CosmosDBStatus.NotConfigured
+                    ) &&
+                  <ChatHistoryPanel/>
+                }
                 </Stack>
             )}
         </div>
