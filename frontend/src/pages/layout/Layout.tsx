@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import Azure from "../../assets/Azure.svg";
-import Baufest from "../../assets/baufest01.png";
+import Baufest from "../../assets/baufest-bw.png";
 import { CopyRegular, ShareRegular } from "@fluentui/react-icons";
 import { CommandBarButton, Dialog, Stack, TextField, ICommandBarStyles, IButtonStyles, DefaultButton  } from "@fluentui/react";
 import { useContext, useEffect, useState } from "react";
@@ -59,6 +59,11 @@ const Layout = () => {
         appStateContext?.dispatch({ type: 'TOGGLE_CHAT_HISTORY' })
     };
 
+    const handleInfoContactClick = () => {
+      console.log('cliqueando');
+      appStateContext?.dispatch({ type: 'DRAWER_USER_INFO' });
+    }
+
     useEffect(() => {
         if (copyClicked) {
             setCopyText("Copied URL");
@@ -70,18 +75,18 @@ const Layout = () => {
     return (
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
-                <Stack horizontal verticalAlign="center" horizontalAlign="space-between"
-                // className={styles.headerContainer}
-                >
+                <Stack horizontal verticalAlign="center" horizontalAlign="space-between" className={styles.headerContainer}>
                     <Stack horizontal verticalAlign="center">
                         <img
+                            alt="baufest"
                             src={Baufest}
                             className={styles.headerIcon}
                             aria-hidden="true"
+                            onClick={handleInfoContactClick}
                         />
-                        <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>Azure AI</h1>
-                        </Link>
+                        {/*<Link to="/" className={styles.headerTitleContainer}>*/}
+                        {/*    <h1 className={styles.headerTitle}>Azure AI</h1>*/}
+                        {/*</Link>*/}
                     </Stack>
                     <Stack horizontal tokens={{ childrenGap: 4 }}>
                             {(appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) && 
@@ -89,7 +94,6 @@ const Layout = () => {
                             }
                             <ShareButton onClick={handleShareClick} />
                     </Stack>
-
                 </Stack>
             </header>
             <Outlet />
