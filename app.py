@@ -89,7 +89,6 @@ AZURE_COSMOSDB_MONGO_VCORE_TITLE_COLUMN = os.environ.get("AZURE_COSMOSDB_MONGO_V
 AZURE_COSMOSDB_MONGO_VCORE_URL_COLUMN = os.environ.get("AZURE_COSMOSDB_MONGO_VCORE_URL_COLUMN")
 AZURE_COSMOSDB_MONGO_VCORE_VECTOR_COLUMNS = os.environ.get("AZURE_COSMOSDB_MONGO_VCORE_VECTOR_COLUMNS")
 
-
 SHOULD_STREAM = True if AZURE_OPENAI_STREAM.lower() == "true" else False
 
 # Chat History CosmosDB Integration Settings
@@ -222,7 +221,25 @@ def generateFilterString(userToken):
     group_ids = ", ".join([obj['id'] for obj in userGroups])
     return f"{AZURE_SEARCH_PERMITTED_GROUPS_COLUMN}/any(g:search.in(g, '{group_ids}'))"
 
+def validate_userdata(request_body):
+    userData = request_body.get('userData')
+    
+    default_values = {
+        'username': BAU_DEFAULT_USER_NAME,
+        'seniority': BAU_DEFAULT_USER_SENIORITY,
+        'job': BAU_DEFAULT_USER_JOB,
+        'location': BAU_DEFAULT_USER_LOCATION
+    }
 
+    if userData:
+        user_name = userData.get('username', default_values['username'])
+        user_seniority = userData.get('seniority', default_values['seniority'])
+        user_job = userData.get('job', default_values['job'])
+        user_location = userData.get('location', default_values['location'])
+    else:
+        user_name, user_seniority, user_job, user_location = default_values.values()
+
+    return user_name, user_seniority, user_job, user_location
 
 def prepare_body_headers_with_data(request):
     request_messages = request.json["messages"]
@@ -234,10 +251,8 @@ def prepare_body_headers_with_data(request):
     user_question = last_message.get('content', '')
     delimiter = "####"
     no_user_data_prefix = BAU_NO_USER_DATA_PREFIX
-    user_name = BAU_DEFAULT_USER_NAME
-    user_seniority = BAU_DEFAULT_USER_SENIORITY
-    user_job = BAU_DEFAULT_USER_JOB
-    user_location = BAU_DEFAULT_USER_LOCATION
+    user_name, user_seniority, user_job, user_location = validate_userdata(request.json)
+    
     # Simplest string to test
     # template_user_message = f"La pregunta es {user_question}"
     template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
