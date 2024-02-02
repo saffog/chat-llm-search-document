@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import {BotRegular, CalendarLtrRegular, RealEstateFilled, PersonQuestionMarkRegular} from "@fluentui/react-icons";
 import styles from "./UserInfo.module.css";
-import {DefaultButton, Dialog, Separator, Stack, TextField} from '@fluentui/react';
+import {DefaultButton, Separator} from '@fluentui/react';
 import {ModalLoginForm} from '../LoginForm';
 import {AppStateContext} from '../../state/AppProvider';
 

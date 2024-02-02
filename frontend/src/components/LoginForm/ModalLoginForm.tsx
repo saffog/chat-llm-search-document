@@ -1,4 +1,4 @@
-import React, {MouseEventHandler, useCallback, useContext, useState} from 'react';
+import React, {useCallback, useContext, useState} from 'react';
 import {DefaultButton, Dialog, Stack, TextField} from '@fluentui/react';
 
 import {AppStateContext} from '../../state/AppProvider';
