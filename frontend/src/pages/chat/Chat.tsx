@@ -33,7 +33,7 @@ import { QuestionInput } from "../../components/QuestionInput";
 import { ChatHistoryPanel } from "../../components/ChatHistory/ChatHistoryPanel";
 import { AppStateContext } from "../../state/AppProvider";
 import { useBoolean } from "@fluentui/react-hooks";
-import UserInfo from '../../components/UserInfo/UserInfo';
+import { UserInfo } from '../../components/UserInfo';
 
 const enum messageStatus {
     NotRunning = "Not Running",

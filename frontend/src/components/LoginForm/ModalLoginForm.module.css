@@ -1,0 +1,13 @@
+.textField {
+  width: 100%;
+}
+
+.buttonLogin {
+  background-color: #a29f9d;
+  color: white;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 10px
+}

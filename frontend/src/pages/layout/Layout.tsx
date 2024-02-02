@@ -38,7 +38,7 @@ const Layout = () => {
     const [isSharePanelOpen, setIsSharePanelOpen] = useState<boolean>(false);
     const [copyClicked, setCopyClicked] = useState<boolean>(false);
     const [copyText, setCopyText] = useState<string>("Copy URL");
-    const appStateContext = useContext(AppStateContext)
+    const appStateContext = useContext(AppStateContext);
 
     const handleShareClick = () => {
         setIsSharePanelOpen(true);
@@ -60,7 +60,6 @@ const Layout = () => {
     };
 
     const handleInfoContactClick = () => {
-      console.log('cliqueando');
       appStateContext?.dispatch({ type: 'DRAWER_USER_INFO' });
     }
 

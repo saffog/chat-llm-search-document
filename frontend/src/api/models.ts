@@ -98,3 +98,14 @@ export type ErrorMessage = {
 export type FrontendSettings = {
     auth_enabled?: string | null;
 }
+
+export type User = {
+    fullName: string;
+    email: string;
+    role: string;
+    dateStart: string;
+    country: string;
+    password: string;
+}
+
+export type UserInfoStore = Omit<User, 'password'>;

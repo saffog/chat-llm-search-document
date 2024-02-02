@@ -11,12 +11,9 @@
 
 .itemCell {
     max-width: 270px;
-    min-height: 32px;
+    min-height: 36px;
     cursor: pointer;
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px 5px 15px;
     box-sizing: border-box;
     border-radius: 5px;
     display: flex;
@@ -31,8 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
     background-color: white;
