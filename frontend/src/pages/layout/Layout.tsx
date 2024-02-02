@@ -37,7 +37,8 @@ const Layout = () => {
     const [isSharePanelOpen, setIsSharePanelOpen] = useState<boolean>(false);
     const [copyClicked, setCopyClicked] = useState<boolean>(false);
     const [copyText, setCopyText] = useState<string>("Copy URL");
-    const appStateContext = useContext(AppStateContext);
+    const appStateContext = useContext(AppStateContext)
+    const BAUCHAT_HEADER = appStateContext?.state.frontendSettings?.BAUCHAT_HEADER;
 
     const handleShareClick = () => {
         setIsSharePanelOpen(true);

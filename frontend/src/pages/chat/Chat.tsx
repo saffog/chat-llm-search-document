@@ -43,6 +43,9 @@ const enum messageStatus {
 const Chat = () => {
     const appStateContext = useContext(AppStateContext)
     const AUTH_ENABLED = appStateContext?.state.frontendSettings?.auth_enabled === "true" ;
+    const BAUCHAT_PANEL_HEADER = appStateContext?.state.frontendSettings?.BAUCHAT_PANEL_HEADER ;
+    const BAUCHAT_PANEL_SUBHEADER = appStateContext?.state.frontendSettings?.BAUCHAT_PANEL_SUBHEADER;
+    const SHOW_ROLE_INPUT = appStateContext?.state.frontendSettings?.show_role_input === "true";
     const chatMessageStreamEnd = useRef<HTMLDivElement | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [showLoadingMessage, setShowLoadingMessage] = useState<boolean>(false);
@@ -598,8 +601,8 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Piloto Chatbot con Azure Cognitive Search y Open AI </h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Este chat está configurado para responder preguntas sobre un documento indexado</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>{BAUCHAT_PANEL_HEADER} </h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>{BAUCHAT_PANEL_SUBHEADER}</h2>
                             </Stack>
                         ) : (
                           <div className={styles.containerMessageStream} >
@@ -716,6 +719,7 @@ const Chat = () => {
                                     appStateContext?.state.isCosmosDBAvailable?.cosmosDB ? makeApiRequestWithCosmosDB(question, roleValue,id) : makeApiRequestWithoutCosmosDB(question, roleValue, id)
                                 }}
                                 conversationId={appStateContext?.state.currentChat?.id ? appStateContext?.state.currentChat?.id : undefined}
+                                showRoleInput={SHOW_ROLE_INPUT}
                             />
                         </Stack>
                     </div>
