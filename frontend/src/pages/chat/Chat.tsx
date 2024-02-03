@@ -9,7 +9,7 @@ import uuid from 'react-uuid';
 import { isEmpty } from "lodash-es";
 
 import styles from "./Chat.module.css";
-import Baufest from "../../assets/baufest01.png";
+import Baufest from "../../assets/baufest-bw.png";
 
 import {
     ChatMessage,
@@ -596,11 +596,14 @@ const Chat = () => {
                     <div className={styles.chatContainer}>
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
-                                <img
-                                    src={Baufest}
-                                    className={styles.chatIcon}
-                                    aria-hidden="true"
-                                />
+                                <div className={styles.containerIcon}>
+                                    <img
+                                      src={Baufest}
+                                      className={styles.chatIcon}
+                                      aria-hidden="true"
+                                    />
+                                </div>
+
                                 <h1 className={styles.chatEmptyStateTitle}>{BAUCHAT_PANEL_HEADER} </h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>{BAUCHAT_PANEL_SUBHEADER}</h2>
                             </Stack>
