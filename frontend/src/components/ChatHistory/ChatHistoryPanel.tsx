@@ -1,12 +1,30 @@
-import { CommandBarButton, ContextualMenu, DefaultButton, Dialog, DialogFooter, DialogType, ICommandBarStyles, IContextualMenuItem, IStackStyles, PrimaryButton, Spinner, SpinnerSize, Stack, StackItem, Text } from "@fluentui/react";
-import { useBoolean } from '@fluentui/react-hooks';
+import React, { useContext } from "react";
 
-import styles from "./ChatHistoryPanel.module.css"
-import { useContext } from "react";
+import { useBoolean } from '@fluentui/react-hooks';
+import {
+    CommandBarButton,
+    ContextualMenu,
+    DefaultButton,
+    Dialog,
+    DialogFooter,
+    DialogType,
+    ICommandBarStyles,
+    IContextualMenuItem,
+    IStackStyles,
+    PrimaryButton,
+    Spinner,
+    SpinnerSize,
+    Stack,
+    StackItem,
+    Text
+} from "@fluentui/react";
+
+
 import { AppStateContext } from "../../state/AppProvider";
-import React from "react";
 import ChatHistoryList from "./ChatHistoryList";
 import { ChatHistoryLoadingState, historyDeleteAll } from "../../api";
+
+import styles from "./ChatHistoryPanel.module.css"
 
 interface ChatHistoryPanelProps {
 

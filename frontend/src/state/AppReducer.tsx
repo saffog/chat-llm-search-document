@@ -1,5 +1,5 @@
-import { Conversation, fetchChatHistoryInit, historyList } from '../api';
 import { Action, AppState } from './AppProvider';
+import {UserInfoStore} from '../api';
 
 // Define the reducer function
 export const appStateReducer = (state: AppState, action: Action): AppState => {
@@ -68,7 +68,11 @@ export const appStateReducer = (state: AppState, action: Action): AppState => {
         case 'SET_COSMOSDB_STATUS':
             return { ...state, isCosmosDBAvailable: action.payload };
         case 'FETCH_FRONTEND_SETTINGS':
-            return { ...state, frontendSettings: action.payload };    
+            return { ...state, frontendSettings: action.payload };
+        case 'SET_USER_INFO':
+            return {...state, userInfo: action.payload};
+        case 'DELETE_USER_INFO':
+            return {...state, userInfo: {} as UserInfoStore}
         default:
             return state;
       }

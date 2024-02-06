@@ -59,10 +59,14 @@
     letter-spacing: -0.01em;
     color: #616161;
 }
+.containerIcon{
+    background-color: #303030;
+    padding: 8px;
+    border-radius: 8px;
+}
 
 .chatIcon {
-    height: 62px;
-    width: 62px;
+    height: 36px;
 }
 .containerMessageStream {
     overflow-y: auto;
