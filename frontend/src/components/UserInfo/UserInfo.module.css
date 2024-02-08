@@ -1,0 +1,93 @@
+.container {
+  width: 200px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconUser {
+  height: 150px;
+  width: 150px;
+  background: none;
+  color: #424242;
+}
+
+.userAvatar {
+  background-color: #a19f9d;
+  border-radius: 100px;
+  margin: 40px 0;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userDetails p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.userDetails .fullName {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.userDetails .email {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.userDetails .role {
+  font-size: 14px;
+  font-weight: bold;
+  color: #55acee;
+  margin-top: 5px;
+}
+
+.userActions {
+  margin-top: auto;
+}
+
+.iconDetail {
+  height: 20px;
+  width: 20px;
+  background: none;
+  color: #a19f9d;
+}
+
+.userDetails .startDate {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.userDetails .date {
+  font-size: 14px;
+  margin: 5px;
+}
+
+.buttonLogin {
+  background-color: #a29f9d;
+  color: white;
+}
+
+.accountLink {
+  color: #55acee;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accountLink:hover {
+  text-decoration: underline;
+}

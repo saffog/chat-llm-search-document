@@ -1,19 +1,33 @@
 import React, { createContext, useReducer, ReactNode, useEffect } from 'react';
 import { appStateReducer } from './AppReducer';
-import { Conversation, ChatHistoryLoadingState, CosmosDBHealth, historyList, historyEnsure, CosmosDBStatus, frontendSettings, FrontendSettings } from '../api';
+import {
+    Conversation,
+    ChatHistoryLoadingState,
+    CosmosDBHealth,
+    historyList,
+    historyEnsure,
+    CosmosDBStatus,
+    frontendSettings,
+    FrontendSettings,
+    UserInfoStore,
+} from '../api';
   
 export interface AppState {
     isChatHistoryOpen: boolean;
+    isDrawerInfoOpen: boolean;
     chatHistoryLoadingState: ChatHistoryLoadingState;
     isCosmosDBAvailable: CosmosDBHealth;
     chatHistory: Conversation[] | null;
     filteredChatHistory: Conversation[] | null;
     currentChat: Conversation | null;
     frontendSettings: FrontendSettings | null;
+    userInfo: UserInfoStore | null;
 }
 
 export type Action =
     | { type: 'TOGGLE_CHAT_HISTORY' }
+    | { type: 'DRAWER_USER_INFO' }
+    | { type: 'SET_USER_INFO', payload: UserInfoStore }
     | { type: 'SET_COSMOSDB_STATUS', payload: CosmosDBHealth }
     | { type: 'UPDATE_CHAT_HISTORY_LOADING_STATE', payload: ChatHistoryLoadingState }
     | { type: 'UPDATE_CURRENT_CHAT', payload: Conversation | null }
@@ -22,12 +36,14 @@ export type Action =
     | { type: 'UPDATE_CHAT_TITLE', payload: Conversation } // API Call
     | { type: 'DELETE_CHAT_ENTRY', payload: string } // API Call
     | { type: 'DELETE_CHAT_HISTORY'}  // API Call
+    | { type: 'DELETE_USER_INFO'}
     | { type: 'DELETE_CURRENT_CHAT_MESSAGES', payload: string }  // API Call
     | { type: 'FETCH_CHAT_HISTORY', payload: Conversation[] | null }  // API Call
     | { type: 'FETCH_FRONTEND_SETTINGS', payload: FrontendSettings | null }  // API Call
 
 const initialState: AppState = {
     isChatHistoryOpen: false,
+    isDrawerInfoOpen: false,
     chatHistoryLoadingState: ChatHistoryLoadingState.Loading,
     chatHistory: null,
     filteredChatHistory: null,
@@ -37,6 +53,7 @@ const initialState: AppState = {
         status: CosmosDBStatus.NotConfigured,
     },
     frontendSettings: null,
+    userInfo: null,
 };
 
 export const AppStateContext = createContext<{

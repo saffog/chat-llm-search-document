@@ -1,5 +1,6 @@
-import { UserInfo, ConversationRequest, Conversation, ChatMessage, CosmosDBHealth, CosmosDBStatus } from "./models";
+import {UserInfo, ConversationRequest, Conversation, ChatMessage, CosmosDBHealth, CosmosDBStatus, User} from "./models";
 import { chatHistorySampleData } from "../constants/chatHistory";
+import {users} from '../constants/users';
 
 export async function conversationApi(options: ConversationRequest, abortSignal: AbortSignal): Promise<Response> {
     console.log("conversationApi", options, abortSignal);
@@ -26,6 +27,27 @@ export async function getUserInfo(): Promise<UserInfo[]> {
 
     const payload = await response.json();
     return payload;
+}
+
+export const getUserInfoMock = async (
+  username: string,
+  password: string
+): Promise<Omit<User, 'password'>> => {
+    try {
+        await new Promise((resolve) => setTimeout(resolve, 500));
+        const user = users.find(
+          (user) => user.email === username && user.password === password
+        );
+
+        if (user) {
+            const { password, ...userData } = user;
+            return userData;
+        } else {
+            throw new Error('Credenciales inválidas');
+        }
+    } catch (error) {
+        throw new Error('Error en la autenticación');
+    }
 }
 
 // export const fetchChatHistoryInit = async (): Promise<Conversation[] | null> => {

@@ -10,7 +10,7 @@ body {
 }
 
 html {
-    background: #f2f2f2;
+    background: #303030;
     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,4 +18,24 @@ html {
 
 #root {
     height: 100%;
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+::-moz-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
