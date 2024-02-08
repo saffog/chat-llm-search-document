@@ -77,6 +77,7 @@ const Chat = () => {
     const [ASSISTANT, TOOL, ERROR] = ["assistant", "tool", "error"]
 
     useEffect(() => {
+        console.log("useEffect")
         if(appStateContext?.state.isCosmosDBAvailable?.status === CosmosDBStatus.NotWorking && appStateContext.state.chatHistoryLoadingState === ChatHistoryLoadingState.Fail && hideErrorDialog){
             let subtitle = `${appStateContext.state.isCosmosDBAvailable.status}. Please contact the site administrator.`
             setErrorMsg({
@@ -88,6 +89,7 @@ const Chat = () => {
     }, [appStateContext?.state.isCosmosDBAvailable]);
 
     const handleErrorDialogClose = () => {
+        console.log("handleErrorDialogClose")
         toggleErrorDialog()
         setTimeout(() => {
             setErrorMsg(null)
@@ -95,6 +97,7 @@ const Chat = () => {
     }
 
     useEffect(() => {
+        console.log("useEffect2")
        setIsLoading(appStateContext?.state.chatHistoryLoadingState === ChatHistoryLoadingState.Loading)
     }, [appStateContext?.state.chatHistoryLoadingState])
 
@@ -117,6 +120,7 @@ const Chat = () => {
     let assistantContent = ""
 
     const processResultMessage = (resultMessage: ChatMessage, userMessage: ChatMessage, conversationId?: string) => {
+        console.log("processResultMessage")
         if (resultMessage.role === ASSISTANT) {
             assistantContent += resultMessage.content
             assistantMessage = resultMessage
@@ -219,10 +223,10 @@ const Chat = () => {
             if (!abortController.signal.aborted) {
                 let errorMessage = "An error occurred. Please try again. If the problem persists, please contact the site administrator.";
                 if (result.error?.message) {
-                    errorMessage = result.error.message;
+                    errorMessage = "1 Error" + result.error.message;
                 }
                 else if (typeof result.error === "string") {
-                    errorMessage = result.error;
+                    errorMessage = "2 Error" + result.error;
                 }
                 let errorChatMsg: ChatMessage = {
                     id: uuid(),
@@ -265,6 +269,7 @@ const Chat = () => {
         let request: ConversationRequest;
         let conversation;
         if(conversationId){
+            console.log("1");
             conversation = appStateContext?.state?.chatHistory?.find((conv) => conv.id === conversationId)
             if(!conversation){
                 console.error("Conversation not found.");
@@ -273,6 +278,7 @@ const Chat = () => {
                 abortFuncs.current = abortFuncs.current.filter(a => a !== abortController);
                 return;
             }else{
+                console.log("1.1");
                 conversation.messages.push(userMessage);
                 request = {
                     messages: [...conversation.messages.filter((answer) => answer.role !== ERROR)]
@@ -288,6 +294,7 @@ const Chat = () => {
         try {
             const response = conversationId ? await historyGenerate(request, abortController.signal, conversationId, context?.state.userInfo) : await historyGenerate(request, abortController.signal,undefined,context?.state.userInfo);
             if(!response?.ok){
+                console.log("2");
                 let errorChatMsg: ChatMessage = {
                     id: uuid(),
                     role: ERROR,
@@ -296,6 +303,7 @@ const Chat = () => {
                 }
                 let resultConversation;
                 if(conversationId){
+                    console.log("3");
                     resultConversation = appStateContext?.state?.chatHistory?.find((conv) => conv.id === conversationId)
                     if(!resultConversation){
                         console.error("Conversation not found.");
@@ -306,6 +314,7 @@ const Chat = () => {
                     }
                     resultConversation.messages.push(errorChatMsg);
                 }else{
+                    console.log("4");
                     setMessages([...messages, userMessage, errorChatMsg])
                     setIsLoading(false);
                     setShowLoadingMessage(false);
@@ -317,6 +326,7 @@ const Chat = () => {
                 return;
             }
             if (response?.body) {
+                console.log("5");
                 const reader = response.body.getReader();
                 let runningText = "";
 
@@ -347,6 +357,7 @@ const Chat = () => {
 
                 let resultConversation;
                 if(conversationId){
+                    console.log("6");
                     resultConversation = appStateContext?.state?.chatHistory?.find((conv) => conv.id === conversationId)
                     if(!resultConversation){
                         console.error("Conversation not found.");
@@ -359,22 +370,27 @@ const Chat = () => {
                         resultConversation.messages.push(assistantMessage) :
                         resultConversation.messages.push(toolMessage, assistantMessage)
                 }else{
+                    console.log("7");
                     resultConversation = {
                         id: result.history_metadata.conversation_id,
                         title: result.history_metadata.title,
                         messages: [userMessage],
                         date: result.history_metadata.date
                     }
+                    console.log(resultConversation);
+                    console.log("7.1");
                     isEmpty(toolMessage) ?
                         resultConversation.messages.push(assistantMessage) :
                         resultConversation.messages.push(toolMessage, assistantMessage)
                 }
                 if(!resultConversation){
+                    console.log("8");
                     setIsLoading(false);
                     setShowLoadingMessage(false);
                     abortFuncs.current = abortFuncs.current.filter(a => a !== abortController);
                     return;
                 }
+                console.log("6-8")
                 appStateContext?.dispatch({ type: 'UPDATE_CURRENT_CHAT', payload: resultConversation });
                 isEmpty(toolMessage) ?
                     setMessages([...messages, assistantMessage]) :
@@ -385,10 +401,10 @@ const Chat = () => {
             if (!abortController.signal.aborted) {
                 let errorMessage = "An error occurred. Please try again. If the problem persists, please contact the site administrator.";
                 if (result.error?.message) {
-                    errorMessage = result.error.message;
+                    errorMessage = "3 Error" + result.error.message;
                 }
                 else if (typeof result.error === "string") {
-                    errorMessage = result.error;
+                    errorMessage = "4 Error" + result.error;
                 }
                 let errorChatMsg: ChatMessage = {
                     id: uuid(),
@@ -398,6 +414,7 @@ const Chat = () => {
                 }
                 let resultConversation;
                 if(conversationId){
+                    console.log("9");
                     resultConversation = appStateContext?.state?.chatHistory?.find((conv) => conv.id === conversationId)
                     if(!resultConversation){
                         console.error("Conversation not found.");
@@ -408,11 +425,24 @@ const Chat = () => {
                     }
                     resultConversation.messages.push(errorChatMsg);
                 }else{
+                    console.log("10");
                     if(!result.history_metadata){
+                        console.log("11");
                         console.error("Error retrieving data.", result);
                         setIsLoading(false);
                         setShowLoadingMessage(false);
                         abortFuncs.current = abortFuncs.current.filter(a => a !== abortController);
+
+                        let errorMessage = "Se ha producido un error.";
+
+                            let errorChatMsg: ChatMessage = {
+                                id: uuid(),
+                                role: ERROR,
+                                content: errorMessage,
+                                date: new Date().toISOString()
+                            }
+
+                        setMessages([...messages, errorChatMsg]);
                         return;
                     }
                     resultConversation = {
@@ -421,9 +451,11 @@ const Chat = () => {
                         messages: [userMessage],
                         date: result.history_metadata.date
                     }
+                    console.log("10.1");
                     resultConversation.messages.push(errorChatMsg);
                 }
                 if(!resultConversation){
+                    console.log("12");
                     setIsLoading(false);
                     setShowLoadingMessage(false);
                     abortFuncs.current = abortFuncs.current.filter(a => a !== abortController);
@@ -432,9 +464,11 @@ const Chat = () => {
                 appStateContext?.dispatch({ type: 'UPDATE_CURRENT_CHAT', payload: resultConversation });
                 setMessages([...messages, errorChatMsg]);
             } else {
+                console.log("13");
                 setMessages([...messages, userMessage])
             }
         } finally {
+            console.log("14");
             setIsLoading(false);
             setShowLoadingMessage(false);
             abortFuncs.current = abortFuncs.current.filter(a => a !== abortController);
@@ -466,6 +500,7 @@ const Chat = () => {
     };
 
     const newChat = () => {
+        console.log("new Chat");
         setProcessMessages(messageStatus.Processing)
         setMessages([])
         setIsCitationPanelOpen(false);
@@ -481,6 +516,7 @@ const Chat = () => {
     }
 
     useEffect(() => {
+        console.log("useEffect3")
         if (appStateContext?.state.currentChat) {
             setMessages(appStateContext.state.currentChat.messages)
         }else{
@@ -495,6 +531,7 @@ const Chat = () => {
         }
 
         if (appStateContext && appStateContext.state.currentChat && processMessages === messageStatus.Done) {
+            console.log(processMessages)
                 if(appStateContext.state.isCosmosDBAvailable.cosmosDB){
                     if(!appStateContext?.state.currentChat?.messages){
                         console.error("Failure fetching current chat state.")
@@ -503,7 +540,9 @@ const Chat = () => {
                     saveToDB(appStateContext.state.currentChat.messages, appStateContext.state.currentChat.id)
                     .then((res) => {
                         if(!res.ok){
-                            let errorMessage = "An error occurred. Answers can't be saved at this time. If the problem persists, please contact the site administrator.";
+
+                            let errorMessage = "Se ha producido un error. Las respuestas no se pueden guardar en este momento. Si el problema persiste, póngase en contacto con el administrador del sitio.";
+
                             let errorChatMsg: ChatMessage = {
                                 id: uuid(),
                                 role: ERROR,
@@ -522,6 +561,7 @@ const Chat = () => {
                         return res as Response
                     })
                     .catch((err) => {
+                        console.log("useLayoutEffectCatch");
                         console.error("Error: ", err)
                         let errRes: Response = {
                             ...new Response,
@@ -539,19 +579,23 @@ const Chat = () => {
     }, [processMessages]);
 
     useEffect(() => {
+        console.log("useEffect4");
         if (AUTH_ENABLED !== undefined) getUserInfoList();
     }, [AUTH_ENABLED]);
 
     useLayoutEffect(() => {
+        console.log("useLayoutEffect2");
         chatMessageStreamEnd.current?.scrollIntoView({ behavior: "smooth" })
     }, [showLoadingMessage, processMessages]);
 
     const onShowCitation = (citation: Citation) => {
+        console.log("onShowCitation");
         setActiveCitation(citation);
         setIsCitationPanelOpen(true);
     };
 
     const onViewSource = (citation: Citation) => {
+        console.log("onViewSource");
         if (citation.url && !citation.url.includes("blob.core")) {
             window.open(citation.url, "_blank");
         }
