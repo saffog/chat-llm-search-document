@@ -28,5 +28,7 @@ users = [
     User(full_name='Laura Méndez', email='laura.mendez@baufest.com', role='Gerente de Proyectos',
         date_start='2021-07-05', country='Colombia', password='password123'),
     User(full_name='Daniel González', email='daniel.gonzalez@baufest.com', role='Desarrollador Fullstack',
-        date_start='2022-04-20', country='Chile', password='password123')
+        date_start='2022-04-20', country='Chile', password='password123'),
+    User(full_name='Silvina Pliego', email='silvina.pliego@baufest.com', role='Desarrollador Fullstack',
+        date_start='2022-01-20', country='Uruguay', password='password123')
 ]
