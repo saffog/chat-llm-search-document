@@ -2,7 +2,7 @@ import React, {useCallback, useContext, useState} from 'react';
 import {DefaultButton, Dialog, Stack, TextField} from '@fluentui/react';
 
 import {AppStateContext} from '../../state/AppProvider';
-import {getUserInfoMock} from '../../api';
+import {getUserInfoSignin} from '../../api';
 
 import styles from './ModalLoginForm.module.css';
 
@@ -31,7 +31,7 @@ export const ModalLoginForm = ({onDismiss, hidden}: Props) => {
 
   const handleSubmit = async () => {
     try {
-      const userData = await getUserInfoMock(user, password);
+      const userData = await getUserInfoSignin(user, password);
       appStateContext?.dispatch({ type: 'SET_USER_INFO', payload: userData });
       onDismiss();
     } catch (error: any) {

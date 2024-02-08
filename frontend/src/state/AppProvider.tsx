@@ -21,7 +21,7 @@ export interface AppState {
     filteredChatHistory: Conversation[] | null;
     currentChat: Conversation | null;
     frontendSettings: FrontendSettings | null;
-    userInfo: UserInfoStore | null;
+    userInfo: UserInfoStore | undefined;
 }
 
 export type Action =
@@ -53,7 +53,7 @@ const initialState: AppState = {
         status: CosmosDBStatus.NotConfigured,
     },
     frontendSettings: null,
-    userInfo: null,
+    userInfo: undefined,
 };
 
 export const AppStateContext = createContext<{
