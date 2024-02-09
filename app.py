@@ -493,7 +493,7 @@ def stream_with_data(body, headers, endpoint, history_metadata={}):
                             })
                             yield format_as_ndjson(response)
     except Exception as e:
-        yield format_as_ndjson({"error" + str(e)})
+        yield format_as_ndjson({"error: " + str(e)})
 
 def formatApiResponseNoStreaming(rawResponse):
     if 'error' in rawResponse:
