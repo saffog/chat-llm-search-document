@@ -175,7 +175,7 @@ export const ChatHistoryListItemCell: React.FC<ChatHistoryListItemCellProps> = (
             onMouseLeave={() => setIsHovered(false)}
             styles={{
                 root: {
-                    backgroundColor: isSelected ? '#e6e6e6' : 'transparent',
+                    backgroundColor: isSelected ? '#a19f9d' : 'transparent',
                 }
             }}
         >
@@ -312,15 +312,15 @@ export const ChatHistoryListItemGroups: React.FC<ChatHistoryListItemGroupsProps>
           <Stack aria-label={group.month} className={styles.chatMonth}>{formatMonth(group.month)}</Stack>
           <List aria-label={`chat history list`} items={group.entries} onRenderCell={onRenderCell} className={styles.chatList}/>
           <div ref={observerTarget} />
-          <Separator styles={{
-            root: {
-                width: '100%',
-                position: 'relative',
-                '::before': {
-                  backgroundColor: '#d6d6d6',
+            {groupedChatHistory.length > 1 &&  <Separator styles={{
+                root: {
+                    width: '100%',
+                    position: 'relative',
+                    '::before': {
+                        backgroundColor: '#a19f9d',
+                    },
                 },
-              },
-          }}/>
+            }}/>}
         </Stack>
       ))}
       {showSpinner && <div className={styles.spinnerContainer}><Spinner size={SpinnerSize.small} aria-label="loading more chat history" className={styles.spinner}/></div>}

@@ -11,27 +11,25 @@
 
 .itemCell {
     max-width: 270px;
-    min-height: 32px;
+    min-height: 36px;
     cursor: pointer;
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px 5px 15px;
     box-sizing: border-box;
     border-radius: 5px;
     display: flex;
+    color: white;
 }
 
 .itemCell:hover {
-    background: #E6E6E6;
+    background: #616161;
 }
 
 .itemButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
     background-color: white;
@@ -40,7 +38,7 @@
 }
 
 .itemButton:hover {
-    background-color: #E6E6E6;
+    background-color: #616161;
 }
 
 .chatGroup {
@@ -64,6 +62,7 @@
     font-weight: 600;
     margin-bottom: 5px;
     padding-left: 15px;
+    color: #a19f9d;
 }
 
 .chatTitle {

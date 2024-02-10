@@ -11,9 +11,10 @@ interface Props {
     rolePlaceHolder?: string;
     clearOnSend?: boolean;
     conversationId?: string;
+    showRoleInput?: boolean;
 }
 
-export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, clearOnSend, conversationId }: Props) => {
+export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, clearOnSend, conversationId, showRoleInput }: Props) => {
     const [question, setQuestion] = useState<string>("");
     const [roleValue, setRoleValue] = useState<string>("");
 
@@ -59,13 +60,14 @@ export const QuestionInput = ({ onSend, disabled, placeholder, rolePlaceHolder, 
 
     return (
         <Stack horizontal className={styles.questionInputContainer}>
-            <TextField 
+            {showRoleInput && (<TextField 
                 className={styles.questionInputTextArea} 
                 placeholder={rolePlaceHolder} 
                 multiline 
                 resizable={false}
                 value={roleValue} 
                 onChange={onRoleChange} />
+                )}
             <TextField
                 className={styles.questionInputTextArea}
                 placeholder={placeholder}

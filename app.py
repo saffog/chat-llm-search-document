@@ -8,9 +8,10 @@ from azure.identity import DefaultAzureCredential
 from base64 import b64encode
 from flask import Flask, Response, request, jsonify, send_from_directory
 from dotenv import load_dotenv
-
+from backend.models.User import users
 from backend.auth.auth_utils import get_authenticated_user_details
 from backend.history.cosmosdbservice import CosmosConversationClient
+from datetime import datetime
 
 load_dotenv()
 
@@ -89,7 +90,6 @@ AZURE_COSMOSDB_MONGO_VCORE_TITLE_COLUMN = os.environ.get("AZURE_COSMOSDB_MONGO_V
 AZURE_COSMOSDB_MONGO_VCORE_URL_COLUMN = os.environ.get("AZURE_COSMOSDB_MONGO_VCORE_URL_COLUMN")
 AZURE_COSMOSDB_MONGO_VCORE_VECTOR_COLUMNS = os.environ.get("AZURE_COSMOSDB_MONGO_VCORE_VECTOR_COLUMNS")
 
-
 SHOULD_STREAM = True if AZURE_OPENAI_STREAM.lower() == "true" else False
 
 # Chat History CosmosDB Integration Settings
@@ -115,8 +115,30 @@ ELASTICSEARCH_EMBEDDING_MODEL_ID = os.environ.get("ELASTICSEARCH_EMBEDDING_MODEL
 
 # Frontend Settings via Environment Variables
 AUTH_ENABLED = os.environ.get("AUTH_ENABLED", "true").lower()
-frontend_settings = { "auth_enabled": AUTH_ENABLED }
+BAUCHAT_HEADER = os.environ.get("BAUCHAT_HEADER")
+BAUCHAT_PANEL_HEADER = os.environ.get("BAUCHAT_PANEL_HEADER")
+BAUCHAT_PANEL_SUBHEADER = os.environ.get("BAUCHAT_PANEL_SUBHEADER")
+BAU_SHOW_ROLE_INPUT = os.environ.get("BAU_SHOW_ROLE_INPUT", "false")
 
+frontend_settings = { 
+    "auth_enabled": AUTH_ENABLED,
+    "BAUCHAT_HEADER": BAUCHAT_HEADER , 
+    "BAUCHAT_PANEL_HEADER": BAUCHAT_PANEL_HEADER, 
+    "BAUCHAT_PANEL_SUBHEADER": BAUCHAT_PANEL_SUBHEADER,
+    "show_role_input": BAU_SHOW_ROLE_INPUT
+     }
+
+# User default data settings via Environment Variables
+BAU_DEFAULT_USER_ID = os.environ.get("BAU_DEFAULT_USER_NAME")
+BAU_DEFAULT_USER_NAME = os.environ.get("BAU_DEFAULT_USER_NAME")
+BAU_DEFAULT_USER_SENIORITY = os.environ.get("BAU_DEFAULT_USER_SENIORITY")
+BAU_DEFAULT_USER_JOB = os.environ.get("BAU_DEFAULT_USER_JOB")
+BAU_DEFAULT_USER_LOCATION = os.environ.get("BAU_DEFAULT_USER_LOCATION")
+BAU_DEFAULT_USER_EMAIL = os.environ.get("BAU_DEFAULT_USER_EMAIL")
+BAU_NO_USER_DATA_PREFIX = os.environ.get("BAU_NO_USER_DATA_PREFIX", "Estimado Baufesiano para responder su pregunta necesito los siguientes datos")
+BAU_CALCULATE_SENIORITY = os.environ.get("BAU_CALCULATE_SENIORITY", default=False)
+user_settings = { 
+    "user_name": BAU_DEFAULT_USER_NAME }
 
 # Initialize a CosmosDB client with AAD auth and containers for Chat History
 cosmos_conversation_client = None
@@ -201,7 +223,32 @@ def generateFilterString(userToken):
     group_ids = ", ".join([obj['id'] for obj in userGroups])
     return f"{AZURE_SEARCH_PERMITTED_GROUPS_COLUMN}/any(g:search.in(g, '{group_ids}'))"
 
+def calculate_seniority(date_start):
+    if not date_start:
+        return None
+    date_start = datetime.strptime(date_start, '%Y-%m-%d')
+    seniority_years = (datetime.now() - date_start).days / 365.25 ## Parsing the days to years
+    return "{} años".format(int(seniority_years)) 
 
+def validate_userdata(request_body):
+    userData = request_body.get('userData')
+    
+    default_values = {
+        'username': BAU_DEFAULT_USER_NAME,
+        'seniority': BAU_DEFAULT_USER_SENIORITY,
+        'job': BAU_DEFAULT_USER_JOB,
+        'location': BAU_DEFAULT_USER_LOCATION
+    }
+
+    if userData:
+        user_name = userData.get('fullName', default_values['username'])
+        user_seniority = userData.get('dateStart', default_values['seniority']) if not BAU_CALCULATE_SENIORITY else calculate_seniority(userData.get('dateStart'))
+        user_job = userData.get('role', default_values['job'])
+        user_location = userData.get('country', default_values['location'])
+    else:
+        user_name, user_seniority, user_job, user_location = default_values.values()
+
+    return user_name, user_seniority, user_job, user_location
 
 def prepare_body_headers_with_data(request):
     request_messages = request.json["messages"]
@@ -209,6 +256,39 @@ def prepare_body_headers_with_data(request):
     last_message = request_messages[-1]
     role_value = last_message.get('roleValue', AZURE_OPENAI_SYSTEM_MESSAGE)
     logging.debug(f"prepare_body_headers_with_data : role_value to test {role_value}")
+    
+    user_question = last_message.get('content', '')
+    delimiter = "####"
+    no_user_data_prefix = BAU_NO_USER_DATA_PREFIX
+    user_name, user_seniority, user_job, user_location = validate_userdata(request.json)
+    
+    # Simplest string to test
+    # template_user_message = f"La pregunta es {user_question}"
+    template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
+    Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe seguir el siguiente formato : {no_user_data_prefix} \
+    listando los datos que te falten y nada mas. \
+    Paso 2 : Si tienes los datos del colaborador, usa en tu respuesta el nombre del colaborador \
+    en lugar de estimado colaborador. \
+    Paso 3 : Usa las siguientes recomendaciones para tu respuesta : \
+    Recomendacion 1 : Usa los datos del colaborador para filtrar la respuesta. \
+    Recomendacion 2 : Solo muestra los resultados que tengan que ver con el pais de la unidad y la antiguedad en Baufest. \
+    Recomendacion 3 : Si la respuesta es muy amplia, filtra la respuesta por el pais de la unidad y la antiguedad en Baufest. \
+    Recomendacion 4 : Si la pregunta no es clara, solicita mayor detalle para responder. \
+    \
+    Datos del colaborador: \
+    Nombre : {user_name}. \
+    Antiguedad en Baufest : {user_seniority}. \
+    Puesto : {user_job}. \
+    Pais de la unidad : {user_location}. \
+    \
+    {delimiter}{user_question}{delimiter} \
+    "
+
+    logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
+
+    request_messages[-1]['content'] = template_user_message
+    logging.debug(f"prepare_body_headers_with_data : request_messages last message {request_messages[-1]}")
+
 
     body = {
         "messages": request_messages,
@@ -413,7 +493,7 @@ def stream_with_data(body, headers, endpoint, history_metadata={}):
                             })
                             yield format_as_ndjson(response)
     except Exception as e:
-        yield format_as_ndjson({"error" + str(e)})
+        yield format_as_ndjson({"error: " + str(e)})
 
 def formatApiResponseNoStreaming(rawResponse):
     if 'error' in rawResponse:
@@ -543,6 +623,7 @@ def conversation_without_data(request_body):
     openai.api_key = AZURE_OPENAI_KEY
 
     request_messages = request_body["messages"]
+    
     messages = [
         {
             "role": "system",
@@ -556,6 +637,10 @@ def conversation_without_data(request_body):
                 "role": message["role"] ,
                 "content": message["content"]
             })
+    
+    ## BEIGN Add Context Create user Info
+    ## userInfo=
+    ## END Add Context Create user info
 
     logging.exception("Before openai.ChatCompletion.create %s",AZURE_OPENAI_MODEL)
     response = openai.ChatCompletion.create(
@@ -614,7 +699,9 @@ def add_conversation():
 
     ## check request for conversation_id
     conversation_id = request.json.get("conversation_id", None)
-
+    user_name, user_seniority, user_job, user_location = validate_userdata(request.json)
+    
+    request_body = request.json
     try:
         # make sure cosmos is configured
         if not cosmos_conversation_client:
@@ -841,7 +928,9 @@ def ensure_cosmos():
         return jsonify({"error": "CosmosDB is not working"}), 500
 
     return jsonify({"message": "CosmosDB is configured and working"}), 200
+## TODO: AGOMEZ AJUSTAR EL PROMPT CON DEFAULTS VARIABLES DE AMBIENTE.
 
+## TODO: SANTIAGO
 @app.route("/frontend_settings", methods=["GET"])  
 def get_frontend_settings():
     try:
@@ -849,6 +938,37 @@ def get_frontend_settings():
     except Exception as e:
         logging.exception("Exception in /frontend_settings")
         return jsonify({"error": str(e)}), 500  
+## TODO: PONCHO
+@app.route("/user_settings", methods=["GET"])  
+def get_user_settings():
+    try:
+        return jsonify(user_settings), 200
+    except Exception as e:
+        logging.exception("Exception in /frontend_settings")
+        return jsonify({"error": str(e)}), 500  
+    
+## TODO: Signin endpoint 
+@app.route("/signin", methods=["POST"])
+def signin():
+    try:
+        print("Signing in...")
+        return jsonify(signin_user(request.json)), 200
+    except Exception as e:
+        logging.exception(f"Exception: {e}")
+        return jsonify({"error": str(e)}), 401
+
+## TODO implement login to do signin of user    
+def signin_user(user_data):
+    if "email" in user_data and "password" in user_data:
+        email = user_data["email"]
+        password = user_data["password"]
+        print(email, password)
+        for user in users:
+            if user.email == email and user.password == password:
+                return user.to_dict()
+        
+    raise Exception("User not found")
+
 
 def generate_title(conversation_messages):
     ## make sure the messages are sorted by _ts descending

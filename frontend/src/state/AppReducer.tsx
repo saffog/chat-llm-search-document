@@ -1,11 +1,13 @@
-import { Conversation, fetchChatHistoryInit, historyList } from '../api';
 import { Action, AppState } from './AppProvider';
+import {UserInfoStore} from '../api';
 
 // Define the reducer function
 export const appStateReducer = (state: AppState, action: Action): AppState => {
     switch (action.type) {
         case 'TOGGLE_CHAT_HISTORY':
             return { ...state, isChatHistoryOpen: !state.isChatHistoryOpen };
+        case 'DRAWER_USER_INFO':
+            return { ...state, isDrawerInfoOpen: !state.isDrawerInfoOpen };
         case 'UPDATE_CURRENT_CHAT':
             return { ...state, currentChat: action.payload };
         case 'UPDATE_CHAT_HISTORY_LOADING_STATE':
@@ -66,7 +68,11 @@ export const appStateReducer = (state: AppState, action: Action): AppState => {
         case 'SET_COSMOSDB_STATUS':
             return { ...state, isCosmosDBAvailable: action.payload };
         case 'FETCH_FRONTEND_SETTINGS':
-            return { ...state, frontendSettings: action.payload };    
+            return { ...state, frontendSettings: action.payload };
+        case 'SET_USER_INFO':
+            return {...state, userInfo: action.payload};
+        case 'DELETE_USER_INFO':
+            return {...state, userInfo: {} as UserInfoStore}
         default:
             return state;
       }
