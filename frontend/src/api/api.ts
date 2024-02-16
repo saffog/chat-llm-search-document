@@ -1,16 +1,22 @@
-import {UserInfo, ConversationRequest, Conversation, ChatMessage, CosmosDBHealth, CosmosDBStatus, User} from "./models";
+import {UserInfo, ConversationRequest, Conversation, ChatMessage, CosmosDBHealth, CosmosDBStatus, User, UserInfoStore} from "./models";
 import { chatHistorySampleData } from "../constants/chatHistory";
-import {users} from '../constants/users';
+import { users } from '../constants/users';
+import { useContext } from 'react';
+import { AppStateContext } from './../state/AppProvider';
 
 export async function conversationApi(options: ConversationRequest, abortSignal: AbortSignal): Promise<Response> {
     console.log("conversationApi", options, abortSignal);
+
+  //  console.log(context?.state.userInfo);
+
     const response = await fetch("/conversation", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            messages: options.messages
+            messages: options.messages,
+      //      userData: context?.state.userInfo
         }),
         signal: abortSignal
     });
@@ -49,6 +55,33 @@ export const getUserInfoMock = async (
         throw new Error('Error en la autenticación');
     }
 }
+
+export const getUserInfoSignin = async (
+    username: string,
+    password: string
+)=>{
+    const response = await 
+        fetch('/signin',{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email: username,
+                password
+            }),
+        })
+        
+    if (response.status===401) {
+        throw new Error('Credenciales inválidas');
+    }
+    if (response.status===500){
+        throw new Error('Error en la autenticación');
+    }
+
+    return await response.json(); //userdata
+}
+
 
 // export const fetchChatHistoryInit = async (): Promise<Conversation[] | null> => {
 export const fetchChatHistoryInit = (): Conversation[] | null => {
@@ -129,18 +162,22 @@ export const historyRead = async (convId: string): Promise<ChatMessage[]> => {
     return response
 }
 
-export const historyGenerate = async (options: ConversationRequest, abortSignal: AbortSignal, convId?: string): Promise<Response> => {
+export const historyGenerate = async (options: ConversationRequest, abortSignal: AbortSignal, convId?: string, userInfo?: UserInfoStore): Promise<Response> => {
     let body;
     if(convId){
         body = JSON.stringify({
             conversation_id: convId,
-            messages: options.messages
+            messages: options.messages,
+            userData: userInfo
         })
     }else{
         body = JSON.stringify({
-            messages: options.messages
+            messages: options.messages,
+            userData: userInfo
         })
     }
+
+    
     const response = await fetch("/history/generate", {
         method: "POST",
         headers: {

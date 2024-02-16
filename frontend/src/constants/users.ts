@@ -41,4 +41,12 @@ export const users: User[] =  [
     country: 'Chile',
     password: 'password123',
   },
+  {
+    fullName: 'Silvina Pliego',
+    email: 'silvina.pliego@baufest.com',
+    role: 'Desarrollador Fullstack',
+    dateStart: '2022-01-20',
+    country: 'Uruguay',
+    password: 'password123',
+  },
 ];

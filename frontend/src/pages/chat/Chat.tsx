@@ -58,6 +58,7 @@ const Chat = () => {
     const [clearingChat, setClearingChat] = useState<boolean>(false);
     const [hideErrorDialog, { toggle: toggleErrorDialog }] = useBoolean(true);
     const [errorMsg, setErrorMsg] = useState<ErrorMessage | null>()
+    const context = useContext(AppStateContext);
 
     const errorDialogContentProps = {
         type: DialogType.close,
@@ -291,7 +292,7 @@ const Chat = () => {
         }
         let result = {} as ChatResponse;
         try {
-            const response = conversationId ? await historyGenerate(request, abortController.signal, conversationId) : await historyGenerate(request, abortController.signal);
+            const response = conversationId ? await historyGenerate(request, abortController.signal, conversationId, context?.state.userInfo) : await historyGenerate(request, abortController.signal,undefined,context?.state.userInfo);
             if(!response?.ok){
                 console.log("2");
                 let errorChatMsg: ChatMessage = {

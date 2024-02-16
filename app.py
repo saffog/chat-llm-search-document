@@ -8,9 +8,10 @@ from azure.identity import DefaultAzureCredential
 from base64 import b64encode
 from flask import Flask, Response, request, jsonify, send_from_directory
 from dotenv import load_dotenv
-
+from backend.models.User import users
 from backend.auth.auth_utils import get_authenticated_user_details
 from backend.history.cosmosdbservice import CosmosConversationClient
+from datetime import datetime
 
 load_dotenv()
 
@@ -135,6 +136,7 @@ BAU_DEFAULT_USER_JOB = os.environ.get("BAU_DEFAULT_USER_JOB")
 BAU_DEFAULT_USER_LOCATION = os.environ.get("BAU_DEFAULT_USER_LOCATION")
 BAU_DEFAULT_USER_EMAIL = os.environ.get("BAU_DEFAULT_USER_EMAIL")
 BAU_NO_USER_DATA_PREFIX = os.environ.get("BAU_NO_USER_DATA_PREFIX", "Estimado Baufesiano para responder su pregunta necesito los siguientes datos")
+BAU_CALCULATE_SENIORITY = os.environ.get("BAU_CALCULATE_SENIORITY", default=False)
 user_settings = { 
     "user_name": BAU_DEFAULT_USER_NAME }
 
@@ -221,6 +223,13 @@ def generateFilterString(userToken):
     group_ids = ", ".join([obj['id'] for obj in userGroups])
     return f"{AZURE_SEARCH_PERMITTED_GROUPS_COLUMN}/any(g:search.in(g, '{group_ids}'))"
 
+def calculate_seniority(date_start):
+    if not date_start:
+        return None
+    date_start = datetime.strptime(date_start, '%Y-%m-%d')
+    seniority_years = (datetime.now() - date_start).days / 365.25 ## Parsing the days to years
+    return "{} años".format(int(seniority_years)) 
+
 def validate_userdata(request_body):
     userData = request_body.get('userData')
     
@@ -232,10 +241,10 @@ def validate_userdata(request_body):
     }
 
     if userData:
-        user_name = userData.get('username', default_values['username'])
-        user_seniority = userData.get('seniority', default_values['seniority'])
-        user_job = userData.get('job', default_values['job'])
-        user_location = userData.get('location', default_values['location'])
+        user_name = userData.get('fullName', default_values['username'])
+        user_seniority = userData.get('dateStart', default_values['seniority']) if not BAU_CALCULATE_SENIORITY else calculate_seniority(userData.get('dateStart'))
+        user_job = userData.get('role', default_values['job'])
+        user_location = userData.get('country', default_values['location'])
     else:
         user_name, user_seniority, user_job, user_location = default_values.values()
 
@@ -614,6 +623,7 @@ def conversation_without_data(request_body):
     openai.api_key = AZURE_OPENAI_KEY
 
     request_messages = request_body["messages"]
+    
     messages = [
         {
             "role": "system",
@@ -627,6 +637,10 @@ def conversation_without_data(request_body):
                 "role": message["role"] ,
                 "content": message["content"]
             })
+    
+    ## BEIGN Add Context Create user Info
+    ## userInfo=
+    ## END Add Context Create user info
 
     logging.exception("Before openai.ChatCompletion.create %s",AZURE_OPENAI_MODEL)
     response = openai.ChatCompletion.create(
@@ -685,7 +699,9 @@ def add_conversation():
 
     ## check request for conversation_id
     conversation_id = request.json.get("conversation_id", None)
-
+    user_name, user_seniority, user_job, user_location = validate_userdata(request.json)
+    
+    request_body = request.json
     try:
         # make sure cosmos is configured
         if not cosmos_conversation_client:
@@ -930,6 +946,29 @@ def get_user_settings():
     except Exception as e:
         logging.exception("Exception in /frontend_settings")
         return jsonify({"error": str(e)}), 500  
+    
+## TODO: Signin endpoint 
+@app.route("/signin", methods=["POST"])
+def signin():
+    try:
+        print("Signing in...")
+        return jsonify(signin_user(request.json)), 200
+    except Exception as e:
+        logging.exception(f"Exception: {e}")
+        return jsonify({"error": str(e)}), 401
+
+## TODO implement login to do signin of user    
+def signin_user(user_data):
+    if "email" in user_data and "password" in user_data:
+        email = user_data["email"]
+        password = user_data["password"]
+        print(email, password)
+        for user in users:
+            if user.email == email and user.password == password:
+                return user.to_dict()
+        
+    raise Exception("User not found")
+
 
 def generate_title(conversation_messages):
     ## make sure the messages are sorted by _ts descending
