@@ -1,4 +1,4 @@
-# The purpose of gptqautils.py is to evaluate responses
+# The purpose of gptqautils.py is to provide utilities functions to help to evaluate model completions against human completions
 
 import openai
 import os
