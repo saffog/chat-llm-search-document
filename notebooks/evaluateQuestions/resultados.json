@@ -6,5 +6,117 @@
       "similar": 1,
       "argument": 0.6
     }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "S\u00ed, pero se requiere que el rango de horario laboral se mantenga por un mes",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "Si, puedes presentar el contrato o escritura al nombre de otra persona, siempre que presentes un documento legal que respalde la convivencia, por ejemplo, como un certificado de concubinato, matrimonio o uni\u00f3n civil. Esto ayudar\u00e1 a garantizar que tu solicitud sea considerada de manera adecuada",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "A trav\u00e9s de la App de Pedidos ya (Men\u00fa/PedidosYa Pagos) ver\u00e1s las acreditaciones que tenes disponible para usar",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "No la acreditaci\u00f3n es semanal y se paga los viernes",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "S\u00ed, lo importante es que en el comprobante figure el mismo domicilio que en tu declaraci\u00f3n de domicilio cargada en TuRecibo",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "Claro, puedes cargar hasta 3 meses retroactivos",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "Desafortunadamente no, es requisito la presentaci\u00f3n de un comprobante con validez oficial",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "No, el beneficio no es retroactivo, tiene que ser a partir del trimestre actual",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "No, el porcentaje es \u00fanicamente el 20%",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "No, el porcentaje es \u00fanicamente el 20%",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "No, se accede a partir de cualquier nivel de ingreso",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "La transferencia se hace desde BF USA IT Services Inc. La misma se hace mediante un pago por cuenta y orden de BF Argentina S.A.",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "Hemos comprobado en los siguientes medios: HSBC, Citibank, Chase, Facebank, Wise, Payoneer y GrabrFi",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
+  },
+  {
+    "robot_answer": "Las ventajas de trabajar en Baufest son las siguientes: BAU Dollar, posible 20% de salario en d\u00f3lares; BAU Health, actividades deportivas; BAU net, pago internet; BAU Lunch, Baufest te paga el lunch; BAU Home, reintegro del costo de tu mudanza y Anti tr\u00e1fico, ajustar el horario laboral.",
+    "expected_answer": "Record\u00e1 que siempre que quieras que depositemos tu sueldo en una cuenta diferente a la que tenemos registrada actualmente, deber\u00e1s cargar la informaci\u00f3n a trav\u00e9s de TuRecibo",
+    "SequenceMatcher_result": {
+      "similar": 0,
+      "argument": 0.6
+    }
   }
 ]
