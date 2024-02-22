@@ -265,7 +265,7 @@ def prepare_body_headers_with_data(request):
     # Simplest string to test
     # template_user_message = f"La pregunta es {user_question}"
     template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
-    Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe seguir el siguiente formato : {no_user_data_prefix} \
+    Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe solicitarlos \
     listando los datos que te falten y nada mas. \
     Paso 2 : Si tienes los datos del colaborador, usa en tu respuesta el nombre del colaborador \
     en lugar de estimado colaborador. \
@@ -274,6 +274,7 @@ def prepare_body_headers_with_data(request):
     Recomendacion 2 : Solo muestra los resultados que tengan que ver con el pais de la unidad y la antiguedad en Baufest. \
     Recomendacion 3 : Si la respuesta es muy amplia, filtra la respuesta por el pais de la unidad y la antiguedad en Baufest. \
     Recomendacion 4 : Si la pregunta no es clara, solicita mayor detalle para responder. \
+    Recomendacion 5 : No uses estimado colaborador en tu respuesta, sino usa un lenguaje más simple. \
     \
     Datos del colaborador: \
     Nombre : {user_name}. \
