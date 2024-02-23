@@ -284,15 +284,15 @@ def prepare_body_headers_with_data(request):
     # {delimiter}{user_question}{delimiter} \
     # "
 
-    template_rules = f"Step 1 : if you don't have the user data, then always start your response \
-    with Estimado Baufesiano. Step 2 : if you have the user data, then always start your response \
-    with 'Estimado <Use the name of the user>'. Review all the steps before answer."
-    
-    template_user_data = f"###user data### Name: {user_name} | Seniority: {user_seniority} | Job: {user_job} | Location: {user_location} ###user data###"
-    
-    template_user_message = f"Follow the next steps to answer the user question delimited by ###Question### and \
-    use the user data delimited by ###user data### to provide a better answer: \
-    {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
+    template_rules = f"Recomendación 1 : Usa los datos del usuario delimitados por ###user_data## para complementar tu respuesta.\
+        Recomendación 2 : Usa el nombre del usuario para dirigirte en tu respuesta, si cuentas con ese dato.\
+        Recomendación 3 : Usa el historial para complementar tu respuesta."
+
+    template_user_data = f"###user_data### Nombre del Usuario: {user_name} \
+    País de la unidad: {user_location} ###user_data###"
+
+    template_user_message = f"Responde la pregunta delimitada por ###Question###. \
+    Para responder tu pregunta sigue las siguientes recomendaciones: {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
     
     logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
 
