@@ -264,31 +264,40 @@ def prepare_body_headers_with_data(request):
     
     # Simplest string to test
     # template_user_message = f"La pregunta es {user_question}"
-    template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
-    Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe seguir el siguiente formato : {no_user_data_prefix} \
-    listando los datos que te falten y nada mas. \
-    Paso 2 : Si tienes los datos del colaborador, usa en tu respuesta el nombre del colaborador \
-    en lugar de estimado colaborador. \
-    Paso 3 : Usa las siguientes recomendaciones para tu respuesta : \
-    Recomendacion 1 : Usa los datos del colaborador para filtrar la respuesta. \
-    Recomendacion 2 : Solo muestra los resultados que tengan que ver con el pais de la unidad y la antiguedad en Baufest. \
-    Recomendacion 3 : Si la respuesta es muy amplia, filtra la respuesta por el pais de la unidad y la antiguedad en Baufest. \
-    Recomendacion 4 : Si la pregunta no es clara, solicita mayor detalle para responder. \
-    \
-    Datos del colaborador: \
-    Nombre : {user_name}. \
-    Antiguedad en Baufest : {user_seniority}. \
-    Puesto : {user_job}. \
-    Pais de la unidad : {user_location}. \
-    \
-    {delimiter}{user_question}{delimiter} \
-    "
+    # template_user_message = f"Sigue los siguientes pasos para responder la pregunta delimitada por 4 hashtags: {delimiter}. \
+    # Paso 1 : Si no tienes los datos del colaborador, tu respuesta debe seguir el siguiente formato : {no_user_data_prefix} \
+    # listando los datos que te falten y nada mas. \
+    # Paso 2 : Si tienes los datos del colaborador, usa en tu respuesta el nombre del colaborador \
+    # en lugar de estimado colaborador. \
+    # Paso 3 : Usa las siguientes recomendaciones para tu respuesta : \
+    # Recomendacion 1 : Usa los datos del colaborador para filtrar la respuesta. \
+    # Recomendacion 2 : Solo muestra los resultados que tengan que ver con el pais de la unidad y la antiguedad en Baufest. \
+    # Recomendacion 3 : Si la respuesta es muy amplia, filtra la respuesta por el pais de la unidad y la antiguedad en Baufest. \
+    # Recomendacion 4 : Si la pregunta no es clara, solicita mayor detalle para responder. \
+    # \
+    # Datos del colaborador: \
+    # Nombre : {user_name}. \
+    # Antiguedad en Baufest : {user_seniority}. \
+    # Puesto : {user_job}. \
+    # Pais de la unidad : {user_location}. \
+    # \
+    # {delimiter}{user_question}{delimiter} \
+    # "
 
+    template_rules = f"Recomendación 1 : Usa los datos del usuario delimitados por ###user_data## para complementar tu respuesta.\
+        Recomendación 2 : Usa el nombre del usuario para dirigirte en tu respuesta, si cuentas con ese dato.\
+        Recomendación 3 : Usa el historial para complementar tu respuesta."
+
+    template_user_data = f"###user_data### Nombre del Usuario: {user_name} \
+    País de la unidad: {user_location} ###user_data###"
+
+    template_user_message = f"Responde la pregunta delimitada por ###Question###. \
+    Para responder tu pregunta sigue las siguientes recomendaciones: {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
+    
     logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
 
     request_messages[-1]['content'] = template_user_message
     logging.debug(f"prepare_body_headers_with_data : request_messages last message {request_messages[-1]}")
-
 
     body = {
         "messages": request_messages,
