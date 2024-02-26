@@ -1,10 +1,11 @@
-# The purpose of this commons.py is to provide the common used methods, imports and other useful functions
+# The purpose of this aoaiextutils.py is to provide the open ai extensions utilities methods
 
 import os
 import openai # this will require pip install openai
 import tiktoken # this will require pip install tiktoken
 import requests
 import json
+import time
 
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
@@ -37,6 +38,13 @@ AZURE_OPENAI_RESOURCE = os.environ.get("AZURE_OPENAI_RESOURCE")
 AZURE_OPENAI_KEY = os.environ.get("AZURE_OPENAI_KEY")
 AZURE_OPENAI_MODEL = os.environ.get("AZURE_OPENAI_MODEL")
 AZURE_OPENAI_SYSTEM_MESSAGE = os.environ.get("AZURE_OPENAI_SYSTEM_MESSAGE", "You are an AI assistant that helps people find information.")
+AZURE_OPENAI_TEMPERATURE = os.environ.get("AZURE_OPENAI_TEMPERATURE")
+AZURE_OPENAI_TOP_P = os.environ.get("AZURE_OPENAI_TOP_P")
+AZURE_OPENAI_MAX_TOKENS = os.environ.get("AZURE_OPENAI_MAX_TOKENS")
+
+# BAUCHAT
+BAUCHAT_MAX_RETRIES = os.environ.get("BAUCHAT_MAX_RETRIES","10")
+BAUCHAT_DEBUG = os.environ.get("BAUCHAT_DEBUG","")
 
 openai.api_key  = AZURE_OPENAI_KEY
 openai.api_type = "azure"
@@ -64,17 +72,20 @@ def print_required_variables(debug=True):
         print(f"AZURE_OPENAI_KEY: {AZURE_OPENAI_KEY}")
         print(f"AZURE_OPENAI_MODEL: {AZURE_OPENAI_MODEL}")
         print(f"AZURE_OPENAI_SYSTEM_MESSAGE: {AZURE_OPENAI_SYSTEM_MESSAGE}")
+        print(f"AZURE_OPENAI_TEMPERATURE: {AZURE_OPENAI_TEMPERATURE}")
+        print(f"AZURE_OPENAI_TOP_P: {AZURE_OPENAI_TOP_P}")
+        print(f"AZURE_OPENAI_MAX_TOKENS: {AZURE_OPENAI_MAX_TOKENS}")
+        print(f"BAUCHAT_MAX_RETRIES: {BAUCHAT_MAX_RETRIES}")
+        print(f"BAUCHAT_DEBUG: {BAUCHAT_DEBUG}")
     else:
         print(f"No variables to print")
 
 def beautify_json(json_to_process): 
     return json.dumps(json_to_process, indent=4)
-
-def get_completion_from_messages(messages,
-                                 ds_role_value="",
-                                 debug=False,
-                                 show_completion=False,
-                                 show_input=True,
+        
+def get_extension_chat_completion_from_messages(messages,
+                                 ds_role_value=AZURE_OPENAI_SYSTEM_MESSAGE,
+                                 debug=bool(BAUCHAT_DEBUG),
                                  return_completion=False) :
     if debug:
         print_required_variables(debug)
@@ -102,19 +113,19 @@ def get_completion_from_messages(messages,
         
         openai.requestssession = session
 
-    if ds_role_value == "" :
-        ds_role_value = AZURE_OPENAI_SYSTEM_MESSAGE
-        
     setup_byod(AZURE_OPENAI_MODEL)
     search_endpoint = f"https://{AZURE_SEARCH_SERVICE}.search.windows.net"
     
-    if show_input:
+    if debug:
         print(f"Data source role information : {ds_role_value}")
         print(f"messages : {beautify_json(messages)}")
     
     completion = openai.ChatCompletion.create(
         messages=messages,
         deployment_id=AZURE_OPENAI_MODEL,
+        temperature=float(AZURE_OPENAI_TEMPERATURE),
+        max_tokens=int(AZURE_OPENAI_MAX_TOKENS),
+        top_p=float(AZURE_OPENAI_TOP_P),
         dataSources=[  # camelCase is intentional, as this is the format the API expects
             {
                 "type": DATASOURCE_TYPE,
@@ -140,10 +151,36 @@ def get_completion_from_messages(messages,
         ]
     )
 
-    if show_completion:
+    if debug:
         print(completion)
         
     if return_completion:
         return completion
 
     return completion.choices[0].message["content"]
+
+
+def get_extension_chat_completion(user_message, debug=bool(BAUCHAT_DEBUG)):
+    max_retries = int(BAUCHAT_MAX_RETRIES)
+    retry_count = 0
+    messages =  [
+        {'role':'user', 
+         'content': f"{user_message}"},
+    ]
+    while retry_count < max_retries:
+        try:
+            response = get_extension_chat_completion_from_messages(messages)
+            break
+        except Exception as e:
+            print("Caught Exception:", e)
+            retry_count += 1
+            if retry_count == max_retries:
+                response = "InvalidRequestError: Max retries reached. Unable to proceed."
+            else:
+                time.sleep(1) 
+    if debug :
+        print(response)
+    
+    return response
+
+
