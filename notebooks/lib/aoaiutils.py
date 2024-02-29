@@ -44,3 +44,21 @@ def get_completion(input_prompt,
         return completion
     else:
         return completion["choices"][0]["text"]
+    
+def get_chat_completion(input_messages,
+                        debug = False, 
+                        returnWholeObject = False):
+    completion = openai.ChatCompletion.create(
+        messages=input_messages,
+        model=AZURE_OPENAI_CHAT_COMPLETION_MODEL,
+        engine=AZURE_OPENAI_CHAT_COMPLETION_ENGINE,
+        temperature=float(AZURE_OPENAI_TEMPERATURE), 
+        max_tokens=int(AZURE_OPENAI_MAX_TOKENS), 
+        stop=["<|im_end|>", "<|im_start|>"])
+
+    if debug: print(f"get_chat_completion : completion : {completion}")
+        
+    if returnWholeObject:
+        return completion
+    else:
+        return completion["choices"][0]["message"]["content"]
