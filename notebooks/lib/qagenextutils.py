@@ -24,7 +24,10 @@ def get_chat_completion(question):
     return aoaiextutils.get_extension_chat_completion(user_message)
 
 
-def generate_robot_responses_with_chat_completion(filename_to_test,debug=BAUCHAT_DEBUG,printResult=True):
+def generate_robot_responses_with_chat_completion(filename_to_test, 
+                                                  debug=BAUCHAT_DEBUG, 
+                                                  printResult=True,
+                                                  completion_json_field='robot_answer'):
     
     filename_to_read =  f"{filename_to_test}.json"
     with open(filename_to_read,encoding='utf-8') as file_read:
@@ -35,18 +38,24 @@ def generate_robot_responses_with_chat_completion(filename_to_test,debug=BAUCHAT
         if questions_answers_item:
             question_to_test = questions_answers_item.get("question")
             if question_to_test:
-                 questions_answers_item['robot_answer'] = get_chat_completion(question_to_test)
+                 questions_answers_item[completion_json_field] = get_chat_completion(question_to_test)
         if debug: print(questions_answers_item)
         results_with_robot_answer.append(questions_answers_item)
     # Get the current date and time
     current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M")
+    
+    # Extract templates
+    used_templates = datos["used_templates"]
+    new_template = {}
+    new_template[completion_json_field] = BAUCHAT_TEMPLATE_USER_MESSAGE 
+    used_templates.append(new_template)
 
     # Construct the filename with the current date and time
     filename_to_write = f"result_{filename_to_test}_{current_datetime}.json"
 
     json_data = {
-        "template_to_test":BAUCHAT_TEMPLATE_USER_MESSAGE,
-        "results":results_with_robot_answer
+        "used_templates": used_templates,
+        "questions_answers":results_with_robot_answer
     }
 
     json_string = json.dumps(json_data)

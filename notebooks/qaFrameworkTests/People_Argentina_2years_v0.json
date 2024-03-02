@@ -1,0 +1,44 @@
+{
+  "used_templates": [
+    {
+      "robot_responde": "{user_question}"
+    }
+  ],
+  "questions_answers": [
+    {
+      "id_question": "1",
+      "question": "¿Cuáles son las ventajas de trabajar en Baufest?",
+      "expected_response": "Estimado Fulanito Garza, una de las tantas ventajas de trabar en Baufest son las siguientes: BAU Dollar, donde recibes el beneficio del 20% de tu salario en dólares; BAU Health, reintegro del costo del gimnasio u otras actividades deportivas; BAU net, recibe una bonificación del costo del servicio de internet; BAU Lunch, Baufest te paga el lunch; BAU Home, se te reintegra el costo de la mudanza y Anti tráfico, tienes la posibilidad de ajustar tu horario laboral para evitar el tráfico.",
+      "tags": "general",
+      "robot_responde": "Baufest ofrece una cultura de trabajo basada en pilares que definen su forma de trabajar y ver las cosas, generando valor agregado [doc1]. Entre los pilares se encuentran la cercanía, la creatividad, la calidad y el compromiso . Además, Baufest se compromete a reconocer y promover las habilidades de sus integrantes, poniendo a su disposición medios de formación y actualización de conocimientos [doc3]. También se busca generar un lugar de trabajo libre de maltrato y violencia, no permitiendo la discriminación, el acoso o el maltrato de cualquier tipo [doc2][doc3]. En cuanto a la calidad de vida profesional, Baufest se compromete a garantizar que mejore y no se degrade la calidad de la vida personal y profesional de sus integrantes [doc2]."
+    },
+    {
+      "id_question": "2",
+      "question": "¿Se puede cambiar el rango de horario una vez que elegí uno?",
+      "expected_response": "Sí, pero se requiere que el rango de horario laboral se mantenga por un mes",
+      "tags": "antitráfico",
+      "robot_responde": "Sí, es posible cambiar el rango de horario una vez que ya se ha optado por uno, aunque se espera que se mantenga estable por al menos un mes para una fluida organización [doc1]."
+    },
+    {
+      "id_question": "3",
+      "question": "Mi escritura o contrato no está a mi nombre. ¿Puedo aplicar para el beneficio?",
+      "expected_response": "Si, puedes presentar el contrato o escritura al nombre de otra persona, siempre que presentes un documento legal que respalde la convivencia, por ejemplo, como un certificado de concubinato, matrimonio o unión civil. Esto ayudará a garantizar que tu solicitud sea considerada de manera adecuada",
+      "tags": "bau home",
+      "robot_responde": "Sí, puedes presentar el contrato o escritura al nombre de otra persona, siempre que presentes un documento legal que respalde la convivencia, por ejemplo, como un certificado de concubinato, matrimonio o unión civil. Esto ayudará a garantizar que tu solicitud sea considerada de manera adecuada [doc1]."
+    },
+    {
+      "id_question": "4",
+      "question": "¿Cómo obtengo mi almuerzo o lunch?",
+      "expected_response": "A través de la App de Pedidos ya (Menú/PedidosYa Pagos) verás las acreditaciones que tenes disponible para usar",
+      "tags": "bau lunch",
+      "robot_responde": "Depende del país en el que te encuentres y del programa al que estés aplicando. Si estás en Argentina o Perú y aplicas al programa BAU Lunch, podrás obtener tu almuerzo a través de la aplicación de PedidosYa, donde verás las acreditaciones disponibles para usar [doc1]. Si estás en Chile, podrás obtener tu lunch a través de Tickets Restaurant emitidos por Edenred [doc1]. Si estás en Uruguay, se te acreditará un importe mensual destinado para este fin y lo verás reflejado en tu recibo de sueldo [doc1]."
+    },
+    {
+      "id_question": "5",
+      "question": "¿El almuerzo se acredita todos los días?",
+      "expected_response": "No la acreditación es semanal y se paga los viernes",
+      "tags": "bau lunch",
+      "robot_responde": "Depende del país en el que te encuentres. En Argentina y Perú, la acreditación del almuerzo es semanal, los viernes [doc2]. En Chile y Uruguay, la acreditación es mensual [doc1]. Por lo tanto, en Chile y Uruguay, el almuerzo no se acredita todos los días."
+    }
+  ]
+}

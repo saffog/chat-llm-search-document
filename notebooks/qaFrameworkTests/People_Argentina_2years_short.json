@@ -1,20 +1,5 @@
 {
-  "test_id": "test01",
-  "description": "Prueba de colaborador con 2 años de antiguedad, cuya unidad de trabajo se encuentra en Argentina",
-  "creation_date": "20240208",
-  "resources_data": {
-    "search_index": "people-culture-faq"
-  },
-  "template_rules": "",
-  "template_user": "",
-  "template_user_data": {
-    "name": "Fulanito Garza",
-    "role": "any",
-    "seniority": "24",
-    "country": "Argentina"
-  },
-  "template_context": "",
-  "template_context_data": {},
+  "used_templates": [],
   "questions_answers": [
     {
       "id_question": "1",
