@@ -13,9 +13,11 @@ BAUCHAT_TEMPLATE_USER_MESSAGE = os.environ.get("BAUCHAT_TEMPLATE_USER_MESSAGE","
 BAUCHAT_DEBUG = os.environ.get("BAUCHAT_DEBUG","")
 
 def print_required_variables(debug=True):
+    aoaiextutils.print_required_variables(debug)
     if debug:
         print(f"BAUCHAT_DEBUG: {BAUCHAT_DEBUG}")       
-        print(f"BAUCHAT_TEMPLATE_USER_MESSAGE: {BAUCHAT_TEMPLATE_USER_MESSAGE}")       
+        print(f"BAUCHAT_TEMPLATE_USER_MESSAGE: {BAUCHAT_TEMPLATE_USER_MESSAGE}")
+        
     else:
         print("Nothing to print")
 
@@ -26,10 +28,11 @@ def get_chat_completion(question):
 
 def generate_robot_responses_with_chat_completion(filename_to_test, 
                                                   debug=BAUCHAT_DEBUG, 
-                                                  printResult=True,
-                                                  completion_json_field='robot_answer'):
+                                                  printResult=False,
+                                                  completion_json_field='robot_answer',
+                                                  filename_result=""):
     
-    filename_to_read =  f"{filename_to_test}.json"
+    filename_to_read =  f"{filename_to_test}"
     with open(filename_to_read,encoding='utf-8') as file_read:
         datos = json.load(file_read)
 
@@ -50,8 +53,11 @@ def generate_robot_responses_with_chat_completion(filename_to_test,
     new_template[completion_json_field] = BAUCHAT_TEMPLATE_USER_MESSAGE 
     used_templates.append(new_template)
 
-    # Construct the filename with the current date and time
-    filename_to_write = f"result_{filename_to_test}_{current_datetime}.json"
+    if filename_result:
+        filename_to_write=filename_result
+    else:
+        # Construct the filename with the current date and time
+        filename_to_write = f"result_{filename_to_test}_{current_datetime}.json"
 
     json_data = {
         "used_templates": used_templates,
@@ -66,3 +72,5 @@ def generate_robot_responses_with_chat_completion(filename_to_test,
     # Writing the dictionary to a JSON file with the current date and time in the filename
     with open(filename_to_write, 'w') as file_write:
         file_write.write(json_string)
+    
+    return filename_to_write
