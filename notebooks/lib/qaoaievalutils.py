@@ -88,7 +88,7 @@ EVAL_QUERY_BETTER_RESPONSE = """<|im_start|>user
     ###RESPONSE_B###
     <|im_end|><|im_start|>assistant"""
 
-def transform_open_ai_compare_to_json(input_string, debug=False):
+def transform_open_ai_compare_to_json(input_string, debug=False, returnAsNiceJson=False):
     data = []
     if debug: print(f"transform_open_ai_compare_to_json : input to process : {input_string}")
     parts = input_string.replace("\n", "").replace("\r", "").split("Question-")
@@ -115,31 +115,32 @@ def transform_open_ai_compare_to_json(input_string, debug=False):
             if debug: print(f"transform_open_ai_compare_to_json : Item to add : {item}")
             data.append(item)
     if debug: print(f"transform_open_ai_compare_to_json : data to json : {data}")
-    return json.dumps(data, indent=2)
+    if returnAsNiceJson: return json.dumps(data, indent=2)    
+    return data
 
-def evaluate_robot_vs_human_response(robot_answer, human_answer, debug=False):
+def evaluate_robot_vs_human_response(robot_answer, human_answer, debug=False, returnAsNiceJson=False):
     prompt = EVAL_ROBOT_VS_HUMAN_PROMPT.format(robot_response=robot_answer, human_response=human_answer)
     if debug: print(f"evaluate_robot_vs_human_response : prompt : {prompt}")
     
     completion = aoaiutils.get_completion(input_prompt=prompt,debug=debug)
-    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug)
+    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug, returnAsNiceJson=False)
     if debug: print(f"evaluate_robot_vs_human_response : result : {result_as_json}") 
     return result_as_json
     
-def evaluate_query_robot_vs_human_response(user_query, robot_answer, human_answer, debug=False):
+def evaluate_query_robot_vs_human_response(user_query, robot_answer, human_answer, debug=False, returnAsNiceJson=False):
     prompt = EVAL_QUERY_ROBOT_VS_HUMAN_PROMPT.format(robot_response=robot_answer, human_response=human_answer,query=user_query)
     if debug: print(f"evaluate_query_robot_vs_human_response : prompt : {prompt}")
     
     completion = aoaiutils.get_completion(input_prompt=prompt,debug=debug)
-    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug)
+    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug, returnAsNiceJson=False)
     if debug: print(f"evaluate_query_robot_vs_human_response : result : {result_as_json}") 
     return result_as_json
 
-def evaluate_query_better_response(user_query, response_a, response_b, debug=False):
+def evaluate_query_better_response(user_query, response_a, response_b, debug=False, returnAsNiceJson=False):
     prompt = EVAL_QUERY_BETTER_RESPONSE.format(response_a=response_a, response_b=response_b, query=user_query)
     if debug: print(f"evaluate_query_better_response : prompt : {prompt}")
     
     completion = aoaiutils.get_completion(input_prompt=prompt,debug=debug)
-    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug)
+    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug, returnAsNiceJson=False)
     if debug: print(f"evaluate_query_better_response : result : {result_as_json}") 
     return result_as_json
