@@ -1,9 +1,0 @@
-[
-  {
-    "robot_answer": "S\u00ed, pero se requiere que el rango de horario laboral se mantenga por un mes",
-    "expected_answer": "Estimado Fulanito Garza, una de las tantas ventajas de trabar en Baufest son las siguientes: BAU Dollar, donde recibes el beneficio del 20% de tu salario en d\u00f3lares; BAU Health, reintegro del costo del gimnasio u otras actividades deportivas; BAU net, recibe una bonificaci\u00f3n del costo del servicio de internet; BAU Lunch, Baufest te paga el lunch; BAU Home, se te reintegra el costo de la mudanza y Anti tr\u00e1fico, tienes la posibilidad de ajustar tu horario laboral para evitar el tr\u00e1fico.",
-    "SequenceMatcher_result": {
-      "similar": 0,
-      "argument": 0.6
-    },
-    "chatgpt_result": 
