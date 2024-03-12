@@ -580,7 +580,7 @@ def conversation_with_data(request_body):
     base_url = AZURE_OPENAI_ENDPOINT if AZURE_OPENAI_ENDPOINT else f"https://{AZURE_OPENAI_RESOURCE}.openai.azure.com/"
     endpoint = f"{base_url}openai/deployments/{AZURE_OPENAI_MODEL}/extensions/chat/completions?api-version={AZURE_OPENAI_PREVIEW_API_VERSION}"
     history_metadata = request_body.get("history_metadata", {})
-    logging.debug(f"conversion_with_data : \nbody {body} \nheaders {headers} \nendpoint {endpoint} \nhistory_metadata {history_metadata}")
+    logging.debug(f"conversation_with_data : \nbody {body} \nheaders {headers} \nendpoint {endpoint} \nhistory_metadata {history_metadata}")
 
     if not SHOULD_STREAM:
         r = requests.post(endpoint, headers=headers, json=body)
@@ -588,15 +588,18 @@ def conversation_with_data(request_body):
         r = r.json()
         if AZURE_OPENAI_PREVIEW_API_VERSION == "2023-06-01-preview":
             r['history_metadata'] = history_metadata
-            return Response(format_as_ndjson(r), status=status_code)
+            response_result = Response(format_as_ndjson(r), status=status_code)
+            logging.debug(f"conversation_with_data(if) : response_result {response_result} : {format_as_ndjson(r)}")
+            return response_result
         else:
             result = formatApiResponseNoStreaming(r)
             result['history_metadata'] = history_metadata
-            return Response(format_as_ndjson(result), status=status_code)
-
+            response_result = Response(format_as_ndjson(result), status=status_code)
+            logging.debug(f"conversation_with_data(else) : response_result {response_result} : {format_as_ndjson(result)}")
+            return response_result
     else:
         responseValue = Response(stream_with_data(body, headers, endpoint, history_metadata), mimetype='text/event-stream')
-        logging.debug(f"conversion_with_data : responseValue {responseValue}")
+        logging.debug(f"conversation_with_data : responseValue {responseValue}")
         return responseValue
 
 def stream_without_data(response, history_metadata={}):
