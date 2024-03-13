@@ -1,0 +1,53 @@
+{
+  "used_templates": [],
+  "questions_answers": [
+    {
+      "id_question": "1",
+      "question": "¿Cuáles son los pilares de Baufest?"
+    },
+    {
+      "id_question": "2",
+      "question": "¿Qué comportamientos incluye cada pilar?"
+    },
+    {
+      "id_question": "3",
+      "question": "¿Qué comportamientos tengo que evitar como baufesiano?"
+    },
+    {
+      "id_question": "4",
+      "question": "¿De qué manera debe relacionarse un baufesiano con sus clientes?"
+    },
+    {
+      "id_question": "5",
+      "question": "¿Si tuviera que contratar empleados en Baufest, qué debo tener en cuenta?"
+    },
+    {
+      "id_question": "6",
+      "question": "¿Cuáles son los criterios de empleabilidad de Baufest?"
+    },
+    {
+      "id_question": "7",
+      "question": "¿Qué valores se ajustan a la cultura de Baufest?"
+    },
+    {
+      "id_question": "8",
+      "question": "¿Qué puedo hacer si alguien se comporta de manera indebida?"
+    },
+    {
+      "id_question": "9",
+      "question": "¿Existen otros canales para denunciar comportamientos?"
+    },
+    {
+      "id_question": "10",
+      "question": "¿Qué es el comité de compliance?"
+    },
+    {
+      "id_question": "11",
+      "question": "¿Dónde puedo obtener más información sobre comportamientos y políticas de Baufest?"
+    },
+    {
+      "id_question": "12",
+      "question": "¿Qué es el código de ética?"
+    }
+  ]
+}

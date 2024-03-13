@@ -284,16 +284,25 @@ def prepare_body_headers_with_data(request):
     # {delimiter}{user_question}{delimiter} \
     # "
 
-    template_rules = f"Recomendación 1 : Usa los datos del usuario delimitados por ###user_data## para complementar tu respuesta.\
-        Recomendación 2 : Usa el nombre del usuario para dirigirte en tu respuesta, si cuentas con ese dato.\
-        Recomendación 3 : Usa el historial para complementar tu respuesta."
-
-    template_user_data = f"###user_data### Nombre del Usuario: {user_name} \
-    País de la unidad: {user_location} ###user_data###"
-
-    template_user_message = f"Responde la pregunta delimitada por ###Question###. \
-    Para responder tu pregunta sigue las siguientes recomendaciones: {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
+    # template_rules = f"Recomendación 1 : Usa los datos del usuario delimitados por ###user_data## para complementar tu respuesta.\
+    #    Recomendación 2 : Usa el nombre del usuario para dirigirte en tu respuesta, si cuentas con ese dato.\
+    #    Recomendación 3 : Usa el historial para complementar tu respuesta."
+    #
+    # template_user_data = f"###user_data### Nombre del Usuario: {user_name} \
+    # País de la unidad: {user_location} ###user_data###"
+    #
+    # template_user_message = f"Responde la pregunta delimitada por ###Question###. \
+    # Para responder tu pregunta sigue las siguientes recomendaciones: {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
     
+    template_experimental = """You are a human resources assistant, that works for Baufest company.
+    You must answer the question made by the user, the question is delimited by ###Question###.
+    If the user does not provide enough information, remember the questions are from ethics and the context is in Baufest company.
+    Your answer must be in spanish
+    ###Question###
+    {user_question}
+    ###Question###"""
+
+    template_user_message = template_experimental.format(user_question=user_question)
     logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
 
     request_messages[-1]['content'] = template_user_message
@@ -580,7 +589,7 @@ def conversation_with_data(request_body):
     base_url = AZURE_OPENAI_ENDPOINT if AZURE_OPENAI_ENDPOINT else f"https://{AZURE_OPENAI_RESOURCE}.openai.azure.com/"
     endpoint = f"{base_url}openai/deployments/{AZURE_OPENAI_MODEL}/extensions/chat/completions?api-version={AZURE_OPENAI_PREVIEW_API_VERSION}"
     history_metadata = request_body.get("history_metadata", {})
-    logging.debug(f"conversion_with_data : \nbody {body} \nheaders {headers} \nendpoint {endpoint} \nhistory_metadata {history_metadata}")
+    logging.debug(f"conversation_with_data : \nbody {body} \nheaders {headers} \nendpoint {endpoint} \nhistory_metadata {history_metadata}")
 
     if not SHOULD_STREAM:
         r = requests.post(endpoint, headers=headers, json=body)
@@ -588,15 +597,18 @@ def conversation_with_data(request_body):
         r = r.json()
         if AZURE_OPENAI_PREVIEW_API_VERSION == "2023-06-01-preview":
             r['history_metadata'] = history_metadata
-            return Response(format_as_ndjson(r), status=status_code)
+            response_result = Response(format_as_ndjson(r), status=status_code)
+            logging.debug(f"conversation_with_data(if) : response_result {response_result} : {format_as_ndjson(r)}")
+            return response_result
         else:
             result = formatApiResponseNoStreaming(r)
             result['history_metadata'] = history_metadata
-            return Response(format_as_ndjson(result), status=status_code)
-
+            response_result = Response(format_as_ndjson(result), status=status_code)
+            logging.debug(f"conversation_with_data(else) : response_result {response_result} : {format_as_ndjson(result)}")
+            return response_result
     else:
         responseValue = Response(stream_with_data(body, headers, endpoint, history_metadata), mimetype='text/event-stream')
-        logging.debug(f"conversion_with_data : responseValue {responseValue}")
+        logging.debug(f"conversation_with_data : responseValue {responseValue}")
         return responseValue
 
 def stream_without_data(response, history_metadata={}):
