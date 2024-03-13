@@ -284,16 +284,25 @@ def prepare_body_headers_with_data(request):
     # {delimiter}{user_question}{delimiter} \
     # "
 
-    template_rules = f"Recomendación 1 : Usa los datos del usuario delimitados por ###user_data## para complementar tu respuesta.\
-        Recomendación 2 : Usa el nombre del usuario para dirigirte en tu respuesta, si cuentas con ese dato.\
-        Recomendación 3 : Usa el historial para complementar tu respuesta."
-
-    template_user_data = f"###user_data### Nombre del Usuario: {user_name} \
-    País de la unidad: {user_location} ###user_data###"
-
-    template_user_message = f"Responde la pregunta delimitada por ###Question###. \
-    Para responder tu pregunta sigue las siguientes recomendaciones: {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
+    # template_rules = f"Recomendación 1 : Usa los datos del usuario delimitados por ###user_data## para complementar tu respuesta.\
+    #    Recomendación 2 : Usa el nombre del usuario para dirigirte en tu respuesta, si cuentas con ese dato.\
+    #    Recomendación 3 : Usa el historial para complementar tu respuesta."
+    #
+    # template_user_data = f"###user_data### Nombre del Usuario: {user_name} \
+    # País de la unidad: {user_location} ###user_data###"
+    #
+    # template_user_message = f"Responde la pregunta delimitada por ###Question###. \
+    # Para responder tu pregunta sigue las siguientes recomendaciones: {template_rules} {template_user_data} ###Question### {user_question} ###Question###"
     
+    template_experimental = """You are a human resources assistant, that works for Baufest company.
+    You must answer the question made by the user, the question is delimited by ###Question###.
+    If the user does not provide enough information, remember the questions are from ethics and the context is in Baufest company.
+    Your answer must be in spanish
+    ###Question###
+    {user_question}
+    ###Question###"""
+
+    template_user_message = template_experimental.format(user_question=user_question)
     logging.debug(f"prepare_body_headers_with_data : template_user_message {template_user_message}")
 
     request_messages[-1]['content'] = template_user_message
