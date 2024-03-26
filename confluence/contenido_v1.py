@@ -1,9 +1,11 @@
+from dotenv import load_dotenv
+import os
 import funciones_v1
 
-dominio_confluence = 'baufest.atlassian.net'
+dominio_confluence = os.getenv('Dominio_confluence')
+usuario = os.getenv('Usuario_confluence')
 page_id = '903413870' 
-usuario = 'svilchis@baufest.com'
-token = 'ATATT3xFfGF0gSwgbo70SselECLe7sXvyLPRWzn8rO6gVhXPpVAmkCZ8-tmNjpxT06wYw_PJT5A14578r4Y2rhWPzKCTdlhQt88fBy39azRC-FmD8wkTXwhWSbnSP2kQ2PbxPGqnYsbp38qdceUFVDQmj5de6yD6s9D8y3MtjEe3ieXP1oYuvtY=C545D6FD'
+token = os.getenv('Token_ID')
 
 urls = [
     f'https://{dominio_confluence}/wiki/rest/api/content/{page_id}',
