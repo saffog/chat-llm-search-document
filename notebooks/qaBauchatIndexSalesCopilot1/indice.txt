@@ -1,0 +1,825 @@
+ Industrias 22
+ Agroindustria 23
+ Bunge S.A. 24
+ 2012 - Bunge - Evaluación de Productos de Desarrollo 25
+ 2016 - Bunge - Consultoría JIRA 28
+ 2016 - Bunge - Soporte Correctivo y Evolutivo CFS 29
+ 2017 - Bunge - 31
+ 2018 - Bunge - Autogestión de Balanzas 32
+ 2017 - Bunge - Servicios de desarrollo 34
+ ASOCIADOS DON MARIO S.A. - GDM 35
+ 2013 - DONMARIO - Sincronización de aplicaciones 36
+ 2014 - DONMARIO - Modernización del Área de Investigación 38
+ 2018 - DONMARIO - Migración y Capacitación Jira 40
+ 2018 - DONMARIO - Soporte de Desarrollo e Investigación 42
+ 2019 - DONMARIO - Migración a Azure DevOps 43
+ Louis Dreyfus Commodities 44
+ 2019 - Dreyfus - Soporte Evolutivo Site TI e industrias (Sharepoint) 45
+ 2016 - Dreyfus - Consultoría sobre Sistema de Planta 47
+ MOLINOS AGRO 49
+ 2013 - Molinos Agro - Scato II 50
+ 2013 - Molinos Agro - Consolidacion Datos de Productores 52
+ 2014 - Molinos Agro - Mejora Continua 53
+ 2014 - Molinos Agro - Migración de Stage & Gates 55
+ 2014 - Molinos Agro - Managed Application Services SharePoint & Web 56
+ 2014 - Molinos Agro - Producciones II 57
+ 2016 - Molinos Agro - Focalización SharePoint 58
+ 2016 - Molinos Agro - SCATO Multi Sociedad 60
+ 2015 - Molinos Agro - Digitalización de Cartas de Porte 62
+ 2019 - MOA - Soporte y Evolutivo SCATO 63
+ 2019 - MOA - Soporte y Evolutivo DataAgro 65
+ 2019 - MOA - Soporte Data Agro Extensión 67
+ 2020 - MOA - MOA Operaciones 69
+ 2020 - MOA - Circuito de Pagos 71
+ 2020 - MOA - Scato Puerto 73
+ Yakima Chief Hops 75
+ Nutrien Ag Solutions 76
+ 202107 - Nutrien - Dashboard Comercial 77
+ Alimentos / Bebidas 79
+ ARCOR S.A.I.C. 80
+ 2015 - Arcor - Mantenimiento CQ 2015 81
+ COLUN 83
+ 201908 - COLUN - Desarrollo App Soy Colun 84
+ 202204 - COLUN - Implementación JSM/JWM para ATC 86
+ DANONE 88
+ 2023 - Danone RTM 89
+ 2017 - Danone - Desarrollo del módulo impresor 91
+ 2009 - Danone - Eficiencia en Producción 92
+ 201709 - Danone - Proximity Functional Support 95
+ 2015 - Danone - Reingeniería de Plataforma Operativa 97
+ 2016 - Danone - Consultoría de Ingeniería de Software 99
+ 2022 - Danone - Digital Products Agile Teams 101
+ DOLE FOODS 104
+ 2004 - Dole - Tranship 105
+ 2006 - Dole - Tranship Support 107
+ GRUPO BIMBO 109
+ 202303 - Grupo Bimbo - Sustentability Management 110
+ 202203 - Grupo Bimbo - PODs Data Route to Market, Deep Logistic, Food Waste 112
+ 201909 - Grupo Bimbo - Customización / Mantenimiento de Sistema CUC (CRM) 116
+ 201907 - Grupo Bimbo - Mantienimiento de Aplicación CUC - Catálogo de Clientes 118
+ 201701 - Grupo Bimbo - Servicio de Soporte Productivo 120
+ 2018 - Grupo Bimbo - Desarrollo EDI Cloud SPA-CIE 122
+ 2018 - Grupo Bimbo - Modelo de gobierno 123
+ 2018 - Grupo Bimbo - Soporte SPA Canadá Migración Quebec 124
+ 2017 - Grupo Bimbo - CIE - Mejoras y nuevos requerimientos 126
+ 2017 - Grupo Bimbo - Agile 4 Business 128
+ 2017 - Grupo Bimbo - CIE-Reactivación Precio Especial 131
+ 2017 - Grupo Bimbo - Sopore Boleto Bancario 133
+ 2017 - Grupo Bimbo - Mantenimiento UAT SPA Multipaís 134
+ 2017 - Grupo Bimbo - Implementación de Catálogo Único de Clientes Brasil, Boleto Bancario y Back Office.
+135
+ 2017 - Grupo Bimbo - Líder de proyecto y especialista funcional CUC-CIE 136
+ 2016 - Grupo Bimbo - SPX400 137
+ 2015 - Grupo Bimbo - BNX100 138
+ 2015 - Grupo Bimbo - Sistema de pedidos de autoservicio 139
+ 2009 - Grupo Bimbo - Catálogo de Clientes 141
+ INGREDION 143
+ 2013 - Ingredion - Servicio de aplicaciones administradas 144
+ 2014 - Ingredion - Carga de Facturas Web 146
+ MOLINOS RIO DE LA PLATA 148
+ XX - Molinos - SCATO II 149
+ PEÑAFLOR - GRUPO PEÑAFLOR 151
+ XX - X X 152
+ 2013 - Peñaflor - Pago de comisiones a vendedores con remuneración variable 154
+ 2014 - Peñaflor - Integración JDEdwards 156
+ SIMPLOT ARGENTINA SRL 158
+ 201810 - SIMPLOT - Yard Management 159
+ SWIFT ARGENTINA S.A. 160
+ 201604 - JBS Swift - Soporte Biztalk 161
+ TASA 163
+ 2022 - TASA - Proyecto Ecosondas 164
+ 2023 - TASA - Proyecto Ecosondas Fase II 167
+ ALICORP 169
+ 2023 - ALICORP - Célula QE para Digital 172
+ Construcción 174
+ Clark Dietrich 175
+ 2008 - Clark- Profit 176
+ Vía Célere 178
+ 2022 – Vía Célere – Auditoría y soporte App Cliente 179
+ Utilities 181
+ TRANSPORTADORA DE GAS DEL SUR 182
+ 2018 - TGS - Migración E-TGS 183
+ 2019 - TGS - Nueva Arquitectura E-TGS 185
+ 2019 - TGS - Migración COST 187
+ 2019 - TGS - Migración MAC 189
+ 2019 - TGS - Servidumbre Desing Thinking 191
+ 2019 - TGS - Tickets Backoffice Servidumbres 192
+ 2019 - TGS - Upgrade Jira y Confluence 193
+ 2020 - TGS - Business Agility & Customer Experience 194
+ 2020 - TGS - Migración SPAC Externos 196
+ 2023 - TGS - Migración SPAC Internos 198
+ PAMPA ENERGIA 200
+ 2018 - Pampa -Web Corporativa 201
+ 2018 - Pampa- CRM 202
+ 2019 - Pampa - mejoras en CRM Electricidad 203
+ 2019 - Pampa - Mejoras WF Creditos 204
+ 2019 - Pampa - Ajustes Biztalk por Res AFIP 205
+ 2019 - Pampa - CRM GAS 206
+ PAN AMERICAN ENERGY 207
+ 2018 - PAE- Configuración Jira Software 208
+ PECOM ENERGIA 210
+ 2019 - PECOM - Mejoras Intranet 211
+ PETROBRAS ENERGIA 212
+ 2015 - Petrobras - Mejoras CRM 213
+ YPF 214
+ 2013-YPF-Servidumbres 215
+ 2018 - YPF- Arquitectura en seguridad cloud 217
+ TOTAL AUSTRAL 219
+ SINOPEC ARGENTINA 220
+ 2018 - Sinopec- Fábrica Sharepoint 221
+ XX - Sinopec - AFE MANAGEMENT SYSTEM (AMS) 222
+ XX - Sinopec - Sourcing Request Site 224
+ 2015 - Sinopec - Arquitectura de integración 226
+ 2015 - Soporte y Fábrica de Aplicaciones 228
+ 2014 - Sinopec - AMSIII Mejoras 230
+ 2014 - Sinopec - Soporte SHP - UX 231
+ SAN ANTONIO INTERNACIONAL 232
+ 2013 - SAI - Plataforma Corporativa 233
+ 2014 - SAI - Migración SGI a SharePoint 2013 235
+ PLUSPETROL S.A. 236
+ 2005 - Pluspetrol - Control de Contratistas 237
+ 2006 - Pluspetrol - Legajo de pozos 239
+ 2012 - Pluspetrol - Sistema de Gestión de Accidentes 241
+ 2005 - Pluspetrol - Soporte y Fábrica de Aplicaciones 243
+ 2014 - Pluspetrol - Portal de seguridad para el lote 108 245
+ SHELL / Raizen 247
+ 2004 - Shell - Laboratorio de Control de Calidad de Lubricantes 248
+ 2019 - Raizen- Intranet SharePoint 250
+ SOLGAS 251
+ 2018 - Solgas - TransMobile - Facturación electrónica 252
+ 2020 - Solgas - Servicio SaaS TransMobile 254
+ 2020 - Solgas - TransMobile - B2B.Granel 257
+ 2021 - Solgas - Soporte y Mantenimiento de Sistemas 259
+ 2022 - Solgas - Soporte y Mantenimiento de Sistemas 261
+ 2023 - Solgas - Soporte y Mantenimiento de Sistemas 263
+ 2024 - Solgas - Soporte y Mantenimiento de Sistemas 266
+ REPSOL 269
+ 2018 - REPSOL - TransMobile Facturación Electrónica 270
+ 2022 - Repsol - Soporte y Mantenimiento de Sistemas 272
+ 2023 - Repsol - Soporte y Mantenimiento de Sistemas 274
+ 2024 - Repsol - Soporte y Mantenimiento de Sistemas 276
+ SAESA 278
+ 2018 - Saesa - Integraciones Procesos Regulatorios 279
+ 2019 - Saesa - Migración Interfases SAP 281
+ Retrospectiva de RmCap 283
+ 2019 - Saesa - Procesos Regulatorios Fase II 285
+ 2019 - Saesa - Equipo BI Operaciones 287
+ 2019 - Saesa - Registro y Monitoreo de Capacitaciones 289
+ LUZ DEL SUR 291
+ 2019 - LDS - MIgración VB3 a Web 292
+ ENAEX 294
+ XX - Enaex - Gestión Logística 295
+ 2016 - Enaex - Nueva Aplicación RIO 297
+ 2017 - Enaex - Plataforma Reconocimiento 298
+ 2016 - Enaex - Aplicación Mobile Capacity 300
+ Enel - Edesrur 302
+ 2019 - Edesur - Agile 303
+ CAMUZZI GAS 305
+ 201710 - CAMUZZI GAS - Desarrollo de la Oficina Virtual 306
+ 201805 - CAMUZZI GAS - Mantenimiento y Soporte de la Oficina Virtual y Plataforma Comercial 308
+ ENERSA - ENERGIA DE ENTRE RIOS 310
+ 2014 - Enersa - Enersa Mobile 311
+ 2017 - Enersa - Sistema de Calculo de Calidad de Servicio 313
+ 2019 - Enersa - Mantenimiento ENERSA Mobile 314
+ Empresa Distribuidora de Energía Norte S.A. 316
+ 2018- Edenor- Mantenimiento aplicación Mobile 317
+ Enel /Edesur 318
+ 2019-Enel-Capacitación Agile 319
+ CAMMESA 320
+ ABASTIBLE 321
+ 2021 - Abastible - Proyecto Smartlock 322
+ 2022 - Abastible - F3 Automatización Atención al Cliente 324
+ GRUPO SAESA 326
+ 2018 - Saesa - Procesamiento de datos Normativos y regulatorios 327
+ 2020 - SAESA - Agile POD Desarrollo Digital 329
+ AYSA - AGUAS Y SANEAMIENTOS ARGENTINOS 331
+ 2018 - AySA - Sistema de Interrupción del Servicio 332
+ 2014 - AySA - Ampliación del sistema de gestión y control de obras 334
+ 2011 - AySA - Sistema de validación de Dispatching 336
+ Finanzas 338
+ BANCO DE CRÉDITO Y SECURITIZACIÓN 339
+ 2016 - Banco de credito -Migración Windows 7 340
+ BANCO MACRO 342
+ BANCO DE VALORES 343
+ BBVA 344
+ 2019 - BBVA - Célula de desarrollo Java 345
+ 2019 - BBVA - Transformación Agile UY 346
+ 2019 - BBVA - Transformación Agile 347
+ 2020 - BBVA - Integración MODO 348
+ 2021 - BBVA - ORANGE 349
+ 2021 - BBVA - OLIMPIA 350
+ 2021 - BBVA - Devops Incubations 351
+ 2021 - BBVA - Reclamos 353
+ BANCO GALICIA 355
+ 2016 - Banco Galicia - Sistema de Asambleas 356
+ 2017 - Banco Galicia - Assessment QA 358
+ 2018 - Banco Galicia - Assessment Colaboradores 360
+ 2018 - Banco Galicia - Galicia Convenios | Prestamos Personales 362
+ 2019 - Banco Galicia - Arquitectura de Ventas - Integración 364
+ 2018 - Banco Galicia - Ola 2 Transformación Digital 366
+ 2019 - Banco Galicia - Journey de Créditos 368
+ 2019 - Banco Galicia - Squad Plataforma Omnicanal (POM) 370
+ 2019 - Banco Galicia - First Contact Resolution- Integración 372
+ 2019 - Banco Galicia - Ecosistema Galicia Rural 374
+ 2017 - Banco Galicia - Servicios PMO 376
+ 2019 - Banco Galicia - Nuevo Portal Quiero! 377
+ 2019 - Banco Galicia - Nuevo Administrador de Promociones NAP 378
+ 2019 - Banco Galicia - Quiero! Tarjeta Naranja 379
+ 2019 - Banco Galicia - Nueva Célula Convenios 380
+ 2019 - Banco Galicia - Préstamos por Convenios - Prendarios 381
+ 2020 - Banco Galicia - SIE Oficios Judiciales 382
+ 2020 - Banco Galicia - Migración Core Quiero! 384
+ 2020 - Banco Galicia - Unificación POM 386
+ 2022 - Banco Galicia - Data & Analytics 389
+ 2022 - Banco Galicia - App Asamblea Accionistas 391
+ BANCO DE LA PROVINCIA DE NEUQUEN 393
+ BANCO CENTRAL DE LA REPÚBLICA ARGENTINA 394
+ BANCO HIPOTECARIO S.A. 395
+ 201805 - Banco Hipotecario - Adminitrador de Pagos 396
+ 201601 - Banco Hipotecario - Coaching Agile 398
+ 201712 - Banco Hipotecario - Arquitecto Tarshop 400
+ 201608 - Banco Hipotecario - #BHAgil 402
+ 201511 - Banco Hipotecario - Estrategia de RollOut - Ciclos I y II - Ambientes & Requerimientos 404
+ 201506 - Banco Hipotecario - Migración windows 7 406
+ 2015 - Banco Hipotecario - Assessment de Procesos y Herramientas de Desarrollo 408
+ 2019 - Banco Hipotecario - Mejoras Testing & QA 410
+ 2017 - Banco Hipotecario - Implementación de Mejoras ALM 412
+ 2015 - Banco Hipotecario - Estrategia de RollOut - Mesa de Pruebas 414
+ 2016 - Banco Hipotecario - Evaluación y Estimación de Proyectos 416
+ 2017 - Banco Hipotecario - Stress Test Oracle BPM-10 418
+ 2016 - Banco Hipotecario - Control Pagos Desarrollo Urbanístico 420
+ 2019 - Banco Hipotecario - Celula de Desarrollo Mobile 422
+ 2019 - Banco Hipotecario - Gestión de Ambientes y Ciclo de Vida (GYGA) 424
+ BOLSA DE COMERCIO DE ROSARIO 426
+ PRISMA MEDIOS DE PAGO S.A. 427
+ 2017 - Prisma - Soporte y Mantenimiento PTyS 428
+ 201811 - Prisma - PRS205 - Soporte y Mantenimiento PTyS 430
+ 201808 - Prisma - Desarrollo PHE 432
+ 201901 - Prisma - Mantenimiento PHE 434
+ 201908 - Prisma - Escuelita / Servicio Software Factory Base24 436
+ 201502 - Prisma - Equipo de Arquitectura de Integración para billetera electrónica (Todo Pago) 437
+ 201910 - Prisma - Transformación Agile de la Organización 439
+ 201505 - Prisma - Factory de Testing 441
+ 201809 - Prisma - Administración y Soporte JIRA 443
+ 201910 - Prisma - Soporte de Equipo de Arquitectura IT 445
+ 201612 - Prisma - Oustsourcing desarrollador Cobol 447
+ 202001 - PRISMA - Cruce de Fondos 449
+ EQUIFAX - VERAZ 451
+ TARSHOP S.A. 452
+ BANCO SANTANDER 453
+ XX - Banco Santander - Sistema de Telemarketing 454
+ XX - Banco Santander - Sistema de Banca Telefónica 456
+ XX - Banco Santander - Sistema de Gestión de Empresas 458
+ xx - Banco Santander - Desarrollo y Mantenimiento de Aplicaciones 460
+ xx - Banco Santander - xx 462
+ 2010 - Banco Santander - Sistema de Control de Recaudación 464
+ 2014 - Banco Santander - SANTANDER SHAREPOINT 001 466
+ 2016 - Banco Santander - IATA 468
+ 2016 - Banco Santander - BIG 470
+ 2017 - Banco Santander - SIVD/SL 472
+ 2017 - Banco Santander - SRVTRAN 474
+ 2017 - Banco Santander - GEMINIS 476
+ 2016 - Banco Santander - Perfiles Agile 478
+ 2017 - Banco Santander - SGE 480
+ 2018 - Banco Santander - ENRI 482
+ 2018 - Banco Santander - WorkCafé 484
+ 2018 - Banco Santander - MALTA 486
+ 2018 - Banco Santander - MESAC/ERI 488
+ 2018 - Banco Santander - ROyT 490
+ 2019 - Banco Santander - Whatsapp 492
+ 2019 - Banco Santander - Recibos Digitales 494
+ 2019 - Banco Santander - Gimnasio Garay 496
+ 2019 - Banco Santander - Watson 498
+ SYSCAC 500
+ 2017 - SysCAC - Sistema de reconocimiento de cheques por dispositivos mobile 501
+ MERCADO ABIERTO ELECTRÓNICO 503
+ XX - Mercado abierto electrónico - Order Routing System 504
+ BANCO IXE 506
+ 2009 - Banco IXE - Base Unificada de Personas 507
+ Banco Santander México 509
+ 2019 - SANTANDER - RT CORE 510
+ 2019 - Santander - Structured Finance Document Agency - SFDA 511
+ 2019 - Santander - Notificaciones - RT Core 512
+ 2019 - Santander - Neo Jupiter 513
+ DAIMLER FINANCIAL SERVICES (DFS) México 514
+ 2019 - DAIMLER - MIGRACIÓN DE APLICACIONES myDFS & myMBF 515
+ PROFUTURO 517
+ 2017 - PROFUTURO - Consultoria Transformación Digital 518
+ Depósito Central de Valores 520
+ 2017 - Depósito Central de Valores - DCV - Migración ClearQuest a JIRA e Implementación GIT 521
+ 2017 - Depósito Central de Valores - Migración RTC a Jira 523
+ 2019 - Depósito Central de Valores - Upgrade BD Jira 525
+ BANCO HSBC 527
+ 2014 - Banco HSBC - Implementación Agile@HSBC 528
+ 2016 - Banco HSBC- Implementacio ndevOps 530
+ 2017 - Banco HSBC - Service of Testing Improvement 532
+ 2015 - Banco HSBC - Software Delivery Streamlining in México 534
+ XEROX 536
+ 2019 - XEROX - Construcción de un SDK 537
+ ZIGO CAPITAL 538
+ 2017 - Zigo Capital - Core Bancario 539
+ VISA SA 541
+ 2015 - VISA - Abono mantenimiento 542
+ NACIONAL MONTE DE PIEDAD 543
+ 2017 - Nacional Monte - Implementación Agile 544
+ OPENBIT 545
+ 2019 - OpenBit - Portal BitCow 546
+ AFIRME 547
+ xx - Afirme - xx 548
+ Grupo Financiero Base 550
+ 2019 - Grupo Financiero Base - Adopción Agile 551
+ PLAY DIGITAL 553
+ 2020 - Play Digital - Desarrollo de MODO 554
+ ICBC Argentina 556
+ 2020 - ICBC Argentina - Legajo Digital 557
+ 2020 - ICBC Argentina - e-WALLET (Billetera Digital) 559
+ 2021 - ICBC Argentina - Prendarios 562
+ 2022 - ICBC Argentina - Modernización Mobile Banking 564
+ GALICIA SEGUROS 566
+ 2020 - Galicia Seguros - Assessment de Arquitectura Empresarial 567
+ Intercam Fondos S.A. 569
+ 2021 - Intercam Fondos - i-Previsional 2.0 570
+ Banco Popular Dominicano 572
+ 2021 – BPD – Atacante Digital 573
+ National Commercial Bank of Jamaica 575
+ 2021-NCB-CBDC 576
+ BigFin 578
+ 2022 - BigFin - BigFin App 579
+ CAJA PIURA 581
+ 2021 - Caja Piura - Formación en agilidad 582
+ 2021 - Caja Piura - Metodología de tribu ágil para app Fase I 584
+ 2022 - Caja Piura - Estrategia y CoE de Agilidad 587
+ SEGUROS RIMAC 589
+ 2021 - RIMAC - Acompañamiento DevOps 590
+ INTERBANK 592
+ 2020 - Interbank - Arquitectura - Provisión de roles clave 593
+ 2021 - Interbank - Crew Clientes - Acompañamiento Devops 595
+ 2022 - Interbank - Open Banking - Provisión de roles QA para Estrategia de pruebas y ejecución de pruebas
+597
+ 2022 - Interbank - Crew Medios de Pago - Provisión de roles clave 599
+ MI BANCO 601
+ 2023 - Mi Banco - Modelo gobierno IaC 602
+ Mc Kinsey 604
+ 2022 - Mc Kinsey - Iniciativa Digital 605
+ Cetelem 607
+ 2015 - Ongoing - Cetelem - Servicio de Outsourcing de Aplicaciones 608
+ 2017 - Cetelem - Assessment / Desarrollo de Buró de Crédito 610
+ 2018 - Cetelem - Desarrollo AMLv2 BNP 612
+ 2018 - Cetelem - Mejoras Buro Crédito PM / PF 613
+ 2016 - Cetelem - Desarrollo Interfaces CCk / Hyundai 614
+ Bancoppel 615
+ 2022 - Actualización CLM 616
+ Gentera 619
+ 2023 - Iniciativa Digital 620
+ Gobierno 623
+ ANSES 624
+ 2011 - Anses - XX 625
+ Fundación Sadosky 627
+ 2014 - Fundación Sadosky - Almacenamiento y Cotejamiento de Pericias de ADN (GENis) 628
+ Gobierno de la Ciudad de Buenos Aires (GCBA) 630
+ 2016 - GCBA - Agencia de Sistemas de Información 631
+ 2016 - GCBA - Portal InnoVaires 632
+ 2016 GCBA - Equipo de testing 633
+ MINISTERIO DE TRABAJO 634
+ 2011 - Ministerio de Trabajo - Planificación y Liquidación de Viajes 635
+ MUNICIPALIDAD DE SAN ISIDRO 637
+ 2014 - Municipalidad San Isidro - Concentrador de Interfaces para laboratorios 638
+ Manufactura 640
+ GRUPO BERCOMAT 641
+ KIMBERLY-CLARK 642
+ 2014 - KIMBERLY-CLARK - Solución Mobile para Ordenes de Servicio 643
+ 2014 - Kimberly-Clark - Dispensers Mobile 645
+ 2017 - KIMBERLY-CLARK - Gestion de proyectos 646
+ MIRGOR 648
+ 2016 - Mirgor - Sharepoint - Repositorio Documental 649
+ NATURA/AVON - NATURA &CO 650
+ 201807 - AVON - Mantenimiento Portales y Aplicaciones Sobre Sharepoint 651
+ NEWSAN 652
+ 202006 - Newsan - Atlassian Operation Center 653
+ NIKE ARGENTINA 655
+ 2014 - NIKE - Pos data 656
+ 2014 - NIKE - Mantenimiento/Servicio POS data 658
+ RADIO VICTORIA FUEGUINA 660
+ RECKITT-BENCKISER 661
+ 202007 - Reckitt - Explotación del Sellout 662
+ 202012 - Reckitt Benckiser- Trade Promotions 664
+ 202106 Supply & Finance Reports 667
+ S. C. JOHNSON & SON INC. 668
+ XX - SCJ - Sistema de calidad 669
+ XX - SCJ - Sistema de intercambio electrónico de documentos 671
+ XX - SCJ - Sistema de ingresos y egresos 673
+ XX - SCJ - Plataforma de loT 675
+ XX - SCJ - Reingeniería de Interfaces Nuevo Sistema de RRHH 677
+ 2007 - SCJ - Soporte de aplicaciones 679
+ 2004 - SCJ - Visa Portfolio 680
+ 2012 - SCJ - Alianza comercial 682
+ 2011 - SCJ - Implementación de SAP 684
+ 2009 - SCJ - DBA Support 686
+ 2012 - SCJ - Point of Sales Support 687
+ 2013 - SCJ - HR Outsourcing | Application Transition 689
+ 2013 - SCJ - SAP Archiving Services 691
+ 2011 - SCJ - Automated Regression Testing 692
+ 2013 - SCJ - Managed Application Service 693
+ 2013 - SCJ - BW Support US 694
+ 2013 - SCJ - GXS Outsourcing 696
+ 2012 - SCJ - SQL & OLAP Development 697
+ 2013 - SCJ - SAP Portals & Collaboration 698
+ 2013 - SCJ - ADIS Support 699
+ 2015 - SCJ - E-Commerce Services 700
+ 2015 - SCJ - Sharepoint and Office Managed Services 701
+ 2015 - SCJ - ADIS - AQS - CRC 702
+ 2016 - SCJ - CIBA SharePoint Development 703
+ 2010 - SCJ - Sistema de Centro de Atención al Consumidor 705
+ 2002 - SCJ - Americas Outsourced Applications Support 706
+ 2013 - SCJ - Process Improvement 707
+ 2009 - SCJ - Soporte de 1° Nivel para SCJ 709
+ 2015 - SCJ - Soporte Access 711
+ 2017 - SCJ - CAT Suppport 713
+ 2017 - SCJ - DAL - STORK content & metadata migration 714
+ 2017 - SCJ - Infraestructure Support 715
+ SMURFIT KAPPA 716
+ 2019 - SMURFIT KAPPA - PRUEBAS DE DESEMPEÑO 717
+ TENARIS 719
+ 2011 - Tenaris - Sistema de Patio de Barras 720
+ 2012 - Tenaris - Licensee Network 723
+ 2012 - Tenaris - Outsourcing Servicio de Ciberseguridad y Desarrollo 725
+ 2013 - Tenaris - Dispatch Planning Tool 727
+ 2014 - Tenaris - Compliance Online 729
+ 2014 - Tenaris - Celda de Desarrollo Siderca 731
+ 2015 - Tenaris - Mantenimiento de la Aplicación Móvil de Techint 733
+ 2017 - Tenaris - Soporte y Mantenimiento Evolutivo de IT Tools 734
+ 2020 - Tenaris - Modulo ACAT 736
+ 2021 - Tenaris - Data Engineering Service 738
+ 2022 - Tenaris - POD Digital Net Core 740
+ TOYOTA 742
+ XX - Toyota - G - SYSTEM 743
+ XX - Toyota - PGR 745
+ XX - Toyota - New Frame System 747
+ UNILEVER 749
+ 2017 - Unilever - Data Quality Domicilios 750
+ 2020 - Unilver - Coaching Organizacional 752
+ Volkswagen 754
+ 2021 - VW - Entrenamiento Certificación SM 755
+ Medios 757
+ Grupo Clarin 758
+ 2019 - ARTEAR - Consultoría DevOps 759
+ COVEDISA 761
+ La Nación 762
+ 2008 - La Nación - Mantenimiento de Aplicaciones 763
+ 2008 - La Nación - Sistema Club La Nación 765
+ 2008 - La Nación - Soporte y Fábrica de Aplicaciones Comerciales 767
+ 2015 - La Nación - Proyecto Conectándonos 769
+ 2016 - La Nación - Órdenes de Publicidad Web 771
+ 2018 - La Nación - Autogestión - Desarrollo Reclamos Online 773
+ 2018 - La Nación - Proyecto Suscripciones 775
+ 2019 - La Nación - Integrador SAP 777
+ SIA INTERACTIVE 779
+ 2016 - SIA Interactive - Dex Broker 780
+ Turner Internacional 781
+ 2015 - Turner - Migración Aleph 782
+ 2016 - Turner - Placer 784
+ 2016 - Turner - Soporte Correctivo y Evolutivo Órdenes de Publicidad 786
+ 2017 - Turner - Desarrollo Video On Demand (VOD) 788
+ 2017 - Turner - Soporte BI Futbol Argentino 789
+ 2018 - Turner - Migración de Catálogo de Contenidos 791
+ 2018 - Turner - SISCOM 793
+ 2019 - Turner - Migración Módulo Pre-billing 795
+ 2019 - Turner - Placement Deportes 797
+ 2019 - Turner - Soporte Correctivo y Evolutivo Aleph 799
+ 2019 - Turner - Design Thinking BIM 801
+ 2019 - Turner - Diseño y Prototipado Media 803
+ IZZI TELECOM (CABLEVISIÓN MÉXICO) 805
+ 2012 - Izzi Telecom - Consultoría en Ingeniería de software 806
+ XX - Izzi Telecom - Adopción de Metodologías Agiles 808
+ DRIDCO (Grupo Diario La NACIÓN) 810
+ XX - Dridco - Depagos.com 811
+ Codere Argentina S.A. 813
+ 2011- Codere Argentina - Evaluaciones de Desempeño 814
+ 2010 - Codere - Tómbola 817
+ BOLDT GAMING 819
+ 2014 - Boldt gaming - Implementación de Mejoras y Plan de Acción 820
+ 2015 - Boldt gaming - Testing Unitario Automatizado - IC 822
+ 2016 - Boldt gaming - Auditoria de Seguridad 824
+ 2016 - Boldt gaming - PM (SDL) para Nuevo Libra 825
+ 2023-BOLDT-Transformación Agile 826
+ Retail 828
+ ABCDIN 829
+ 201807 - ABCDIN - Agile Coaching 830
+ CENCOSUD 832
+ 2005 - Cencosud − Sistema de Gestión de Solicitudes 833
+ 201211 - Cencosud- Software Factory / Mantenimiento y Soporte de Aplicaciones Varias 834
+ 2015 - Cencosud - Solución Fidelidad Analytics 836
+ 201604 - CENCOSUD - Portal de Procesos y Workflow Factory 838
+ 2017 - Cencosud - Mantenimiento Microsoft EPM 841
+ 2017 - Cencosud - Cleansing de Usuarios 842
+ 201904 - Cencosud - Portal Regional de RRHH 844
+ 201906 - Cencosud - Catalogación de Productos 846
+ 201907 - Cencosud - Flexibilización de Entrega E-Commerce Easy 848
+ 201910 - Cencosud - Servicio de Workflow Factory y Mantenimiento Portal 850
+ 201911 - Cencosud - Mantenimiento E-Commerce Easy 852
+ 202001 - Cencosud - POC BIG DATA - AWS 854
+ 2020 - Cencosud- Agile POD Ingeniería del Software 856
+ 202010 - Cencosud - CenCommerce Portal de Autogestión 858
+ 202103 - Cencosud - Consultoría de Datos eCommerce 860
+ 202102 - Cencosud - POS Servicio Gateway de Campañas 863
+ 202109 - Cencosud - POS Easy 865
+ 202110 - Cencosud - RPA 867
+ 202111 - Cencosud - Seguridad Cloud 870
+ 202112 - Cencosud - Coaching Equipo POS (SM+HC) 873
+ 202201 - Cencosud - Fase II 875
+ 202202 - Cencosud - CenCommerce Fulfillment 877
+ 202206 - Cencosud - Arcus 879
+ 202207 - Cencosud - Ecommerce Staffing roles desarrollo 883
+ COPPEL 885
+ 2020-2022 - COPPEL - Desarrollo de nuevas funcionalidades para Sistema de Punto de Venta 886
+ 2020 - COPPEL- Equipo Outsourcing BYA 888
+ 2022 - COPPEL - Adquirencia 890
+ 2021 - COPPEL - Devops (Automatización y Monitoreo de Ambientes) 892
+ 2022 - COPPEL - Cancelaciones Omnicanal 895
+ EMPRESAS SB 898
+ 2022 - ESB - Agile Academy 899
+ FALABELLA 902
+ 2022 - Falabella - Proyecto GLI (Antes LIA) 903
+ 201906 - Falabella - Sistema de Promotores 906
+ 2019 - Falabella - Sistema de Sorteos 908
+ 2019 - Falabella - Muleto 910
+ 2019 - Falabella - Staffing 912
+ 201907 - Falabella - Outsourcing Analista auditor en seguridad & IT 914
+ 2012 - Fallabela - Falabella Gestión de Comisiones - Etapa IV 916
+ GARBARINO 918
+ HEB 919
+ 2018 - HEB - Adopción DevOps 920
+ 2020 - HEB - Estrategia de Adopción Agile 922
+ 2020 - HEB - Fidelización de Clientes 925
+ 2021 - HEB - Testing Ágil en Comercio Electrónico 927
+ LES SCHWAB 932
+ LIVERPOOL 933
+ xx - Liverpool - xx 934
+ 2012 - Liverpool - Soporte y Acompañamiento para Pruebas con IBM Rational 936
+ MERKDO 938
+ 2016 - Merkdo - Cofre Millonario 939
+ OFFICE DEPOT 940
+ xx - Office Depot - xx 941
+ oh! Gift Card 943
+ 2013 - oh! Gift Card - Nueva Plataforma 944
+ 2015 - oh! Gift Card - Mantenimiento y Evolución Plataforma Tecnológica 945
+ 2022 - oh! Gift Card - Mantenimiento, Evolución Plataforma Tecnológica y cambio de organización 946
+ VITRO 948
+ 201908 - VITRO - Proyecto EDGE VITROCAR 949
+ 2020-Vitro-Evolución Vitrocar 951
+ WALMART CHILE 954
+ 2020 - Walmart Chile - Business Insights 955
+ 202012 - Walmart - Agile Coachs 957
+ PARQUE ARAUCO 959
+ 2021 - PARQUE ARAUCO - Gobierno de Datos 960
+ SC Johnson 962
+ Camuzzi 963
+ Implementación JSM - Tesorería y Finanzas 964
+ Implementación JSM - Help Desk 966
+ Salud / Laboratorios 968
+ BIOGEN IDEC 969
+ 2013 - Biogen - Soporte HD 970
+ EMERGENCIAS MÉDICAS 971
+ HOSPITAL BRITÁNICO DE BUENOS AIRES 972
+ OSDE - ORGANIZACIÓN DE SERVICIOS DIRECTOS EMPRESARIOS 973
+ 2013 - OSDE - Consultoria en servicios de IT 974
+ ROEMMERS 976
+ 2015 - Roemmers - Soporte de aplicaciones con Hosting 977
+ 2016 - Roemmers - Sistema de Gestión Farmaceútica 979
+ GADOR 981
+ 2012 - Gador - Sitio de Gestión de Calidad, Proceso de Acondicionamiento de Lotes 982
+ Seguros 984
+ ASOCIART ART 985
+ 2008 - Asociart - AnteProyecto de Reingeniería 986
+ 2015 - Asociart - Software Factory C# 988
+ 2018 - Asociart - Software Factory C# 990
+ 2019 - Asociart - Software Factory C# 992
+ ASSIST CARD 994
+ 2021 - Assist Card - Customer Lifetime Value 995
+ BNP PARIBAS CARDIF 997
+ 2017 - BNP Paribas Cardif - Diseño de L&F 998
+ 2018 - BNP Paribas Cardif - Mantenimiento correctivo y preventivo CRM 999
+ 2018 - BNP Paribas Cardif - Implementación Dynamics CRM 1001
+ 2019 - BNP Paribas Cardif - Service Design Thinking 1003
+ MERCANTIL ANDINA 1005
+ 2016 - Mercantil Andina - Assesstment SDLC 1006
+ MAPFRE UNIDAD VIDA 1007
+ 2017 - Mapfre - Cotizador Combinado Familiar 1008
+ 2018 - Mapfre - Cotizador de Autos 1009
+ METLIFE AR 1010
+ 2019 - MetLife - Servicios de LAN - WAN y seguridad para adecuación regional a PCI 1011
+ 2013 - MetLife - GICCP 1013
+ 2015 - MetLife - Coordinación Global Data Center 1015
+ 2015 - MetLife - SITIPE 1017
+ 2017 - MetLife - Migración de DTSs 1019
+ 2014 - Met Life - Soporte a Aplicaciones Productivas 1020
+ ORÍGENES SEGUROS DE RETIRO 1021
+ GRUPO SANCOR SEGUROS 1022
+ 2015 - Grupo Sancor Seguros - Soporte portal productores 1023
+ 2011 - Grupo Sancor Seguros - Cotizador móvil de seguros automotor 1024
+ xx - Grupo Sancor Seguros - Arquitectura Corporativa 1026
+ PRUDENTIAL 1028
+ xx - Prudential - xx 1029
+ PACIFICO SEGUROS 1031
+ 2022 - Pacifico Seguros - Consultoría DevOps 1032
+ 2022 - Pacifico Seguros - Provisión de roles DevOps 1034
+ Servicios 1036
+ AKTIO S.A. 1037
+ FUJITSU 1038
+ 2016 - Fujitsu - SDM 1039
+ 2015 - Fujitsu - Parts Management 1041
+ KAPSCH TRAFFICCOM S.A. 1043
+ 2017 - KAPSCH - Assessment Metodología de Testing 1044
+ LOGYT 1045
+ 2014 - Logyt - TPR100 1046
+ MICROSOFT 1048
+ RAPPI 1049
+ DATCO 1050
+ 2016 - Datco - Time % Attendance Assessment 1051
+ BAUFEST 1053
+ 2017 - Baufest - Migración JOOMLA 1054
+ 2014 - Baufest - DBA Services 1056
+ 2017 - Baufest - Bco Hipotecario - Pruebas de Performance 1058
+ SACDE (GRUPO PAMPA ENERGÍA) 1059
+ COMMONWEALTH 1060
+ 2017 - Commonwealth - E-commerce Boyd's Coffee 1061
+ 2018 - Commonwealth - Sitio web HMI 1063
+ TRAMARSA 1064
+ 2019 - Tramarsa - Adopción de DevOps POL y TD 1065
+ 2019 - Tramarsa - Plataforma de Operaciones Portuarias (POP) 1066
+ 2020 - Tramarsa - Acompañamiento Dev-Ops 1068
+ Aeropuertos Argentina 2000 (AA2000) 1070
+ 2019 - AA2000 - Integración Continua 1071
+ D&C Servicios Logísticos S.A. 1073
+ 2017 - D&C - Desarrollo e Implementación de Sistema Logístico 1074
+ RANSA COMERCIAL S.A. 1076
+ 2019 - RANSA - Implementación TDepot 1077
+ 2020 - Ransa - Soporte y Mantenimiento TransDepot 1079
+ 2021 - Ransa - Soporte y Mantenimiento TransDepot 1082
+ 2022 - Ransa - Soporte y Mantenimiento TransDepot 1085
+ 2023 - Ransa - Soporte y Mantenimiento TransDepot 1088
+ AVANTRIP 1091
+ 2015 - Avantrip - Desarrollo Integraciones Plataforma Hoteles 1092
+ EASTRIDGE TECHNOLOGY 1094
+ 2010 - Eastridge - Word Add-In development 1095
+ ZTE CORPORATION 1096
+ 2010 - ZTE CORPORATION - Solución de Wizard CD para MODEM ADSL 1097
+ Grupo Ultramar - Ultranav - UASL - Sitrans 1099
+ Ultramar Agencia Maritima 1100
+ 2019 - Ultramar - Soporte y Mantenimiento de Sistemas 1101
+ 2020 - Ultramar - Soporte y Mantenimiento de Sistemas 1103
+ 2021 - Ultramar - Soporte y Mantenimiento de Sistemas 1104
+ 2021 - Ultramar - Migración de OS/DB 2019 1107
+ 2022 - Ultramar - Soporte y Mantenimiento de Sistemas 1109
+ 2023 - Ultramar - Soporte y Mantenimiento de Sistemas 1111
+ 2024 - Ultramar - Soporte y Mantenimiento de Sistemas 1113
+ Ultramar - UASL 1115
+ 2022 - UASL - Migración de SRU 1116
+ 2022 - UASL - Soporte y Mantenimiento de Sistemas 1118
+ 2023 - UASL - Soporte y Mantenimiento de Sistemas 1120
+ 2024 - UASL - Soporte y Mantenimiento de Sistemas 1122
+ Ultranav - Ultratug 1124
+ 2020 - Ultranav - Soporte y Mantenimiento de Sistemas 1125
+ 2020 - Ultranav - Ethical Hacking 1127
+ 2021 - Ultranav - Soporte y Mantenimiento de Sistemas 1129
+ 2021 - Ultranav - Migración de OS/DB 2019 1132
+ 2022 - Ultranav - Soporte y Mantenimiento de Sistemas 1134
+ 2022 - Ultranav Ethical Hacking 1137
+ 2023 - Ultranav - Soporte y Mantenimiento de Sistemas 1139
+ 2024 - Ultranav - Soporte y Mantenimiento de Sistemas 1142
+ Sitrans 1145
+ 2023 - Sitrans - RPA Implementación automatizaciones 1146
+ 2023 - SER - Especialistas Técnicos (RPA-DATA-SWD) 1149
+ A.P. Moller (APM) - Maersk 1152
+ 2020 - Contopsa - Soporte y Mantenimiento de Sistemas 1153
+ 2021 - Contopsa - Soporte y Mantenimiento de Sistemas 1156
+ 2022 - Contopsa - Soporte y Mantenimiento de Sistemas 1159
+ 2023 - Contopsa - Soporte y Mantenimiento de Sistemas 1161
+ 2019 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR 1163
+ 2021 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR 1165
+ 2022 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR 1167
+ 2023 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR 1169
+ 2020 - APM Terminals Peru - Consultoria y Asesoria Yard Management 1171
+ 2022 - Maersk Desarrollo bodega SD1 1173
+ 2022 - Consultoria especializada - Arquitecto Baufest 1175
+ BCYCLE 1177
+ 2016 - BCycle - BCycle Development Team 1178
+ IBM México 1179
+ 2017 - IBM México - Implementación DevOps SAT 1180
+ DINEROMAIL 1181
+ 2012 - DineroMail - Integración con sistema externo de autenticación de personas. 1182
+ 2012 - DineroMail - Mantenimiento y expansión del sistema de fraudes 1183
+ 2012 - Dinero Mail - Mantenimiento y expansión del sistema de fraudes 1184
+ 2011 - DineroMail - Integración de pagos con AliPay 1185
+ 2011 - DineroMail - Integración de Pagos Sub1 1187
+ CONTRANS 1189
+ 2020-Contrans-Agile POD's e Implementación Trans Depot 1190
+ 2021-Contrans-Continuidad del Servicio (SIOL) 1192
+ 2022-Transmeridian- Evento Corporativo GT: Innovacion TI 1195
+ Isapre Colmena 1198
+ 2019 - Colmena - Transformación Agile (Agile Office) 1199
+ AAA 1201
+ 2020 - AAA - Gift Center 1202
+ American Logistics 1204
+ 2020 - AL - Data Services 1206
+ 2020 - AL - Tripkit mobile app 1208
+ 2021 - AL - Ride Cafe Driver app 1210
+ 2021 - AL - Ride Cafe Provider web 1212
+ 2020 - AL - Data Warehouse 1214
+ 2020 - AL - IVA 1216
+ 2020 - AL - Data Quality 1218
+ 2020 - AL - DevOps 1220
+ 2019 - AL - Galaxy 1222
+ ALC SCHOOLS / EverDriven 1224
+ 2021 - ALS - Dev & QA 1225
+ SMARSH 1226
+ 2021 - Smarsh - Separate SLR Indexer from Queue Populator 1227
+ 2021 - Smarsh - Solr Hardware Virtualization 1229
+ Solistica 1231
+ 2023 - Solistica - OpenAI Legal 1233
+ AGUNSA 1235
+ 2023 - SER - Assesstment Data 1236
+ 2023 - SER - RPA Implementación Aforo Contenedores 1239
+ Telecomunicaciones 1241
+ Claro 1242
+ 2018- Claro - Clúster RPA 1243
+ 2019 -Claro -Soporte Nivel 3 Atlassian 1245
+ Nextel 1247
+ Telecom - Cablevisión - Nextel 1248
+ 2015 - Cablevisión - Mantenimiento Evolutivo de aplicaciones Java 1249
+ 2015 - Cablevisión - Actualización de circuitos Serena Business Manager 1251
+ 2018 - Cablevisión - Contenedor de Micro-Aplicaciones 1253
+ 2019 - Telecom - Mantenimiento Preventivo Aplicaciones Nextel 1254
+ 2021 - Telecom - Desarrollo de Capacidad Ágil 1256
+ 2021 - Telecom - Perfiles Ágiles Team COE 1258
+ 2021 - Telecom - Agile POD para Fintech 1260
+ 2022 - Telecom - Soporte Atlassian 1262
+ 2022 - Coaching QA para QMO 1264
+ yyyy - Telecom - <template> 1266
+ DirecTV Panamericana 1268
+ 2013 - DirectTV - Software Factory 1269
+ xx - DirecTV - Servicio de Fábrica SOA 1270
+ xx - DirecTV - Planificación y Staffing de Recursos IT 1272
+ XX - DirecTV - Gestión de Métricas de IT 1274
+ TELEFE 1276
+ 2013 - Telefe - xx 1277
+ 2013 - Telefe - Desarrollo de la Intranet Corporativa 1279
+ SKY MÉXICO 1281
+ 2010 - SKY - Consultoría en Ingeniería de Software - Implementación de herramientas para el Ciclo de Vida
+1282
+ 2017 - SKY - SKY Servicios Implementación DevOps 1284
+ 2016 - SKY - Servicios de Implementación Requerimientos SKY 1286
+ 2016 - SKY - Sistema Documental de Políticas y Procedimientos 1287
+ 2016 - SKY - Automatización de Pruebas Pagos 1288
+ 2020 - SKY - Migración Sharepoint 2013-2016 1290
+ Lumen (CenturyLink / Level 3 / Global Crossing) 1292
+ 2019 - CenturyLink - Implementación de ChatBot 1293
+ 2019 - CenturyLink - Soporte Portal WEB 1295
+ 2020 - Lumen - Consultoría en Gestión de Proyectos - Fase Assessment 1297
+ 2021 - Lumen - Consultoría en Gestión de Proyectos - Fase Implementación 1299
+ NII HOLDINGS 1301
+ 2011 - NII Holdings - Repositorio PSP 1302
+ HUAWEI TECHNOLOGIES Co. Ltd 1304
+ 2009 - Huawei - Solución de Wizard CD para MODEM ADSL 1305
+ Educación 1307
+ UADE 1308
+ 2022-UADE-Discovery PIA 1309
+ Por unidades de práctica (UP) 1311
+ Business Transformation (BIZTRA) 1312
+ Customer Centricity (CusCen) 1313
+ Software Development (SwDev) 1315
+ Software Quality (SQualy) 1317
+ Data (Data) 1319
+ IT Operations & Continuity (ITOps) 1321
+ US Extended Team (USExt) 1323
+ Sales Force (SForce) 1324
+ Cognitive & RPA (CogRPA) 1325
+ Logistic and Solutions (LogSol) 1326
+ Applied AI (APPAI) 1327
+ Por Cluster 1328
+ Finance 1329
+ Services 1331
+ Products 1333
+ Nature 1335
+ West 1337
+ Por Tipo de Solución 1338
+ E-commerce 1339
+ Portal Autogestión 1340
+ Intranet 1341
+ Facturador 1342
+ CRM 1343
+ Call Center 1344
+ Digitalización 1345
+ Web corporativa 1346
+ Modernización 1347
+ Prevención de Fraude 1349
+ Atlassian 1350
+ Oficina virtual 1351
+ Capacitación 1352
+ Cloud 1353
+ Suscripciones 1354
+ Logistica 1355
+ Biotecnologia 1356
+ Discovery 1357
+ Fidelización 1358
+ Sólo Antecedentes Validados 1359

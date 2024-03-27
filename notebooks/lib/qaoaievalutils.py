@@ -88,14 +88,58 @@ EVAL_QUERY_BETTER_RESPONSE = """<|im_start|>user
     ###RESPONSE_B###
     <|im_end|><|im_start|>assistant"""
 
+EVAL_ALL_RESPONSES_AS_NUMERIC = """<|im_start|>user
+    Evaluate the response A against the query.
+    Evaluate the response B against the query.
+    Compare response A versus response B.
+    The query is delimited by ###QUERY###.
+    The response A is delimited by ###RESPONSE_A###. 
+    The response B is delimited by ###RESPONSE_B###.
+    Answer the next questions:
+    Question-1 : Is the response A similar to response B? Score from 0 to 10 the similarity where 0 is the score for no similarity at all 
+    and 10 for a total similarity 
+    Question 2: Is answer A correct? Score from 0 to 10, where 0 is the score for a correct answer, 5 for a partially correct answer 
+    and 10 for a completely correct answer.    
+    Question-3 : Is the response B correct? Score from 0 to 10, where 0 is the score for a correct answer, 5 for a partially correct answer 
+    and 10 for a completely correct answer.
+    Question-4 : Which response is better? Score from 0 to 10, where 0 is the score if A was better than B, 5 if A and B both are equally
+    better and 10 if B was better than A.
+    For the next questions, on a scale of 0 to 10, where 0 is the lowest score and 10 the highest, score simplicity 
+    and relevant information.
+    Question-5 : What would be the score for response A?
+    Question-6 : What would be the score for response B?
+    For your responses follow the next format:
+    Question-1--Similarity--Number between 0 and 10--Summarize your arguments in 10 words
+    Question-2--Response A Correctness--Number between 0 and 10--Summarize your arguments in 10 words
+    Question-3--Response B Correctness--Number between 0 and 10--Summarize your arguments in 10 words
+    Question-4--Better response--Number between 0 and 10--Summarize your arguments in 10 words
+    Question-5--Score A --Number between 0 and 10--Summarize your arguments in 10 words
+    Question-6--Score B --Number between 0 and 10--Summarize your arguments in 10 words
+
+    ###QUERY###
+    {query}
+    ###QUERY###
+
+    ###RESPONSE_A###
+    {response_a}
+    ###RESPONSE_A###
+    
+    ###RESPONSE_B###
+    {response_b}
+    ###RESPONSE_B###
+    <|im_end|><|im_start|>assistant"""
+
+
 def transform_open_ai_compare_to_json(input_string, debug=False, returnAsNiceJson=False):
     data = []
     if debug: print(f"transform_open_ai_compare_to_json : input to process : {input_string}")
-    parts = input_string.replace("\n", "").replace("\r", "").split("Question-")
+    parts = [x.strip() for x in input_string.replace("\n", "").replace("\r", "").split("Question-")]
     if debug: print(f"parts : {parts}")
     for i, part in enumerate(parts, start=1):
         if part:
             info = part.split("--")
+            if len(info) != 4:
+                continue
             if debug: print(f"transform_open_ai_compare_to_json : i: {i} part: {part} info: {info}")
             test_id = info[0]
             test = info[1]
@@ -138,6 +182,15 @@ def evaluate_query_robot_vs_human_response(user_query, robot_answer, human_answe
 
 def evaluate_query_better_response(user_query, response_a, response_b, debug=False, returnAsNiceJson=False):
     prompt = EVAL_QUERY_BETTER_RESPONSE.format(response_a=response_a, response_b=response_b, query=user_query)
+    if debug: print(f"evaluate_query_better_response : prompt : {prompt}")
+    
+    completion = aoaiutils.get_completion(input_prompt=prompt,debug=debug)
+    result_as_json = transform_open_ai_compare_to_json(input_string=completion,debug=debug, returnAsNiceJson=False)
+    if debug: print(f"evaluate_query_better_response : result : {result_as_json}") 
+    return result_as_json
+
+def evaluate_query_better_response_all_numeric(user_query, response_a, response_b, debug=False, returnAsNiceJson=False):
+    prompt = EVAL_ALL_RESPONSES_AS_NUMERIC.format(response_a=response_a, response_b=response_b, query=user_query)
     if debug: print(f"evaluate_query_better_response : prompt : {prompt}")
     
     completion = aoaiutils.get_completion(input_prompt=prompt,debug=debug)
