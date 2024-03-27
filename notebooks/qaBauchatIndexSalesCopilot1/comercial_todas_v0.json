@@ -1,0 +1,341 @@
+{
+    "used_templates": [],
+    "questions_answers": [
+      {
+        "id_question": "1",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Agroindustria"
+      },
+      {
+        "id_question": "2",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Agroindustria indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "3",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Agroindustria que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "4",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Agroindustria en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "5",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Agroindustria con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "6",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Agroindustria que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "7",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Alimentos y Bebidas"
+      },
+      {
+        "id_question": "8",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Alimentos y Bebidas indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "9",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Alimentos y Bebidas que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "10",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Alimentos y Bebidas en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "11",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Alimentos y Bebidas con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "12",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Alimentos y Bebidas que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "13",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Construcción"
+      },
+      {
+        "id_question": "14",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Construcción indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "15",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Construcción que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "16",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Construcción en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "17",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Construcción con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "18",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Construcción que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "19",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Educación"
+      },
+      {
+        "id_question": "20",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Educación indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "21",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Educación que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "22",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Educación en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "23",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Educación con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "24",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Educación que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "25",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Finanzas"
+      },
+      {
+        "id_question": "26",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Finanzas indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "27",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Finanzas que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "28",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Finanzas en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "29",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Finanzas con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "30",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Finanzas que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },    
+      {
+        "id_question": "31",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Gobierno"
+      },
+      {
+        "id_question": "32",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Gobierno indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "33",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Gobierno que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "34",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Gobierno en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "35",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Gobierno con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "36",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Gobierno que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "37",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Manufactura"
+      },
+      {
+        "id_question": "38",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Manufactura indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "39",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Manufactura que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "40",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Manufactura en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "41",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Manufactura con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "42",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Manufactura que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "43",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Medios"
+      },
+      {
+        "id_question": "44",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Medios indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "45",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Medios que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "46",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Medios en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "47",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Medios con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "48",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Medios que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "49",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de retail"
+      },
+      {
+        "id_question": "50",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de retail indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "51",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de retail que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "52",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de retail en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "53",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de retail con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "54",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de retail que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "55",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Salud y Laboratorios"
+      },
+      {
+        "id_question": "56",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Salud y Laboratorios indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "57",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Salud y Laboratorios que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "58",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Salud y Laboratorios en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "59",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Salud y Laboratorios con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "60",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Salud y Laboratorios que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "61",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Seguros"
+      },
+      {
+        "id_question": "62",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Seguros indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "63",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Seguros que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "64",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Seguros en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "65",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Seguros con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "66",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Seguros que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "67",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Servicios"
+      },
+      {
+        "id_question": "68",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Servicios indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "69",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Servicios que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "70",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Servicios en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "71",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Servicios con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "72",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Servicios que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "73",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Telecomunicaciones"
+      },
+      {
+        "id_question": "74",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Telecomunicaciones indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "75",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Telecomunicaciones que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "76",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Telecomunicaciones en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "77",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Telecomunicaciones con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "78",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Telecomunicaciones que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "79",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Utilities"
+      },
+      {
+        "id_question": "80",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Utilities indicando cliente y resumen breve del proyecto"
+      },
+      {
+        "id_question": "81",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Utilities que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "82",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Utilities en los últimos 5 años que incluyan temas de supply chain o cadena de suministros o abastecimiento indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "83",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Utilities con tecnología Java indicando cliente y breve resumen del proyecto"
+      },
+      {
+        "id_question": "84",
+        "question": "Dame una lista de todos los proyectos que hayamos hecho para la industria de Utilities que hayan involucrado a la práctica de ITOps indicando cliente y breve resumen del proyecto"
+      }                
+    ]
+  }

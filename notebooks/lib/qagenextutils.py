@@ -21,6 +21,9 @@ def print_required_variables(debug=True):
     else:
         print("Nothing to print")
 
+def set_AZURE_SEARCH_INDEX(new_index):
+    aoaiextutils.AZURE_SEARCH_INDEX = new_index
+        
 def get_chat_completion(question):
     user_message = BAUCHAT_TEMPLATE_USER_MESSAGE.format(user_question=question)
     return aoaiextutils.get_extension_chat_completion(user_message)

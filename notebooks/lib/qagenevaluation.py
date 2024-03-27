@@ -10,7 +10,8 @@ def evaluate_responses(filename_to_eval,
                        debug=False, 
                        printResult=False,
                        filename_result="",
-                       includeSMEval=False):
+                       includeSMEval=False,
+                       all_numeric=False):
     
     filename_to_read =  f"{filename_to_eval}"
     with open(filename_to_read,encoding='utf-8') as file_read:
@@ -25,7 +26,10 @@ def evaluate_responses(filename_to_eval,
             if question_to_eval and response_a_to_eval and response_b_to_eval:
                 questions_answers_item['response_a'] = response_a_field
                 questions_answers_item['response_b'] = response_b_field                
-                questions_answers_item['evaluate_with_AOAI_result'] = qaoaievalutils.evaluate_query_better_response(user_query=question_to_eval,response_a=response_a_to_eval,response_b=response_b_to_eval,debug=debug)
+                if all_numeric:
+                    questions_answers_item['evaluate_with_AOAI_result'] = qaoaievalutils.evaluate_query_better_response_all_numeric(user_query=question_to_eval,response_a=response_a_to_eval,response_b=response_b_to_eval,debug=debug)                    
+                else:
+                    questions_answers_item['evaluate_with_AOAI_result'] = qaoaievalutils.evaluate_query_better_response(user_query=question_to_eval,response_a=response_a_to_eval,response_b=response_b_to_eval,debug=debug)
                 if includeSMEval:
                     questions_answers_item['evaluate_with_SM_result'] = qasmevalutils.sm_matching_test(response_a_to_eval, response_b_to_eval, debug=debug)
             if debug: print(questions_answers_item)
