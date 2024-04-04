@@ -167,20 +167,6 @@ def is_chat_model():
         return True
     return False
 
-def should_use_data():
-    if AZURE_SEARCH_SERVICE and AZURE_SEARCH_INDEX and AZURE_SEARCH_KEY:
-        if DEBUG_LOGGING:
-            logging.debug("Using Azure Cognitive Search")
-        return True
-    
-    if AZURE_COSMOSDB_MONGO_VCORE_DATABASE and AZURE_COSMOSDB_MONGO_VCORE_CONTAINER and AZURE_COSMOSDB_MONGO_VCORE_INDEX and AZURE_COSMOSDB_MONGO_VCORE_CONNECTION_STRING:
-        if DEBUG_LOGGING:
-            logging.debug("Using Azure CosmosDB Mongo vcore")
-        return True
-    
-    return False
-
-
 def format_as_ndjson(obj: dict) -> str:
     return json.dumps(obj, ensure_ascii=False) + "\n"
 
@@ -635,91 +621,6 @@ def conversation_with_data(request_body):
         logging.debug(f"conversation_with_data : responseValue {responseValue}")
         return responseValue
 
-def stream_without_data(response, history_metadata={}):
-    responseText = ""
-    for line in response:
-        if line["choices"]:
-            deltaText = line["choices"][0]["delta"].get('content')
-        else:
-            deltaText = ""
-        if deltaText and deltaText != "[DONE]":
-            responseText = deltaText
-
-        response_obj = {
-            "id": line["id"],
-            "model": line["model"],
-            "created": line["created"],
-            "object": line["object"],
-            "choices": [{
-                "messages": [{
-                    "role": "assistant",
-                    "content": responseText
-                }]
-            }],
-            "history_metadata": history_metadata
-        }
-        yield format_as_ndjson(response_obj)
-
-
-def conversation_without_data(request_body):
-    openai.api_type = "azure"
-    openai.api_base = AZURE_OPENAI_ENDPOINT if AZURE_OPENAI_ENDPOINT else f"https://{AZURE_OPENAI_RESOURCE}.openai.azure.com/"
-    openai.api_version = "2023-08-01-preview"
-    openai.api_key = AZURE_OPENAI_KEY
-
-    request_messages = request_body["messages"]
-    
-    messages = [
-        {
-            "role": "system",
-            "content": AZURE_OPENAI_SYSTEM_MESSAGE
-        }
-    ]
-
-    for message in request_messages:
-        if message:
-            messages.append({
-                "role": message["role"] ,
-                "content": message["content"]
-            })
-    
-    ## BEIGN Add Context Create user Info
-    ## userInfo=
-    ## END Add Context Create user info
-
-    logging.exception("Before openai.ChatCompletion.create %s",AZURE_OPENAI_MODEL)
-    response = openai.ChatCompletion.create(
-        engine=AZURE_OPENAI_MODEL,
-        messages = messages,
-        temperature=float(AZURE_OPENAI_TEMPERATURE),
-        max_tokens=int(AZURE_OPENAI_MAX_TOKENS),
-        top_p=float(AZURE_OPENAI_TOP_P),
-        stop=AZURE_OPENAI_STOP_SEQUENCE.split("|") if AZURE_OPENAI_STOP_SEQUENCE else None,
-        stream=SHOULD_STREAM
-    )
-
-    history_metadata = request_body.get("history_metadata", {})
-
-    if not SHOULD_STREAM:
-        response_obj = {
-            "id": response,
-            "model": response.model,
-            "created": response.created,
-            "object": response.object,
-            "choices": [{
-                "messages": [{
-                    "role": "assistant",
-                    "content": response.choices[0].message.content
-                }]
-            }],
-            "history_metadata": history_metadata
-        }
-
-        return jsonify(response_obj), 200
-    else:
-        return Response(stream_without_data(response, history_metadata), mimetype='text/event-stream')
-
-
 @app.route("/conversation", methods=["GET", "POST"])
 def conversation():
     request_body = request.json
@@ -727,11 +628,7 @@ def conversation():
 
 def conversation_internal(request_body):
     try:
-        use_data = should_use_data()
-        if use_data:
-            return conversation_with_data(request_body)
-        else:
-            return conversation_without_data(request_body)
+        return conversation_with_data(request_body)
     except Exception as e:
         logging.exception("Exception in /conversation")
         return jsonify({"error": str(e)}), 500
