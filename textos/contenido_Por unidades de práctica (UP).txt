@@ -1,0 +1,3416 @@
+La empresa Baufest para Comercial cuenta en su cartera con la división *Por unidades de práctica (UP)* y dicha división cuenta con los siguientes industrias: *Business Transformation (BIZTRA), Customer Centricity (CusCen), Software Development (SwDev), Software Quality (SQualy), Data (Data), IT Operations & Continuity (ITOps), US Extended Team (USExt), Sales Force (SForce), Cognitive & RPA (CogRPA), Logistic and Solutions (LogSol), Applied AI (APPAI)* 
+Business Transformation (BIZTRA) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2015 - Ongoing - Cetelem - Servicio de Outsourcing de Aplicaciones
+
+
+
+
+Página: 
+
+201601 - Banco Hipotecario - Coaching Agile
+
+
+
+
+Página: 
+
+201608 - Banco Hipotecario - #BHAgil
+
+
+
+
+Página: 
+
+2017 - Banco Galicia - Servicios PMO
+
+
+
+
+Página: 
+
+2018 - HEB - Adopción DevOps
+
+
+
+
+Página: 
+
+201807 - ABCDIN - Agile Coaching
+
+
+
+
+Página: 
+
+2019 - AL - Galaxy
+
+
+
+
+Página: 
+
+2019 - BBVA - Transformación Agile
+
+
+
+
+Página: 
+
+2019 - BBVA - Transformación Agile UY
+
+
+
+
+Página: 
+
+2019 - Colmena - Transformación Agile (Agile Office)
+
+
+
+
+Página: 
+
+2019 - Edesur - Agile
+
+
+
+
+Página: 
+
+2019 - Grupo Financiero Base - Adopción Agile
+
+
+
+
+Página: 
+
+2019 - Santander - Notificaciones - RT Core
+
+
+
+
+Página: 
+
+2019-Enel-Capacitación Agile
+
+
+
+
+Página: 
+
+201910 - Prisma - Transformación Agile de la Organización
+
+
+
+
+Página: 
+
+2020 - AL - Tripkit mobile app
+
+
+
+
+Página: 
+
+2020 - HEB - Estrategia de Adopción Agile
+
+
+
+
+Página: 
+
+2020 - Lumen - Consultoría en Gestión de Proyectos - Fase Assessment
+
+
+
+
+Página: 
+
+2020 - TGS - Business Agility & Customer Experience
+
+
+
+
+Página: 
+
+2020 - Unilver - Coaching Organizacional
+
+
+
+
+Página: 
+
+2021 - Caja Piura - Formación en agilidad
+
+
+
+
+Página: 
+
+2021 - Caja Piura - Metodología de tribu ágil para app Fase I
+
+
+
+
+Página: 
+
+2021 - Lumen - Consultoría en Gestión de Proyectos - Fase Implementación
+
+
+
+
+Página: 
+
+2021 - Telecom - Desarrollo de Capacidad Ágil
+
+
+
+
+Página: 
+
+2021 - Telecom - Perfiles Ágiles Team COE
+
+
+
+
+Página: 
+
+2022 - ESB - Agile Academy
+
+
+
+
+Página: 
+
+2022-UADE-Discovery PIA
+
+
+
+
+Página: 
+
+2023-BOLDT-Transformación Agile
+
+
+
+ 
+Customer Centricity (CusCen) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2014 - DONMARIO - Modernización del Área de Investigación
+
+
+
+
+Página: 
+
+2014 - Fundación Sadosky - Almacenamiento y Cotejamiento de Pericias de ADN (GENis)
+
+
+
+
+Página: 
+
+2016 - La Nación - Órdenes de Publicidad Web
+
+
+
+
+Página: 
+
+201604 - CENCOSUD - Portal de Procesos y Workflow Factory
+
+
+
+
+Página: 
+
+2017 - Danone - Desarrollo del módulo impresor
+
+
+
+
+Página: 
+
+2018 - AySA - Sistema de Interrupción del Servicio
+
+
+
+
+Página: 
+
+2018 - La Nación - Autogestión - Desarrollo Reclamos Online
+
+
+
+
+Página: 
+
+2018 - La Nación - Proyecto Suscripciones
+
+
+
+
+Página: 
+
+2018 - Saesa - Integraciones Procesos Regulatorios
+
+
+
+
+Página: 
+
+2018 - TGS - Migración E-TGS
+
+
+
+
+Página: 
+
+2018 - Turner - Migración de Catálogo de Contenidos
+
+
+
+
+Página: 
+
+2018 - Turner - SISCOM
+
+
+
+
+Página: 
+
+201805 - Banco Hipotecario - Adminitrador de Pagos
+
+
+
+
+Página: 
+
+201808 - Prisma - Desarrollo PHE
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Watson
+
+
+
+
+Página: 
+
+2019 - CenturyLink - Soporte Portal WEB
+
+
+
+
+Página: 
+
+2019 - Edesur - Agile
+
+
+
+
+Página: 
+
+2019 - Grupo Financiero Base - Adopción Agile
+
+
+
+
+Página: 
+
+2019 - OpenBit - Portal BitCow
+
+
+
+
+Página: 
+
+2019 - Raizen- Intranet SharePoint
+
+
+
+
+Página: 
+
+2019 - Saesa - Equipo BI Operaciones
+
+
+
+
+Página: 
+
+2019 - TGS - Servidumbre Desing Thinking
+
+
+
+
+Página: 
+
+2019 - Turner - Design Thinking BIM
+
+
+
+
+Página: 
+
+2019 - Turner - Diseño y Prototipado Media
+
+
+
+
+Página: 
+
+2019 - Turner - Migración Módulo Pre-billing
+
+
+
+
+Página: 
+
+2019 - Turner - Placement Deportes
+
+
+
+
+Página: 
+
+201901 - Prisma - Mantenimiento PHE
+
+
+
+
+Página: 
+
+201904 - Cencosud - Portal Regional de RRHH
+
+
+
+
+Página: 
+
+201906 - Cencosud - Catalogación de Productos
+
+
+
+
+Página: 
+
+201907 - Cencosud - Flexibilización de Entrega E-Commerce Easy
+
+
+
+
+Página: 
+
+201908 - VITRO - Proyecto EDGE VITROCAR
+
+
+
+
+Página: 
+
+201910 - Prisma - Transformación Agile de la Organización
+
+
+
+
+Página: 
+
+2020 - AL - IVA
+
+
+
+
+Página: 
+
+2020 - AL - Tripkit mobile app
+
+
+
+
+Página: 
+
+2020 - Banco Galicia - Migración Core Quiero!
+
+
+
+
+Página: 
+
+2020 - ICBC Argentina - e-WALLET  (Billetera Digital)
+
+
+
+
+Página: 
+
+2020 - ICBC Argentina - Legajo Digital
+
+
+
+
+Página: 
+
+2020 - MOA - Circuito de Pagos
+
+
+
+
+Página: 
+
+2020 - MOA - MOA Operaciones
+
+
+
+
+Página: 
+
+2020 - MOA - Scato Puerto
+
+
+
+
+Página: 
+
+2020 - Play Digital - Desarrollo de MODO
+
+
+
+
+Página: 
+
+2020 - SAESA - Agile POD Desarrollo Digital
+
+
+
+
+Página: 
+
+2020 - Solgas - TransMobile - B2B.Granel
+
+
+
+
+Página: 
+
+2020 - TGS - Business Agility & Customer Experience
+
+
+
+
+Página: 
+
+2020-Contrans-Agile POD's e Implementación Trans Depot
+
+
+
+
+Página: 
+
+202001 - PRISMA - Cruce de Fondos
+
+
+
+
+Página: 
+
+202010 - Cencosud - CenCommerce Portal de Autogestión
+
+
+
+
+Página: 
+
+202012 - Reckitt Benckiser- Trade Promotions
+
+
+
+
+Página: 
+
+2021 - AL - Ride Cafe Driver app
+
+
+
+
+Página: 
+
+2021 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021 - Telecom - Desarrollo de Capacidad Ágil
+
+
+
+
+Página: 
+
+2021-Contrans-Continuidad del Servicio (SIOL)
+
+
+
+
+Página: 
+
+2022 - BigFin - BigFin App
+
+
+
+
+Página: 
+
+2022 - Falabella - Proyecto GLI (Antes LIA)
+
+
+
+
+Página: 
+
+2022 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022-Transmeridian- Evento Corporativo GT: Innovacion TI
+
+
+
+
+Página: 
+
+202201 - Cencosud - Fase II
+
+
+
+
+Página: 
+
+202206 - Cencosud - Arcus
+
+
+
+
+Página: 
+
+2023 - MOA - Plataforma de Compras
+
+
+
+
+Página: 
+
+2023 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+ 
+Software Development (SwDev) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2004 - Dole - Tranship
+
+
+
+
+Página: 
+
+2005 - Cencosud − Sistema de Gestión de Solicitudes
+
+
+
+
+Página: 
+
+2005 - Pluspetrol - Control de Contratistas
+
+
+
+
+Página: 
+
+2005 - Pluspetrol - Soporte y Fábrica de Aplicaciones
+
+
+
+
+Página: 
+
+2006 - Pluspetrol - Legajo de pozos
+
+
+
+
+Página: 
+
+2008 - Clark- Profit
+
+
+
+
+Página: 
+
+2008 - La Nación - Sistema Club La Nación
+
+
+
+
+Página: 
+
+2008 - La Nación - Soporte y Fábrica de Aplicaciones Comerciales
+
+
+
+
+Página: 
+
+2011 - Tenaris - Sistema de Patio de Barras
+
+
+
+
+Página: 
+
+2012 - Pluspetrol - Sistema de Gestión de Accidentes
+
+
+
+
+Página: 
+
+201211 - Cencosud- Software Factory / Mantenimiento y Soporte de Aplicaciones Varias
+
+
+
+
+Página: 
+
+2013 - SAI - Plataforma Corporativa
+
+
+
+
+Página: 
+
+2013-YPF-Servidumbres
+
+
+
+
+Página: 
+
+2014 - DONMARIO - Modernización del Área de Investigación
+
+
+
+
+Página: 
+
+2014 - Enersa - Enersa Mobile
+
+
+
+
+Página: 
+
+2014 - Fundación Sadosky - Almacenamiento y Cotejamiento de Pericias de ADN (GENis)
+
+
+
+
+Página: 
+
+2014 - KIMBERLY-CLARK - Solución Mobile para Ordenes de Servicio
+
+
+
+
+Página: 
+
+2014 - NIKE - Mantenimiento/Servicio POS data
+
+
+
+
+Página: 
+
+2015 - oh! Gift Card - Mantenimiento y Evolución Plataforma Tecnológica
+
+
+
+
+Página: 
+
+2015 - Ongoing - Cetelem - Servicio de Outsourcing de Aplicaciones
+
+
+
+
+Página: 
+
+2015 - Soporte y Fábrica de Aplicaciones
+
+
+
+
+Página: 
+
+2015 - Tenaris - Mantenimiento de la Aplicación Móvil de Techint
+
+
+
+
+Página: 
+
+201502 - Prisma - Equipo de Arquitectura de Integración para billetera electrónica (Todo Pago)
+
+
+
+
+Página: 
+
+2016 - Banco Santander  - BIG
+
+
+
+
+Página: 
+
+2016 - Bunge - Soporte Correctivo y Evolutivo CFS
+
+
+
+
+Página: 
+
+2016 - La Nación - Órdenes de Publicidad Web
+
+
+
+
+Página: 
+
+201601 - Banco Hipotecario - Coaching Agile
+
+
+
+
+Página: 
+
+201604 - CENCOSUD - Portal de Procesos y Workflow Factory
+
+
+
+
+Página: 
+
+201604 - JBS Swift - Soporte Biztalk
+
+
+
+
+Página: 
+
+201608 - Banco Hipotecario - #BHAgil
+
+
+
+
+Página: 
+
+201612 - Prisma - Oustsourcing desarrollador Cobol
+
+
+
+
+Página: 
+
+2017 - Banco Santander - GEMINIS
+
+
+
+
+Página: 
+
+2017 - Banco Santander - SGE
+
+
+
+
+Página: 
+
+2017 - Banco Santander - SIVD/SL
+
+
+
+
+Página: 
+
+2017 - Banco Santander - SRVTRAN
+
+
+
+
+Página: 
+
+2017 - Baufest - Migración JOOMLA
+
+
+
+
+Página: 
+
+2017 - Bunge -
+
+
+
+
+Página: 
+
+2017 - Cencosud - Mantenimiento Microsoft EPM
+
+
+
+
+Página: 
+
+2017 - Commonwealth - E-commerce Boyd's Coffee
+
+
+
+
+Página: 
+
+2017 - D&C - Desarrollo e Implementación de Sistema Logístico
+
+
+
+
+Página: 
+
+2017 - Danone - Desarrollo del módulo impresor
+
+
+
+
+Página: 
+
+2017 - Enersa - Sistema de Calculo de Calidad de Servicio
+
+
+
+
+Página: 
+
+2017 - Prisma - Soporte y Mantenimiento PTyS
+
+
+
+
+Página: 
+
+2017 - Tenaris  - Soporte y Mantenimiento Evolutivo de IT Tools
+
+
+
+
+Página: 
+
+201701 - Grupo Bimbo - Servicio de Soporte Productivo
+
+
+
+
+Página: 
+
+201709 - Danone - Proximity Functional Support
+
+
+
+
+Página: 
+
+201710 - CAMUZZI GAS - Desarrollo de la Oficina Virtual
+
+
+
+
+Página: 
+
+201712 - Banco Hipotecario - Arquitecto Tarshop
+
+
+
+
+Página: 
+
+2018 - Asociart - Software Factory C#
+
+
+
+
+Página: 
+
+2018 - AySA - Sistema de Interrupción del Servicio
+
+
+
+
+Página: 
+
+2018 - Banco Galicia - Ola 2 Transformación Digital
+
+
+
+
+Página: 
+
+2018 - Banco Santander - ENRI
+
+
+
+
+Página: 
+
+2018 - Banco Santander - MALTA
+
+
+
+
+Página: 
+
+2018 - Banco Santander - MESAC/ERI
+
+
+
+
+Página: 
+
+2018 - Banco Santander - ROyT
+
+
+
+
+Página: 
+
+2018 - Banco Santander - WorkCafé
+
+
+
+
+Página: 
+
+2018 - BNP Paribas Cardif  - Implementación Dynamics CRM
+
+
+
+
+Página: 
+
+2018 - Commonwealth - Sitio web HMI
+
+
+
+
+Página: 
+
+2018 - La Nación - Autogestión - Desarrollo Reclamos Online
+
+
+
+
+Página: 
+
+2018 - La Nación - Proyecto Suscripciones
+
+
+
+
+Página: 
+
+2018 - Pampa -Web Corporativa
+
+
+
+
+Página: 
+
+2018 - REPSOL - TransMobile Facturación Electrónica
+
+
+
+
+Página: 
+
+2018 - Sinopec- Fábrica Sharepoint
+
+
+
+
+Página: 
+
+2018 - Solgas - TransMobile - Facturación electrónica
+
+
+
+
+Página: 
+
+2018 - TGS - Migración E-TGS
+
+
+
+
+Página: 
+
+2018 - Turner - Migración de Catálogo de Contenidos
+
+
+
+
+Página: 
+
+2018 - Turner - SISCOM
+
+
+
+
+Página: 
+
+2018- Edenor- Mantenimiento aplicación Mobile
+
+
+
+
+Página: 
+
+201805 - Banco Hipotecario - Adminitrador de Pagos
+
+
+
+
+Página: 
+
+201805 - CAMUZZI GAS - Mantenimiento y Soporte de la Oficina Virtual y Plataforma Comercial
+
+
+
+
+Página: 
+
+201807 - AVON - Mantenimiento Portales y Aplicaciones Sobre Sharepoint
+
+
+
+
+Página: 
+
+201808 - Prisma - Desarrollo PHE
+
+
+
+
+Página: 
+
+201810 - SIMPLOT - Yard Management
+
+
+
+
+Página: 
+
+201811 - Prisma - PRS205 - Soporte y Mantenimiento PTyS
+
+
+
+
+Página: 
+
+2019 - AA2000 - Integración Continua
+
+
+
+
+Página: 
+
+2019 - AL - Galaxy
+
+
+
+
+Página: 
+
+2019 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR
+
+
+
+
+Página: 
+
+2019 - Asociart - Software Factory C#
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Arquitectura de Ventas - Integración
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Ecosistema Galicia Rural
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - First Contact Resolution- Integración
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Journey de Créditos
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Nueva Célula Convenios
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Nuevo Administrador de Promociones NAP
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Nuevo Portal Quiero!
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Préstamos por Convenios - Prendarios
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Quiero! Tarjeta Naranja
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Squad Plataforma Omnicanal (POM)
+
+
+
+
+Página: 
+
+2019 - Banco Hipotecario - Celula de Desarrollo Mobile
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Gimnasio Garay
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Recibos Digitales
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Watson
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Whatsapp
+
+
+
+
+Página: 
+
+2019 - BBVA - Célula de desarrollo Java
+
+
+
+
+Página: 
+
+2019 - DAIMLER - MIGRACIÓN DE APLICACIONES myDFS & myMBF
+
+
+
+
+Página: 
+
+2019 - Enersa - Mantenimiento ENERSA Mobile
+
+
+
+
+Página: 
+
+2019 - Falabella - Muleto
+
+
+
+
+Página: 
+
+2019 - Falabella - Sistema de Sorteos
+
+
+
+
+Página: 
+
+2019 - Falabella - Staffing
+
+
+
+
+Página: 
+
+2019 - La Nación - Integrador SAP
+
+
+
+ 
+Software Quality (SQualy) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2004 - Dole - Tranship
+
+
+
+
+Página: 
+
+2008 - Clark- Profit
+
+
+
+
+Página: 
+
+2008 - La Nación - Sistema Club La Nación
+
+
+
+
+Página: 
+
+2008 - La Nación - Soporte y Fábrica de Aplicaciones Comerciales
+
+
+
+
+Página: 
+
+2013-YPF-Servidumbres
+
+
+
+
+Página: 
+
+2014 - DONMARIO - Modernización del Área de Investigación
+
+
+
+
+Página: 
+
+2014 - Fundación Sadosky - Almacenamiento y Cotejamiento de Pericias de ADN (GENis)
+
+
+
+
+Página: 
+
+201502 - Prisma - Equipo de Arquitectura de Integración para billetera electrónica (Todo Pago)
+
+
+
+
+Página: 
+
+201505 - Prisma - Factory de Testing
+
+
+
+
+Página: 
+
+2016 - GCBA - Agencia de Sistemas de Información
+
+
+
+
+Página: 
+
+2016 - La Nación - Órdenes de Publicidad Web
+
+
+
+
+Página: 
+
+2016 - SKY - Automatización de Pruebas Pagos
+
+
+
+
+Página: 
+
+2017 - Enersa - Sistema de Calculo de Calidad de Servicio
+
+
+
+
+Página: 
+
+2017 - Tenaris  - Soporte y Mantenimiento Evolutivo de IT Tools
+
+
+
+
+Página: 
+
+2018 - Asociart - Software Factory C#
+
+
+
+
+Página: 
+
+2018 - AySA - Sistema de Interrupción del Servicio
+
+
+
+
+Página: 
+
+2018 - La Nación - Autogestión - Desarrollo Reclamos Online
+
+
+
+
+Página: 
+
+2018 - La Nación - Proyecto Suscripciones
+
+
+
+
+Página: 
+
+2018 - Saesa - Integraciones Procesos Regulatorios
+
+
+
+
+Página: 
+
+2018 - TGS - Migración E-TGS
+
+
+
+
+Página: 
+
+2018- Edenor- Mantenimiento aplicación Mobile
+
+
+
+
+Página: 
+
+201805 - Banco Hipotecario - Adminitrador de Pagos
+
+
+
+
+Página: 
+
+201805 - CAMUZZI GAS - Mantenimiento y Soporte de la Oficina Virtual y Plataforma Comercial
+
+
+
+
+Página: 
+
+201808 - Prisma - Desarrollo PHE
+
+
+
+
+Página: 
+
+201810 - SIMPLOT - Yard Management
+
+
+
+
+Página: 
+
+2019 - AL - Galaxy
+
+
+
+
+Página: 
+
+2019 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR
+
+
+
+
+Página: 
+
+2019 - Asociart - Software Factory C#
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Journey de Créditos
+
+
+
+
+Página: 
+
+2019 - Banco Galicia - Squad Plataforma Omnicanal (POM)
+
+
+
+
+Página: 
+
+2019 - Falabella - Sistema de Sorteos
+
+
+
+
+Página: 
+
+2019 - LDS - MIgración VB3 a Web
+
+
+
+
+Página: 
+
+2019 - Raizen- Intranet SharePoint
+
+
+
+
+Página: 
+
+2019 - RANSA - Implementación TDepot
+
+
+
+
+Página: 
+
+2019 - Saesa - Equipo BI Operaciones
+
+
+
+
+Página: 
+
+2019 - Saesa - Migración Interfases SAP
+
+
+
+
+Página: 
+
+2019 - Saesa - Procesos Regulatorios Fase II
+
+
+
+
+Página: 
+
+2019 - Saesa - Registro y Monitoreo de Capacitaciones
+
+
+
+
+Página: 
+
+2019 - Santander - Neo Jupiter
+
+
+
+
+Página: 
+
+2019 - Santander - Notificaciones - RT Core
+
+
+
+
+Página: 
+
+2019 - SMURFIT KAPPA - PRUEBAS DE DESEMPEÑO
+
+
+
+
+Página: 
+
+2019 - TGS - Migración COST
+
+
+
+
+Página: 
+
+2019 - TGS - Migración MAC
+
+
+
+
+Página: 
+
+2019 - Tramarsa - Plataforma de Operaciones Portuarias (POP)
+
+
+
+
+Página: 
+
+2019 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+201901 - Prisma - Mantenimiento PHE
+
+
+
+
+Página: 
+
+201906 - Falabella - Sistema de Promotores
+
+
+
+
+Página: 
+
+201907 - Cencosud - Flexibilización de Entrega E-Commerce Easy
+
+
+
+
+Página: 
+
+201908 - COLUN - Desarrollo App Soy Colun
+
+
+
+
+Página: 
+
+201908 - VITRO - Proyecto EDGE VITROCAR
+
+
+
+
+Página: 
+
+2020 - AAA - Gift Center
+
+
+
+
+Página: 
+
+2020 - AL - IVA
+
+
+
+
+Página: 
+
+2020 - AL - Tripkit mobile app
+
+
+
+
+Página: 
+
+2020 - BBVA - Integración MODO
+
+
+
+
+Página: 
+
+2020 - ICBC Argentina - e-WALLET  (Billetera Digital)
+
+
+
+
+Página: 
+
+2020 - Play Digital - Desarrollo de MODO
+
+
+
+
+Página: 
+
+2020 - SAESA - Agile POD Desarrollo Digital
+
+
+
+
+Página: 
+
+2020 - Tenaris - Modulo ACAT
+
+
+
+
+Página: 
+
+2020 - TGS - Migración SPAC Externos
+
+
+
+
+Página: 
+
+2020-2022 - COPPEL - Desarrollo de nuevas funcionalidades para Sistema de Punto de Venta
+
+
+
+
+Página: 
+
+2020-Contrans-Agile POD's e Implementación Trans Depot
+
+
+
+
+Página: 
+
+2020-Vitro-Evolución Vitrocar
+
+
+
+
+Página: 
+
+202010 - Cencosud - CenCommerce Portal de Autogestión
+
+
+
+
+Página: 
+
+202012 - Reckitt Benckiser- Trade Promotions
+
+
+
+
+Página: 
+
+2021 - AL - Ride Cafe Driver app
+
+
+
+
+Página: 
+
+2021 - ALS - Dev & QA
+
+
+
+
+Página: 
+
+2021 - BBVA - OLIMPIA
+
+
+
+
+Página: 
+
+2021 - BBVA - ORANGE
+
+
+
+
+Página: 
+
+2021 - HEB - Testing Ágil en Comercio Electrónico
+
+
+
+
+Página: 
+
+2021 - Tenaris  - Data Engineering Service
+
+
+
+
+Página: 
+
+2021-NCB-CBDC
+
+
+
+
+Página: 
+
+2022 - COPPEL - Adquirencia
+
+
+
+
+Página: 
+
+2022 - COPPEL - Cancelaciones Omnicanal
+
+
+
+
+Página: 
+
+2022 - Falabella - Proyecto GLI (Antes LIA)
+
+
+
+
+Página: 
+
+2022 - Interbank - Crew Medios de Pago - Provisión de roles clave
+
+
+
+
+Página: 
+
+2022 - Interbank - Open Banking - Provisión de roles QA para Estrategia de pruebas y ejecución de pruebas
+
+
+
+
+Página: 
+
+2022 - Tenaris  - POD Digital Net Core
+
+
+
+
+Página: 
+
+2022-UADE-Discovery PIA
+
+
+
+
+Página: 
+
+202201 - Cencosud - Fase II
+
+
+
+
+Página: 
+
+202204 - COLUN - Implementación JSM/JWM para ATC
+
+
+
+
+Página: 
+
+2023 - ALICORP - Célula QE para Digital
+
+
+
+
+Página: 
+
+2023 - TGS - Migración SPAC Internos
+
+
+
+
+Página: 
+
+2024 - ALICORP - QE para GTM Omnicanalidad
+
+
+
+
+Página: 
+
+XX - Toyota - G - SYSTEM
+
+
+
+
+Página: 
+
+XX - Toyota - PGR
+
+
+
+ 
+Data (Data) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2008 - La Nación - Sistema Club La Nación
+
+
+
+
+Página: 
+
+2014 - DONMARIO - Modernización del Área de Investigación
+
+
+
+
+Página: 
+
+2015 - Cencosud - Solución Fidelidad  Analytics
+
+
+
+
+Página: 
+
+2017 - Cencosud - Cleansing de Usuarios
+
+
+
+
+Página: 
+
+2017 - Danone - Desarrollo del módulo impresor
+
+
+
+
+Página: 
+
+2017 - KIMBERLY-CLARK - Gestion de proyectos
+
+
+
+
+Página: 
+
+2017 - Prisma - Soporte y Mantenimiento PTyS
+
+
+
+
+Página: 
+
+2017 - Tenaris  - Soporte y Mantenimiento Evolutivo de IT Tools
+
+
+
+
+Página: 
+
+2017 - Unilever - Data Quality Domicilios
+
+
+
+
+Página: 
+
+2018 - AySA - Sistema de Interrupción del Servicio
+
+
+
+
+Página: 
+
+2018 - La Nación - Proyecto Suscripciones
+
+
+
+
+Página: 
+
+2018 - Saesa - Integraciones Procesos Regulatorios
+
+
+
+
+Página: 
+
+2018 - Saesa - Procesamiento de datos Normativos y regulatorios
+
+
+
+
+Página: 
+
+201811 - Prisma - PRS205 - Soporte y Mantenimiento PTyS
+
+
+
+
+Página: 
+
+2019 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Watson
+
+
+
+
+Página: 
+
+2019 - La Nación - Integrador SAP
+
+
+
+
+Página: 
+
+2019 - LDS - MIgración VB3 a Web
+
+
+
+
+Página: 
+
+2019 - RANSA - Implementación TDepot
+
+
+
+
+Página: 
+
+2019 - Saesa - Equipo BI Operaciones
+
+
+
+
+Página: 
+
+2019 - Saesa - Procesos Regulatorios Fase II
+
+
+
+
+Página: 
+
+2019 - SANTANDER - RT CORE
+
+
+
+
+Página: 
+
+2019 - Tramarsa - Plataforma de Operaciones Portuarias (POP)
+
+
+
+
+Página: 
+
+2019 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+201906 - Cencosud - Catalogación de Productos
+
+
+
+
+Página: 
+
+201910 - Cencosud - Servicio de Workflow Factory y Mantenimiento Portal
+
+
+
+
+Página: 
+
+2020 - AL - Data Quality
+
+
+
+
+Página: 
+
+2020 - AL - Data Services
+
+
+
+
+Página: 
+
+2020 - AL - Data Warehouse
+
+
+
+
+Página: 
+
+2020 - AL - IVA
+
+
+
+
+Página: 
+
+2020 - Banco Galicia - Migración Core Quiero!
+
+
+
+
+Página: 
+
+2020 - Ransa - Soporte y Mantenimiento TransDepot
+
+
+
+
+Página: 
+
+2020 - Solgas - Servicio SaaS TransMobile
+
+
+
+
+Página: 
+
+2020 - Solgas - TransMobile - B2B.Granel
+
+
+
+
+Página: 
+
+2020 - Walmart Chile - Business Insights
+
+
+
+
+Página: 
+
+2020-Contrans-Agile POD's e Implementación Trans Depot
+
+
+
+
+Página: 
+
+202001 - Cencosud - POC BIG DATA - AWS
+
+
+
+
+Página: 
+
+202007 - Reckitt - Explotación del Sellout
+
+
+
+
+Página: 
+
+202012 - Reckitt Benckiser- Trade Promotions
+
+
+
+
+Página: 
+
+2021 - Intercam Fondos - i-Previsional 2.0
+
+
+
+
+Página: 
+
+2021 - Lumen - Consultoría en Gestión de Proyectos - Fase Implementación
+
+
+
+
+Página: 
+
+2021 - PARQUE ARAUCO - Gobierno de Datos
+
+
+
+
+Página: 
+
+2021 - Ransa - Soporte y Mantenimiento TransDepot
+
+
+
+
+Página: 
+
+2021 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021 - Tenaris  - Data Engineering Service
+
+
+
+
+Página: 
+
+2021 - Ultramar - Migración de OS/DB 2019
+
+
+
+
+Página: 
+
+2021 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021 - Ultranav - Migración de OS/DB 2019
+
+
+
+
+Página: 
+
+2021 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021-Contrans-Continuidad del Servicio (SIOL)
+
+
+
+
+Página: 
+
+202103 - Cencosud - Consultoría de Datos eCommerce
+
+
+
+
+Página: 
+
+202107 - Nutrien - Dashboard Comercial
+
+
+
+
+Página: 
+
+2022 - BigFin - BigFin App
+
+
+
+
+Página: 
+
+2022 - Danone - Digital Products Agile Teams
+
+
+
+
+Página: 
+
+2022 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - UASL - Migración de SRU
+
+
+
+
+Página: 
+
+2022 - UASL - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022-UADE-Discovery PIA
+
+
+
+
+Página: 
+
+202203 - Grupo Bimbo - RTM (Route to Market)
+
+
+
+
+Página: 
+
+202206 - Grupo Bimbo - Deep Logistic
+
+
+
+
+Página: 
+
+202206 - Grupo Bimbo - Food Waste
+
+
+
+
+Página: 
+
+2023 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - SER - Assesstment Data
+
+
+
+
+Página: 
+
+2023 - SER - Especialistas Técnicos (RPA-DATA-SWD)
+
+
+
+
+Página: 
+
+2023 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - UASL - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - SER - Especialistas Técnicos (RPA-DATA-SWD)
+
+
+
+
+Página: 
+
+2024 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - UASL - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+ 
+IT Operations & Continuity (ITOps) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2012 - Tenaris  - Outsourcing Servicio de Ciberseguridad y Desarrollo
+
+
+
+
+Página: 
+
+2013 - Biogen - Soporte HD
+
+
+
+
+Página: 
+
+2014 - Fundación Sadosky - Almacenamiento y Cotejamiento de Pericias de ADN (GENis)
+
+
+
+
+Página: 
+
+201502 - Prisma - Equipo de Arquitectura de Integración para billetera electrónica (Todo Pago)
+
+
+
+
+Página: 
+
+201511 - Banco Hipotecario - Estrategia de RollOut - Ciclos I y II - Ambientes & Requerimientos
+
+
+
+
+Página: 
+
+2017 - Cencosud - Mantenimiento Microsoft EPM
+
+
+
+
+Página: 
+
+2017 - SKY - SKY Servicios Implementación DevOps
+
+
+
+
+Página: 
+
+2017 - Tenaris  - Soporte y Mantenimiento Evolutivo de IT Tools
+
+
+
+
+Página: 
+
+2018 - Banco Galicia - Ola 2 Transformación Digital
+
+
+
+
+Página: 
+
+2018 - HEB - Adopción DevOps
+
+
+
+
+Página: 
+
+2018 - PAE- Configuración Jira Software
+
+
+
+
+Página: 
+
+2018 - YPF-  Arquitectura en seguridad cloud
+
+
+
+
+Página: 
+
+201809 - Prisma - Administración y Soporte JIRA
+
+
+
+
+Página: 
+
+2019 - AA2000 - Integración Continua
+
+
+
+
+Página: 
+
+2019 - APM Terminals MOIN - Mantenimiento Evolutivo y Soporte Nivel 2 TransMR
+
+
+
+
+Página: 
+
+2019 - ARTEAR - Consultoría DevOps
+
+
+
+
+Página: 
+
+2019 - Banco Hipotecario - Gestión de Ambientes y Ciclo de Vida (GYGA)
+
+
+
+
+Página: 
+
+2019 - Depósito Central de Valores - Upgrade BD Jira
+
+
+
+
+Página: 
+
+2019 - Enersa - Mantenimiento ENERSA Mobile
+
+
+
+
+Página: 
+
+2019 - MetLife - Servicios de LAN - WAN y seguridad para adecuación regional a PCI
+
+
+
+
+Página: 
+
+2019 - TGS - Upgrade Jira y Confluence
+
+
+
+
+Página: 
+
+2019 - Tramarsa - Adopción de DevOps POL y TD
+
+
+
+
+Página: 
+
+2019 - Tramarsa - Plataforma de Operaciones Portuarias (POP)
+
+
+
+
+Página: 
+
+2019 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2019 -Claro -Soporte Nivel 3 Atlassian
+
+
+
+
+Página: 
+
+201906 - Cencosud - Catalogación de Productos
+
+
+
+
+Página: 
+
+201907 - Cencosud - Flexibilización de Entrega E-Commerce Easy
+
+
+
+
+Página: 
+
+201907 - Falabella - Outsourcing Analista auditor en seguridad & IT
+
+
+
+
+Página: 
+
+201908 - VITRO - Proyecto EDGE VITROCAR
+
+
+
+
+Página: 
+
+201911 - Cencosud - Mantenimiento E-Commerce Easy
+
+
+
+
+Página: 
+
+2020 - BBVA - Integración MODO
+
+
+
+
+Página: 
+
+2020 - Interbank - Arquitectura - Provisión de roles clave
+
+
+
+
+Página: 
+
+2020 - MOA - Circuito de Pagos
+
+
+
+
+Página: 
+
+2020 - Ransa - Soporte y Mantenimiento TransDepot
+
+
+
+
+Página: 
+
+2020 - Solgas - Servicio SaaS TransMobile
+
+
+
+
+Página: 
+
+2020 - Solgas - TransMobile - B2B.Granel
+
+
+
+
+Página: 
+
+2020 - Tramarsa - Acompañamiento Dev-Ops
+
+
+
+
+Página: 
+
+2020-2022 - COPPEL - Desarrollo de nuevas funcionalidades para Sistema de Punto de Venta
+
+
+
+
+Página: 
+
+2021 - Abastible - Proyecto Smartlock
+
+
+
+
+Página: 
+
+2021 - BBVA - Devops Incubations
+
+
+
+
+Página: 
+
+2021 - BBVA - OLIMPIA
+
+
+
+
+Página: 
+
+2021 - BBVA - ORANGE
+
+
+
+
+Página: 
+
+2021 - Interbank - Crew Clientes - Acompañamiento Devops
+
+
+
+
+Página: 
+
+2021 - Ransa - Soporte y Mantenimiento TransDepot
+
+
+
+
+Página: 
+
+2021 - RIMAC - Acompañamiento DevOps
+
+
+
+
+Página: 
+
+2021 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021 - Tenaris  - Data Engineering Service
+
+
+
+
+Página: 
+
+2021 - Ultramar - Migración de OS/DB 2019
+
+
+
+
+Página: 
+
+2021 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021 - Ultranav - Migración de OS/DB 2019
+
+
+
+
+Página: 
+
+2021 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021 –  BPD – Atacante Digital
+
+
+
+
+Página: 
+
+2021-Contrans-Continuidad del Servicio (SIOL)
+
+
+
+
+Página: 
+
+2021-NCB-CBDC
+
+
+
+
+Página: 
+
+202111 - Cencosud - Seguridad Cloud
+
+
+
+
+Página: 
+
+2022 - COPPEL - Adquirencia
+
+
+
+
+Página: 
+
+2022 - Pacifico Seguros - Consultoría DevOps
+
+
+
+
+Página: 
+
+2022 - Pacifico Seguros - Provisión de roles DevOps
+
+
+
+
+Página: 
+
+2022 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Telecom - Soporte Atlassian
+
+
+
+
+Página: 
+
+2022 - Tenaris  - POD Digital Net Core
+
+
+
+
+Página: 
+
+2022 - UASL - Migración de SRU
+
+
+
+
+Página: 
+
+2022 - UASL - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Ultranav Ethical Hacking
+
+
+
+
+Página: 
+
+202203 - Grupo Bimbo - RTM (Route to Market)
+
+
+
+
+Página: 
+
+202206 - Cencosud - Arcus
+
+
+
+
+Página: 
+
+202206 - Cencosud - Identity Management
+
+
+
+
+Página: 
+
+202206 - Grupo Bimbo - Deep Logistic
+
+
+
+
+Página: 
+
+202206 - Grupo Bimbo - Food Waste
+
+
+
+
+Página: 
+
+2023 - Mi Banco - Modelo gobierno IaC
+
+
+
+
+Página: 
+
+2023 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - UASL - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - UASL - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Ultramar - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Ultranav - Soporte y Mantenimiento de Sistemas
+
+
+
+ 
+US Extended Team (USExt) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2019 - BNP Paribas Cardif - Service Design Thinking
+
+
+
+
+Página: 
+
+2020 - AL - Tripkit mobile app
+
+
+
+ 
+Sales Force (SForce) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2018 - Pampa- CRM
+
+
+
+
+Página: 
+
+2019 - Pampa - Ajustes Biztalk por Res AFIP
+
+
+
+
+Página: 
+
+2019 - Pampa - CRM GAS
+
+
+
+
+Página: 
+
+2019 - Pampa - mejoras en CRM Electricidad
+
+
+
+
+Página: 
+
+2019 - Pampa - Mejoras WF Creditos
+
+
+
+
+Página: 
+
+2019 - Santander - Notificaciones - RT Core
+
+
+
+ 
+Cognitive & RPA (CogRPA) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+201211 - Cencosud- Software Factory / Mantenimiento y Soporte de Aplicaciones Varias
+
+
+
+
+Página: 
+
+2018- Claro - Clúster RPA
+
+
+
+
+Página: 
+
+2019 - Banco Santander - Watson
+
+
+
+
+Página: 
+
+2019 - CenturyLink - Implementación de ChatBot
+
+
+
+
+Página: 
+
+201906 - Cencosud - Catalogación de Productos
+
+
+
+
+Página: 
+
+201908 - VITRO - Proyecto EDGE VITROCAR
+
+
+
+
+Página: 
+
+201910 - Prisma - Soporte de Equipo de Arquitectura IT
+
+
+
+
+Página: 
+
+2020 - AL - IVA
+
+
+
+
+Página: 
+
+2020 - AL - Tripkit mobile app
+
+
+
+
+Página: 
+
+2020 - Galicia Seguros - Assessment de Arquitectura Empresarial
+
+
+
+
+Página: 
+
+2020 - HEB - Estrategia de Adopción Agile
+
+
+
+
+Página: 
+
+202110 - Cencosud - RPA
+
+
+
+
+Página: 
+
+2022 - Abastible - F3 Automatización Atención al Cliente
+
+
+
+
+Página: 
+
+2022 - ESB - Agile Academy
+
+
+
+
+Página: 
+
+2023 - SER - Especialistas Técnicos (RPA-DATA-SWD)
+
+
+
+
+Página: 
+
+2023 - Sitrans - RPA Implementación automatizaciones
+
+
+
+
+Página: 
+
+2024 - SER - Especialistas Técnicos (RPA-DATA-SWD)
+
+
+
+
+Página: 
+
+2024 - SER - RPA Implementación Aforo Contenedores
+
+
+
+ 
+Logistic and Solutions (LogSol) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2019 - RANSA - Implementación TDepot
+
+
+
+
+Página: 
+
+2020 - Ransa - Soporte y Mantenimiento TransDepot
+
+
+
+
+Página: 
+
+2020 - Solgas - Servicio SaaS TransMobile
+
+
+
+
+Página: 
+
+2020 - Solgas - TransMobile - B2B.Granel
+
+
+
+
+Página: 
+
+2020-Contrans-Agile POD's e Implementación Trans Depot
+
+
+
+
+Página: 
+
+2021 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2021-Contrans-Continuidad del Servicio (SIOL)
+
+
+
+
+Página: 
+
+2022 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2022 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2023 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Repsol - Soporte y Mantenimiento de Sistemas
+
+
+
+
+Página: 
+
+2024 - Solgas - Soporte y Mantenimiento de Sistemas
+
+
+
+ 
+Applied AI (APPAI) contiene la siguiente información 
+Antecedentes de proyectos en los que participó la práctica
+
+
+
+Página: 
+
+2021 - Assist Card - Customer Lifetime Value
+
+
+
+
+Página: 
+
+2022 - TASA - Proyecto Ecosondas
+
+
+
+
+Página: 
+
+2023 - Solistica - OpenAI Legal
+
+
+
+
+Página: 
+
+2023 - TASA - Proyecto Ecosondas Fase II
+
+
+
+ 
