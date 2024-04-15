@@ -38,11 +38,13 @@ Para este ejemplo se utilizó el lenguaje de programación Python
 
 Para poder obtener la información de Confluence desde la API es necesario lo siguiente
 
-1. Instalar Requests y BeautifulSoup
+1. Crear un entorno virtual e Instalar los requirements.txt
 
 ```
-pip install requests
-pip install beautifulsoup4 lxml
+python -m virtualenv venv
+.\venv\Scripts\activate
+
+pip install -r "requirements.txt"
 ```
 
 2. Es necesario tener los siguientes datos, el usuario tiene que ser el mismo que creo el token, la page_id es de la pagina de la cual queremos obtener la informacion
